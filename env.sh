@@ -1,0 +1,11 @@
+#!/bin/bash
+
+USER_NAME=hanrc
+USER_HOME=/users/$USER_NAME
+EXTSTORAGE=$USER_HOME/hanrc
+HL_SRC=$EXTSTORAGE/go/src/github.com/hyperledger
+FABRIC_SRC=$HL_SRC/fabric # GOPATH is EXTSTORAGE/go
+DEPLOY_FABRIC_DIR=$EXTSTORAGE/deploy_fabric
+HOSTS=$DEPLOY_FABRIC_DIR/hosts
+HL_DATA=$EXTSTORAGE/hl_data
+LOG_DIR=$HL_DATA/log
