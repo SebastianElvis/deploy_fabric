@@ -1,11 +1,15 @@
-#!/bin/bash
+HL_HOME=/users/hanrc/hanrc/deploy_fabric
+HOSTS=$HL_HOME/hosts
+CLIENTS=$HL_HOME/clients
+HL_DATA=/users/hanrc/hanrc/go
+HL_SOURCE=/users/hanrc/hanrc/go/src/github.com/hyperledger/fabric
+LOG_DIR=$HL_HOME/benchmark_log
+EXE_HOME=$HL_HOME/../../src/macro/kvstore/
+BENCHMARK=ycsb
 
-USER_NAME=hanrc
-USER_HOME=/users/$USER_NAME
-EXTSTORAGE=$USER_HOME/hanrc
-HL_SRC=$EXTSTORAGE/go/src/github.com/hyperledger
-FABRIC_SRC=$HL_SRC/fabric # GOPATH is EXTSTORAGE/go
-DEPLOY_FABRIC_DIR=$EXTSTORAGE/deploy_fabric
-HOSTS=$DEPLOY_FABRIC_DIR/hosts
-HL_DATA=$EXTSTORAGE/hl_data
-LOG_DIR=$HL_DATA/log
+export PATH=$PATH:/users/hanrc/hanrc/go/src/github.com/hyperledger/fabric/build/bin
+export GOPATH=/users/hanrc/hanrc/go
+
+##comment these out for smallbank
+#EXE_HOME=$HL_HOME/../../src/smallbank/hyperledger
+#BENCHMARK=smallbank

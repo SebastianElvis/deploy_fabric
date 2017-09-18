@@ -1,0 +1,557 @@
+14:37:04.529 [peer] func1 -> INFO 001[0m Auto detected peer address: 155.98.39.93:7051
+14:37:04.529 [peer] func1 -> INFO 002[0m Auto detected peer address: 155.98.39.93:7051
+14:37:04.532 [nodeCmd] serve -> INFO 003[0m Security enabled status: false
+14:37:04.532 [eventhub_producer] start -> INFO 004[0m event processor started
+14:37:04.532 [nodeCmd] serve -> INFO 005[0m Privacy enabled status: false
+14:37:04.533 [db] open -> INFO 006[0m Setting rocksdb maxLogFileSize to 10485760
+14:37:04.533 [db] open -> INFO 007[0m Setting rocksdb keepLogFileNum to 10
+14:37:04.819 [chaincode] NewChaincodeSupport -> INFO 008[0m Chaincode support using peerAddress: 155.98.39.93:7051
+14:37:04.820 [sysccapi] RegisterSysCC -> INFO 009[0m system chaincode (noop,github.com/hyperledger/fabric/bddtests/syschaincode/noop) disabled
+14:37:04.820 [state] loadConfig -> INFO 00a[0m Loading configurations...
+14:37:04.820 [state] loadConfig -> INFO 00b[0m Configurations loaded. stateImplName=[buckettree], stateImplConfigs=map[bucketCacheSize:%!s(int=100) numBuckets:%!s(int=1000003) maxGroupingAtEachLevel:%!s(int=5)], deltaHistorySize=[500]
+14:37:04.820 [state] NewState -> INFO 00c[0m Initializing state implementation [buckettree]
+14:37:04.820 [buckettree] initConfig -> INFO 00d[0m configs passed during initialization = map[string]interface {}{"numBuckets":1000003, "maxGroupingAtEachLevel":5, "bucketCacheSize":100}
+14:37:04.820 [buckettree] initConfig -> INFO 00e[0m Initializing bucket tree state implemetation with configurations &{maxGroupingAtEachLevel:5 lowestLevel:9 levelToNumBucketsMap:map[3:65 9:1000003 4:321 1:3 2:13 0:1 6:8001 5:1601 8:200001 7:40001] hashFunc:0x949fd0}
+14:37:04.820 [buckettree] newBucketCache -> INFO 00f[0m Constructing bucket-cache with max bucket cache size = [100] MBs
+14:37:04.820 [buckettree] loadAllBucketNodesFromDB -> INFO 010[0m Loaded buckets data in cache. Total buckets in DB = [0]. Total cache size:=0
+14:37:04.820 [genesis] func1 -> INFO 011[0m Creating genesis block.
+14:37:04.823 [consensus/controller] NewConsenter -> INFO 012[0m Creating consensus plugin pbft
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 013[0m PBFT type = *pbft.obcBatch
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 014[0m PBFT Max number of validating peers (N) = 8
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 015[0m PBFT Max number of failing peers (f) = 2
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 016[0m PBFT byzantine flag = false
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 017[0m PBFT request timeout = 2s
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 018[0m PBFT view change timeout = 2s
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 019[0m PBFT Checkpoint period (K) = 10
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 01a[0m PBFT broadcast timeout = 1s
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 01b[0m PBFT Log multiplier = 4
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 01c[0m PBFT log size (L) = 40
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 01d[0m PBFT null requests disabled
+14:37:04.824 [consensus/pbft] newPbftCore -> INFO 01e[0m PBFT automatic view change disabled
+14:37:04.825 [consensus/pbft] restoreLastSeqNo -> INFO 01f[0m Replica 3 restored lastExec: 0
+14:37:04.825 [consensus/pbft] restoreState -> INFO 020[0m Replica 3 restored state: view: 0, seqNo: 0, pset: 0, qset: 0, reqBatches: 0, chkpts: 1 h: 0
+14:37:04.825 [consensus/pbft] newObcBatch -> INFO 021[0m PBFT Batch size = 500
+14:37:04.825 [consensus/pbft] newObcBatch -> INFO 022[0m PBFT Batch timeout = 1s
+14:37:04.826 [consensus/statetransfer] SyncToTarget -> INFO 023[0m Syncing to target 46b9dd2b0ba88d13233b3feb743eeb243fcd52ea62b81b82b50c27646ed5762fd75dc4ddd8c0f200cb05019d67b592f6fc821c49479ab48640292eacb3b7c4be for block number 0 with peers []
+14:37:04.826 [nodeCmd] serve -> INFO 024[0m Starting peer with ID=name:"vp3" , network ID=dev2, address=155.98.39.93:7051, rootnodes=pc344.emulab.net:7051, validator=true
+14:37:04.826 [consensus/pbft] ProcessEvent -> INFO 025[0m Replica 3 application caught up via state transfer, lastExec now 0
+14:37:04.828 [consensus/statetransfer] blockThread -> INFO 026[0m Validated blockchain to the genesis block
+14:37:04.830 [rest] StartOpenchainRESTServer -> INFO 027[0m Initializing the REST service on 0.0.0.0:7050, TLS is disabled.
+14:37:39.283 [consensus/pbft] executeOne -> INFO 028[0m Replica 3 executing/committing request batch for view=0/seqNo=1 and digest ZfnLXidBR6S1ux5gl91i3MWoE+fLOX/nHygchGaih4uDbHpLFTpqafaHae+su2bHSivbwh8CjaeCLg5t20vrzQ==
+14:37:39.292 [consensus/pbft] execDoneSync -> INFO 029[0m Replica 3 finished execution 1, trying next
+14:37:40.300 [consensus/pbft] executeOne -> INFO 02a[0m Replica 3 executing/committing request batch for view=0/seqNo=2 and digest En4T6zEbrJJ+8E201/z/0RlsAXpa92VEGui4yqTnbMOFIRd9w9v4DYtPfItIw0pcnQQfLcroeSPST+ciXWH6Ng==
+14:37:40.308 [consensus/pbft] execDoneSync -> INFO 02b[0m Replica 3 finished execution 2, trying next
+14:37:41.303 [consensus/pbft] executeOne -> INFO 02c[0m Replica 3 executing/committing request batch for view=0/seqNo=3 and digest 5/nF6xD21yF8oQ+OjLiI3jjr2Wg/mHDd5G9B+z8SsyRlMCvgVFzkghsgMeYofIDNuriUyshzYS360QaHkTE/9Q==
+14:37:41.319 [consensus/pbft] execDoneSync -> INFO 02d[0m Replica 3 finished execution 3, trying next
+14:37:42.312 [consensus/pbft] executeOne -> INFO 02e[0m Replica 3 executing/committing request batch for view=0/seqNo=4 and digest cw/Jm+acOwRlTzUsHOV88IkohZvhAXTzGSCvRMBuMRjibrHs4gqFmoAqkfvLwyqup4gd0OV8E2EJCsuaR/fbKQ==
+14:37:42.327 [consensus/pbft] execDoneSync -> INFO 02f[0m Replica 3 finished execution 4, trying next
+14:37:43.325 [consensus/pbft] executeOne -> INFO 030[0m Replica 3 executing/committing request batch for view=0/seqNo=5 and digest zJ4J/wie1FDAcx+CgbSrjIkRJVHCphumi7thakaOTzbJ58RjeGf0+2w4XgaLoSOGdcRkg057t0vNvm2PPlhttw==
+14:37:43.333 [consensus/pbft] execDoneSync -> INFO 031[0m Replica 3 finished execution 5, trying next
+14:37:44.334 [consensus/pbft] executeOne -> INFO 032[0m Replica 3 executing/committing request batch for view=0/seqNo=6 and digest 1C2VM9pJQil1D3qKSCP5gbzYEuHPBrzVw/vZcRALKVeChrrChumARbPAmnTMinh6zoeQiXqaC/XyzsZ/06nHXA==
+14:37:44.343 [consensus/pbft] execDoneSync -> INFO 033[0m Replica 3 finished execution 6, trying next
+14:37:45.348 [consensus/pbft] executeOne -> INFO 034[0m Replica 3 executing/committing request batch for view=0/seqNo=7 and digest lx+CKYe2XJvLF5i7tQylJu+D1QItv/7vDvKVqRZJPnT0gvESZKR2zHSdEOtwGUzY5+bogAj6DsI5r77KMjUn7g==
+14:37:45.356 [consensus/pbft] execDoneSync -> INFO 035[0m Replica 3 finished execution 7, trying next
+14:37:46.359 [consensus/pbft] executeOne -> INFO 036[0m Replica 3 executing/committing request batch for view=0/seqNo=8 and digest +OhDY3MuiiRvM5t6Y1vSl1WyyuZ7YAK6sEjQCg9pVqeghXvcG3n/+U3GNGN9/Hb7a4UaUf+IQ6ZgblB7Yk6QDQ==
+14:37:46.366 [consensus/pbft] execDoneSync -> INFO 037[0m Replica 3 finished execution 8, trying next
+14:37:47.369 [consensus/pbft] executeOne -> INFO 038[0m Replica 3 executing/committing request batch for view=0/seqNo=9 and digest p/KxIQXR0hqKZPa0gFH6cfgy1r+9xTog0v2622qeybGzv7aZrc/i3t4gm4iH5/UVwrWG5SKC+lp5ohEDir53DQ==
+14:37:47.376 [consensus/pbft] execDoneSync -> INFO 039[0m Replica 3 finished execution 9, trying next
+14:37:48.356 [consensus/pbft] executeOne -> INFO 03a[0m Replica 3 executing/committing request batch for view=0/seqNo=10 and digest 2JF6VkwOPibW4HjHsmP0XCps626HDVOI4C6zCChwqtQd03DDFj0OT1Bn/t7pY004Op6cYwqxxQUkfP2MChE/kg==
+14:37:48.360 [consensus/pbft] execDoneSync -> INFO 03b[0m Replica 3 finished execution 10, trying next
+14:38:09.089 [consensus/pbft] executeOne -> INFO 03c[0m Replica 3 executing/committing request batch for view=0/seqNo=11 and digest 9jeDdsSdLley8bRXmqGv90Ks1byI21yV9G+qRqYpl9Dzx0xJz/JG1WzfilsgPOfRhEnUbYvJqLeN8kKovVZzQA==
+14:38:09.110 [consensus/pbft] execDoneSync -> INFO 03d[0m Replica 3 finished execution 11, trying next
+14:38:10.127 [consensus/pbft] executeOne -> INFO 03e[0m Replica 3 executing/committing request batch for view=0/seqNo=12 and digest j+Dp6O53sbQYgZm55DoJy1SXgN86HZdu6fXKhjLCLy0KHFN+AHexhB5c4yc/IFTJ6JSoYwF0n0HKgP94C3tVDg==
+14:38:10.147 [consensus/pbft] execDoneSync -> INFO 03f[0m Replica 3 finished execution 12, trying next
+14:38:11.151 [consensus/pbft] executeOne -> INFO 040[0m Replica 3 executing/committing request batch for view=0/seqNo=13 and digest eKSXq6OjWDYencxCfj/6X1L1c6D5DE8pl51jAqxRKIO+fIVOhEyINfklrltOV2L4HNrjlnOV4Ogsu2/Z4GQDvQ==
+14:38:11.169 [consensus/pbft] execDoneSync -> INFO 041[0m Replica 3 finished execution 13, trying next
+14:38:12.170 [consensus/pbft] executeOne -> INFO 042[0m Replica 3 executing/committing request batch for view=0/seqNo=14 and digest UulwWEq4ohO9VyDcQKgDuXIiCwBY0Ru6G16Pir1lsgtf4EKvRZ1JXSFGFJdaYo62BUXdtSLbw0usO3W4ZV3hsA==
+14:38:12.185 [consensus/pbft] execDoneSync -> INFO 043[0m Replica 3 finished execution 14, trying next
+14:38:13.194 [consensus/pbft] executeOne -> INFO 044[0m Replica 3 executing/committing request batch for view=0/seqNo=15 and digest W43y6mt6JtfOnhIdVOQGEKjme7OkXaeUlkkXdKzvAxt+RQWNf6QqNv3gkuchtIp5WQeOdoopedkJ0ztfjYWPNw==
+14:38:13.214 [consensus/pbft] execDoneSync -> INFO 045[0m Replica 3 finished execution 15, trying next
+14:38:14.251 [consensus/pbft] executeOne -> INFO 046[0m Replica 3 executing/committing request batch for view=0/seqNo=16 and digest qtD8MDu2j3eJhR8HzIlo/IYaH6I7F1L5DN5W6HaLKEfU8U+9i3sO3z8pfHVz6a0zyR8/z4aWrTT2NETJESWdcA==
+14:38:14.270 [consensus/pbft] execDoneSync -> INFO 047[0m Replica 3 finished execution 16, trying next
+14:38:15.274 [consensus/pbft] executeOne -> INFO 048[0m Replica 3 executing/committing request batch for view=0/seqNo=17 and digest O8WQgSjem6khWPXQe2CbGAhHejpkyOAWjxU9keajyyKGfkgJtftfQY52kobeS6PUt8GSGp9dEFglpLtzSPY37g==
+14:38:15.290 [consensus/pbft] execDoneSync -> INFO 049[0m Replica 3 finished execution 17, trying next
+14:38:16.291 [consensus/pbft] executeOne -> INFO 04a[0m Replica 3 executing/committing request batch for view=0/seqNo=18 and digest BdCDzW2jMkVWEELgppL6JouFnXbn/Vtp3jz2PF4Aas2En9e0BPNWuwtS+JrHkn9uajMnx1xNHAZRId9CoGpAHw==
+14:38:16.312 [consensus/pbft] execDoneSync -> INFO 04b[0m Replica 3 finished execution 18, trying next
+14:38:17.318 [consensus/pbft] executeOne -> INFO 04c[0m Replica 3 executing/committing request batch for view=0/seqNo=19 and digest L3p2LFWFZ2RWjr+CGQaj0cLEP+Wf+HABXFZUiOw0qDdmgAgzsB8ijci84wB55uYf2eYIsV91IqHEbhNZ+GaGtw==
+14:38:17.333 [consensus/pbft] execDoneSync -> INFO 04d[0m Replica 3 finished execution 19, trying next
+14:38:18.310 [consensus/pbft] executeOne -> INFO 04e[0m Replica 3 executing/committing request batch for view=0/seqNo=20 and digest HhPpvYQzUB5uwmiGSO0YFqscQgZs0pFo/2SmgnT5Z2JIUlC/y1Xi77OcegBJJ58frkjaSvQKLKAPOtpKbmFJNQ==
+14:38:18.325 [consensus/pbft] execDoneSync -> INFO 04f[0m Replica 3 finished execution 20, trying next
+14:38:38.852 [consensus/pbft] executeOne -> INFO 050[0m Replica 3 executing/committing request batch for view=0/seqNo=21 and digest 03V4xZjz3sPTVjSy2vMJvyhSkenidIAxA9QKPp6K7hJ9WtspP0nWYwv7MTF5z9ufM3rsnsGPepl2wcljdTGq5g==
+14:38:38.879 [consensus/pbft] execDoneSync -> INFO 051[0m Replica 3 finished execution 21, trying next
+14:38:39.912 [consensus/pbft] executeOne -> INFO 052[0m Replica 3 executing/committing request batch for view=0/seqNo=22 and digest UarlcOst1wq0OExv17ixVP3U8NRTQSpqzwfymI0sZ7ZUyduchEtAIvp0WytgTh3Z5nTX42N4abC7G5tmgbf/+A==
+14:38:39.942 [consensus/pbft] execDoneSync -> INFO 053[0m Replica 3 finished execution 22, trying next
+14:38:40.978 [consensus/pbft] executeOne -> INFO 054[0m Replica 3 executing/committing request batch for view=0/seqNo=23 and digest Zj5kXKmOWmSB5It0A34HAXQdDJwYL8UIRvPE1TdDZJ/8SlbmWT14I4ymRGZo5Uk8zzCY75kB4TZZkHUnNdW3Nw==
+14:38:41.007 [consensus/pbft] execDoneSync -> INFO 055[0m Replica 3 finished execution 23, trying next
+14:38:42.053 [consensus/pbft] executeOne -> INFO 056[0m Replica 3 executing/committing request batch for view=0/seqNo=24 and digest wt1Oo/iDJ87L3jQzhSM5KN8O6ZXrcjDtim+Fz/K4cB8RsOpLydl9G+Mu1BdEBxGqz/Xjr4IAnhIYQWGZkvFfxQ==
+14:38:42.088 [consensus/pbft] execDoneSync -> INFO 057[0m Replica 3 finished execution 24, trying next
+14:38:43.111 [consensus/pbft] executeOne -> INFO 058[0m Replica 3 executing/committing request batch for view=0/seqNo=25 and digest ko5X8NbZc/3aw1BV2muxNwUmJimDlJkRIAYv8QZRsamlSJooE5ENlOVMXKy4M/WHtTm2iqNDYi8+gULLB/7D1Q==
+14:38:43.135 [consensus/pbft] execDoneSync -> INFO 059[0m Replica 3 finished execution 25, trying next
+14:38:44.183 [consensus/pbft] executeOne -> INFO 05a[0m Replica 3 executing/committing request batch for view=0/seqNo=26 and digest GI8tqijNjbjVFYeuRLl2QDPqQbBG/KvODluu8kfypsjUe1T5fp9ZvnicxScQN3XHXIBZ+uO8uu9asThV/0l59Q==
+14:38:44.208 [consensus/pbft] execDoneSync -> INFO 05b[0m Replica 3 finished execution 26, trying next
+14:38:45.265 [consensus/pbft] executeOne -> INFO 05c[0m Replica 3 executing/committing request batch for view=0/seqNo=27 and digest 77REm38beXdxpBSRnykfFp3YZmjmmu3ebljYd1alcdOaQdvkECwGuKY0q6nPRvkcUnZ0eQ9fO1EfAOYqW4k2hA==
+14:38:45.288 [consensus/pbft] execDoneSync -> INFO 05d[0m Replica 3 finished execution 27, trying next
+14:38:46.338 [consensus/pbft] executeOne -> INFO 05e[0m Replica 3 executing/committing request batch for view=0/seqNo=28 and digest 1c5ASarHDBk8Jso9P4FmwT0f5ZkW/WTLEgZgQJc7CtEL65SDJgOWOMxpabe9EqGZSuEVnwVKXoEgRHoxrn9/nA==
+14:38:46.363 [consensus/pbft] execDoneSync -> INFO 05f[0m Replica 3 finished execution 28, trying next
+14:38:47.398 [consensus/pbft] executeOne -> INFO 060[0m Replica 3 executing/committing request batch for view=0/seqNo=29 and digest KYkZdW0d8UoANU2fIPIOb3Qwd61c55at2sLgXDUyLeKsaJfa8meO2LBK90o9bqCgYre7RH8zhfYDosG6Cpp/2A==
+14:38:47.422 [consensus/pbft] execDoneSync -> INFO 061[0m Replica 3 finished execution 29, trying next
+14:38:48.401 [consensus/pbft] executeOne -> INFO 062[0m Replica 3 executing/committing request batch for view=0/seqNo=30 and digest kKT3j62V7oGi7Ve74K0uYHKwrtiXyMgnCBa3TqeIFTH0KPejSyZ0SivuMrECJH+TGoLVROUJCCWiQFf6S9nzzw==
+14:38:48.411 [consensus/pbft] execDoneSync -> INFO 063[0m Replica 3 finished execution 30, trying next
+14:39:08.799 [consensus/pbft] executeOne -> INFO 064[0m Replica 3 executing/committing request batch for view=0/seqNo=31 and digest akXy2wIhDeBlwZkr6fWUIC5RK+TP3srzrDldbAu9cFAT5UO3tR0fMx8eQZ2CLD/VHlSDh6pexRhHw0CZCqc9rg==
+14:39:08.824 [consensus/pbft] execDoneSync -> INFO 065[0m Replica 3 finished execution 31, trying next
+14:39:09.898 [consensus/pbft] executeOne -> INFO 066[0m Replica 3 executing/committing request batch for view=0/seqNo=32 and digest zNZDRFOxod49PkuTjcPWEQoqG8uiqJZuGu5MnzRaxXCcYoXGPG2HcIv/pLMVb97EIJDUuBUDHzJEJT03zzGQ9g==
+14:39:09.933 [consensus/pbft] execDoneSync -> INFO 067[0m Replica 3 finished execution 32, trying next
+14:39:11.007 [consensus/pbft] executeOne -> INFO 068[0m Replica 3 executing/committing request batch for view=0/seqNo=33 and digest b121C6MrJixyIOb26QrTvBssgJDLSGgrqxtB123SbsBdJ+OMmVyh+YIsuRbCTQW2IAOLtX3s4lMIcW8y433oaA==
+14:39:11.044 [consensus/pbft] execDoneSync -> INFO 069[0m Replica 3 finished execution 33, trying next
+14:39:12.112 [consensus/pbft] executeOne -> INFO 06a[0m Replica 3 executing/committing request batch for view=0/seqNo=34 and digest ysV3EUXrbuaJvZbFx3kMmguWhZtRQ/X72f96DGTTfnJkkQBYwEt9gaC/4rSaHDcYyyysIxpAKBNo7l7VhydyAw==
+14:39:12.154 [consensus/pbft] execDoneSync -> INFO 06b[0m Replica 3 finished execution 34, trying next
+14:39:13.234 [consensus/pbft] executeOne -> INFO 06c[0m Replica 3 executing/committing request batch for view=0/seqNo=35 and digest b8hCptlL9v2BDYX+aLJkSOYhzcTb2MaVzyXyr9DXI43XdokflTbn8MA76vS1V1ne9YFtIIvELO0bbwcERymHXg==
+14:39:13.280 [consensus/pbft] execDoneSync -> INFO 06d[0m Replica 3 finished execution 35, trying next
+14:39:14.336 [consensus/pbft] executeOne -> INFO 06e[0m Replica 3 executing/committing request batch for view=0/seqNo=36 and digest i8OosNXtgNlGwFDfed9ENXg/fXKiak7LfZ+UdOO16eiUGuvWSUsR4JCNEIlJqTczzyq7Si9npEgjb4yztyHAFA==
+14:39:14.375 [consensus/pbft] execDoneSync -> INFO 06f[0m Replica 3 finished execution 36, trying next
+14:39:15.425 [consensus/pbft] executeOne -> INFO 070[0m Replica 3 executing/committing request batch for view=0/seqNo=37 and digest 9VrdqJ9vZVVwPP04iFZ6WiNHQkZ//xsSFh2cIH/IbUn+sY/R94TmNC9EHu76FJkg8q6KvaufVf1JJZAJkN8AEg==
+14:39:15.467 [consensus/pbft] execDoneSync -> INFO 071[0m Replica 3 finished execution 37, trying next
+14:39:16.536 [consensus/pbft] executeOne -> INFO 072[0m Replica 3 executing/committing request batch for view=0/seqNo=38 and digest WAgIN3sy0HM3dsTApKee4qZr09SNAvxxJ4jvPc91bXoG/Qp3RYh6wVWCk3JgDF7o/nF6Ught6+qk6T40ZYBeiA==
+14:39:16.573 [consensus/pbft] execDoneSync -> INFO 073[0m Replica 3 finished execution 38, trying next
+14:39:17.634 [consensus/pbft] executeOne -> INFO 074[0m Replica 3 executing/committing request batch for view=0/seqNo=39 and digest iCqXj9f/21ahZFQc7+Gya028oHN1/ZHdxyqnKwWzgJQZP1AfklgyNqa0H8KZzAdJwB1up/wy6612VyQS1+2MXQ==
+14:39:17.668 [consensus/pbft] execDoneSync -> INFO 075[0m Replica 3 finished execution 39, trying next
+14:39:18.633 [consensus/pbft] executeOne -> INFO 076[0m Replica 3 executing/committing request batch for view=0/seqNo=40 and digest 7ydckg7EVhPaPqGIIP1MDbJIRADWcXQXl3dkJPfIumIjhpjnHWF9RYy6COTbvAvYg6rp7lsboMkVEqzpzBEiXA==
+14:39:18.640 [consensus/pbft] execDoneSync -> INFO 077[0m Replica 3 finished execution 40, trying next
+14:39:38.827 [consensus/pbft] executeOne -> INFO 078[0m Replica 3 executing/committing request batch for view=0/seqNo=41 and digest 9oP4GC3HKGvlH/qAjBHkqAihbxurXDE2uf6zdO0UoYDOYRonRscyOgvJCZAGwlX28pVRVcSiDZIQSVVbhOb22g==
+14:39:38.852 [consensus/pbft] execDoneSync -> INFO 079[0m Replica 3 finished execution 41, trying next
+14:39:40.009 [consensus/pbft] executeOne -> INFO 07a[0m Replica 3 executing/committing request batch for view=0/seqNo=42 and digest 3GKWrROxMQOnd2eZhSZ1SjFNSQaFKybrvnovfJF06A+c9i8MR8LHsnUnaKyOGerliFNxVIF3EguyVG9HHTBbbw==
+14:39:40.054 [consensus/pbft] execDoneSync -> INFO 07b[0m Replica 3 finished execution 42, trying next
+14:39:41.319 [consensus/pbft] executeOne -> INFO 07c[0m Replica 3 executing/committing request batch for view=0/seqNo=43 and digest DceK6u+w4JQkL+FRUzFIfwW6OKzRrRhRV33xEaU1ZQiinxxG+H2/cY1INFaIxBK42EUYqeIOCOVoJm3m6s+B9w==
+14:39:41.366 [consensus/pbft] execDoneSync -> INFO 07d[0m Replica 3 finished execution 43, trying next
+14:39:42.333 [consensus/pbft] recvViewChange -> INFO 07e[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:42.475 [consensus/pbft] executeOne -> INFO 07f[0m Replica 3 executing/committing request batch for view=0/seqNo=44 and digest zpvZkJsd2L60zZuZhAXjhmJ3M2/KoAcDd3ss8vwGLNRTH6+o8hR/61FDsgLNQIOCiq+qjbDG+zpTyF+IHdO0wg==
+14:39:42.519 [consensus/pbft] execDoneSync -> INFO 080[0m Replica 3 finished execution 44, trying next
+14:39:43.286 [consensus/pbft] executeOne -> INFO 081[0m Replica 3 executing/committing request batch for view=0/seqNo=45 and digest YZPPZrxPReu3GjCG0HpXq3N2fqYsLX7Zc2fBvp3BKl0Q1sGOYYQovWD/j/J2STHr+DLUG+I/MPEL3R8JlvTlkQ==
+14:39:43.332 [consensus/pbft] execDoneSync -> INFO 082[0m Replica 3 finished execution 45, trying next
+14:39:44.333 [consensus/pbft] recvViewChange -> INFO 083[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:44.333 [consensus/pbft] recvViewChange -> WARN 084[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:44.571 [consensus/pbft] executeOne -> INFO 085[0m Replica 3 executing/committing request batch for view=0/seqNo=46 and digest 8ZXikSXXIGBZYEnCbwDPjRIvDvGQ4meHiKgVPhMuhEPUryw2UI2AVMMRzpKQwW14qTLrK6UJAkbAunGOI8Q9lw==
+14:39:44.617 [consensus/pbft] execDoneSync -> INFO 086[0m Replica 3 finished execution 46, trying next
+14:39:45.981 [consensus/pbft] executeOne -> INFO 087[0m Replica 3 executing/committing request batch for view=0/seqNo=47 and digest oFHd3MMGyI0MidkzSsupR7U9s0WobdDSqKOJ6MWyVZodC5RlXmDUgrbRQ0EPijVWBCTiBfzRXixmLDbDotNnyQ==
+14:39:46.023 [consensus/pbft] execDoneSync -> INFO 088[0m Replica 3 finished execution 47, trying next
+14:39:46.335 [consensus/pbft] recvViewChange -> INFO 089[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:46.335 [consensus/pbft] recvViewChange -> WARN 08a[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:47.022 [consensus/pbft] executeOne -> INFO 08b[0m Replica 3 executing/committing request batch for view=0/seqNo=48 and digest F9kGd3U/FxDn0LixdjVimbQ+bw3VJr6NAfwJ12ilwTr8vXOFXMtYC8KeHs2p9cn+J6AWvktR5e44HUNCJXXPCQ==
+14:39:47.067 [consensus/pbft] execDoneSync -> INFO 08c[0m Replica 3 finished execution 48, trying next
+14:39:47.943 [consensus/pbft] executeOne -> INFO 08d[0m Replica 3 executing/committing request batch for view=0/seqNo=49 and digest tf2/7Gr5iqvWy9sgOyHo1iL0NYLGp89IoxbrP4FkA6/KIrqMXYUWmqQ3T4VQ9eLCDfj3iBVNjV06+h10Y6DLRA==
+14:39:47.990 [consensus/pbft] execDoneSync -> INFO 08e[0m Replica 3 finished execution 49, trying next
+14:39:48.335 [consensus/pbft] recvViewChange -> INFO 08f[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:48.335 [consensus/pbft] recvViewChange -> WARN 090[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:48.982 [consensus/pbft] executeOne -> INFO 091[0m Replica 3 executing/committing request batch for view=0/seqNo=50 and digest KNIEP1MU1+i75pvgRoxmAgjErCx4SBjnpm9U4pw1M+h9epXiqeM4Jkarkn5UOAvjZuHis0g5HpSw6jKclNFO+Q==
+14:39:49.011 [consensus/pbft] execDoneSync -> INFO 092[0m Replica 3 finished execution 50, trying next
+14:39:50.336 [consensus/pbft] recvViewChange -> INFO 093[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:50.336 [consensus/pbft] recvViewChange -> WARN 094[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:52.337 [consensus/pbft] recvViewChange -> INFO 095[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:52.337 [consensus/pbft] recvViewChange -> WARN 096[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:54.338 [consensus/pbft] recvViewChange -> INFO 097[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:54.338 [consensus/pbft] recvViewChange -> WARN 098[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:56.338 [consensus/pbft] recvViewChange -> INFO 099[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:56.338 [consensus/pbft] recvViewChange -> WARN 09a[0m Replica 3 already has a view change message for view 1 from replica 2
+14:39:58.339 [consensus/pbft] recvViewChange -> INFO 09b[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:58.339 [consensus/pbft] recvViewChange -> WARN 09c[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:00.340 [consensus/pbft] recvViewChange -> INFO 09d[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:00.340 [consensus/pbft] recvViewChange -> WARN 09e[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:02.341 [consensus/pbft] recvViewChange -> INFO 09f[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:02.341 [consensus/pbft] recvViewChange -> WARN 0a0[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:04.341 [consensus/pbft] recvViewChange -> INFO 0a1[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:04.341 [consensus/pbft] recvViewChange -> WARN 0a2[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:06.342 [consensus/pbft] recvViewChange -> INFO 0a3[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:06.342 [consensus/pbft] recvViewChange -> WARN 0a4[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:08.343 [consensus/pbft] recvViewChange -> INFO 0a5[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:08.343 [consensus/pbft] recvViewChange -> WARN 0a6[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:09.232 [consensus/pbft] executeOne -> INFO 0a7[0m Replica 3 executing/committing request batch for view=0/seqNo=51 and digest Pta06KRwBfGXosGj384DcQE9YFqrHVMzQoR7A379NLvaGeYDCWJtq7iB9phMNfWM7L0gQCt3+POehqhjNeZulg==
+14:40:09.260 [consensus/pbft] execDoneSync -> INFO 0a8[0m Replica 3 finished execution 51, trying next
+14:40:10.344 [consensus/pbft] recvViewChange -> INFO 0a9[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:10.344 [consensus/pbft] recvViewChange -> WARN 0aa[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:10.554 [consensus/pbft] executeOne -> INFO 0ab[0m Replica 3 executing/committing request batch for view=0/seqNo=52 and digest XsQkRvxbNDXjoQpuiikjL4wvDjxl9zvr5CTeEmVTOLFZRzbWWTtqb5MPSlurtgNOWGmQ6Crep8WI5lvBlfCuHg==
+14:40:10.601 [consensus/pbft] execDoneSync -> INFO 0ac[0m Replica 3 finished execution 52, trying next
+14:40:11.681 [consensus/pbft] executeOne -> INFO 0ad[0m Replica 3 executing/committing request batch for view=0/seqNo=53 and digest 4yo9DDHG+1GMS8l1j+ghUDN+VV1I+f3EeCk1Bz/cKUjztqsLfoM11YM90a5mUcBn1eVii+Fz5GIFOJq1kSmOYQ==
+14:40:11.727 [consensus/pbft] execDoneSync -> INFO 0ae[0m Replica 3 finished execution 53, trying next
+14:40:12.345 [consensus/pbft] recvViewChange -> INFO 0af[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:12.345 [consensus/pbft] recvViewChange -> WARN 0b0[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:13.052 [consensus/pbft] executeOne -> INFO 0b1[0m Replica 3 executing/committing request batch for view=0/seqNo=54 and digest dndHsFM03AERaACEM+2j8vxsx7ohrGAIwI1UTJ2TAE5OxYGLHAylUzbqCqtH5P7Ed6uKt1HWX6adOqdQTdmp7w==
+14:40:13.094 [consensus/pbft] execDoneSync -> INFO 0b2[0m Replica 3 finished execution 54, trying next
+14:40:14.054 [consensus/pbft] recvViewChange -> INFO 0b3[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+14:40:14.146 [consensus/pbft] executeOne -> INFO 0b4[0m Replica 3 executing/committing request batch for view=0/seqNo=55 and digest 8VCLnxxD6l7XOkVv7ZuUQToepIFE0r1Jr7f0FmAJD6F9LtGrt9Tbmk369W3p4yXUICq9c1DsnHRfAqoXG6+HuA==
+14:40:14.189 [consensus/pbft] execDoneSync -> INFO 0b5[0m Replica 3 finished execution 55, trying next
+14:40:14.346 [consensus/pbft] recvViewChange -> INFO 0b6[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:14.346 [consensus/pbft] recvViewChange -> WARN 0b7[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:15.459 [consensus/pbft] executeOne -> INFO 0b8[0m Replica 3 executing/committing request batch for view=0/seqNo=56 and digest x9YAflj6L0Ct4Bmiib9k5dXSNkVarhTo1qxmTU3dGt3Pb1aSrDyiPSNuyu91wjcWSlG2Ov1vUIh0lv9pyfPPqA==
+14:40:15.500 [consensus/pbft] execDoneSync -> INFO 0b9[0m Replica 3 finished execution 56, trying next
+14:40:16.055 [consensus/pbft] recvViewChange -> INFO 0ba[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:16.055 [consensus/pbft] recvViewChange -> WARN 0bb[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:16.347 [consensus/pbft] recvViewChange -> INFO 0bc[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:16.347 [consensus/pbft] recvViewChange -> WARN 0bd[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:17.401 [consensus/pbft] executeOne -> INFO 0be[0m Replica 3 executing/committing request batch for view=0/seqNo=57 and digest 52XDZh0PhWuL+gub3O9WiKkOb1v2krIWn0X/NcFwkMpVfgiHBaLbfG3rSLHvBNNO3zU6evP9M1V8LK9eFu/3UQ==
+14:40:17.445 [consensus/pbft] execDoneSync -> INFO 0bf[0m Replica 3 finished execution 57, trying next
+14:40:18.056 [consensus/pbft] recvViewChange -> INFO 0c0[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:18.056 [consensus/pbft] recvViewChange -> WARN 0c1[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:18.348 [consensus/pbft] recvViewChange -> INFO 0c2[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:18.348 [consensus/pbft] recvViewChange -> WARN 0c3[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:18.711 [consensus/pbft] executeOne -> INFO 0c4[0m Replica 3 executing/committing request batch for view=0/seqNo=58 and digest 6u68Ux8GiNjQBofsZL3olGQNxa9hOHag63HishlJpxewrJxzUaldgB8X57LiQttMBEZ3vGAwSAQ0GoYeoQdA/w==
+14:40:18.754 [consensus/pbft] execDoneSync -> INFO 0c5[0m Replica 3 finished execution 58, trying next
+14:40:18.754 [consensus/pbft] executeOne -> INFO 0c6[0m Replica 3 executing/committing request batch for view=0/seqNo=59 and digest qsv5iXSuzed3FkZhWRd2Khg0VLZ0P+r4kpxEs5XG/28zcVpezpZrKetUHSfJwhJKNosBG8aCHuXwMSp+2D80iw==
+14:40:18.791 [consensus/pbft] execDoneSync -> INFO 0c7[0m Replica 3 finished execution 59, trying next
+14:40:19.475 [consensus/pbft] executeOne -> INFO 0c8[0m Replica 3 executing/committing request batch for view=0/seqNo=60 and digest +ThkZy8v0MV7EAtQR+r+Oc8WlCwan3v5EpaE/oU1GM+lwE0eIKQxIpqPiWweT7AC8G8bQn0qOG7G4f9bqRq3Ng==
+14:40:19.490 [consensus/pbft] execDoneSync -> INFO 0c9[0m Replica 3 finished execution 60, trying next
+14:40:20.057 [consensus/pbft] recvViewChange -> INFO 0ca[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:20.057 [consensus/pbft] recvViewChange -> WARN 0cb[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:20.348 [consensus/pbft] recvViewChange -> INFO 0cc[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:20.348 [consensus/pbft] recvViewChange -> WARN 0cd[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:22.057 [consensus/pbft] recvViewChange -> INFO 0ce[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:22.058 [consensus/pbft] recvViewChange -> WARN 0cf[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:22.349 [consensus/pbft] recvViewChange -> INFO 0d0[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:22.349 [consensus/pbft] recvViewChange -> WARN 0d1[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:24.058 [consensus/pbft] recvViewChange -> INFO 0d2[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:24.059 [consensus/pbft] recvViewChange -> WARN 0d3[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:24.350 [consensus/pbft] recvViewChange -> INFO 0d4[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:24.350 [consensus/pbft] recvViewChange -> WARN 0d5[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:26.059 [consensus/pbft] recvViewChange -> INFO 0d6[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:26.059 [consensus/pbft] recvViewChange -> WARN 0d7[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:26.351 [consensus/pbft] recvViewChange -> INFO 0d8[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:26.351 [consensus/pbft] recvViewChange -> WARN 0d9[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:28.059 [consensus/pbft] recvViewChange -> INFO 0da[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:28.060 [consensus/pbft] recvViewChange -> WARN 0db[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:28.352 [consensus/pbft] recvViewChange -> INFO 0dc[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:28.352 [consensus/pbft] recvViewChange -> WARN 0dd[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:30.061 [consensus/pbft] recvViewChange -> INFO 0de[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:30.061 [consensus/pbft] recvViewChange -> WARN 0df[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:30.352 [consensus/pbft] recvViewChange -> INFO 0e0[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:30.352 [consensus/pbft] recvViewChange -> WARN 0e1[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:32.061 [consensus/pbft] recvViewChange -> INFO 0e2[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:32.061 [consensus/pbft] recvViewChange -> WARN 0e3[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:32.353 [consensus/pbft] recvViewChange -> INFO 0e4[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:32.353 [consensus/pbft] recvViewChange -> WARN 0e5[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:34.062 [consensus/pbft] recvViewChange -> INFO 0e6[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:34.062 [consensus/pbft] recvViewChange -> WARN 0e7[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:34.354 [consensus/pbft] recvViewChange -> INFO 0e8[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:34.354 [consensus/pbft] recvViewChange -> WARN 0e9[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:36.063 [consensus/pbft] recvViewChange -> INFO 0ea[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:36.064 [consensus/pbft] recvViewChange -> WARN 0eb[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:36.354 [consensus/pbft] recvViewChange -> INFO 0ec[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:36.355 [consensus/pbft] recvViewChange -> WARN 0ed[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:38.064 [consensus/pbft] recvViewChange -> INFO 0ee[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:38.064 [consensus/pbft] recvViewChange -> WARN 0ef[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:38.356 [consensus/pbft] recvViewChange -> INFO 0f0[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:38.356 [consensus/pbft] recvViewChange -> WARN 0f1[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:40.065 [consensus/pbft] recvViewChange -> INFO 0f2[0m Replica 3 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:40.065 [consensus/pbft] recvViewChange -> WARN 0f3[0m Replica 3 already has a view change message for view 1 from replica 1
+14:40:40.357 [consensus/pbft] recvViewChange -> INFO 0f4[0m Replica 3 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:40.357 [consensus/pbft] recvViewChange -> WARN 0f5[0m Replica 3 already has a view change message for view 1 from replica 2
+14:40:41.330 [consensus/pbft] ProcessEvent -> INFO 0f6[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:40:41.330 [consensus/pbft] sendViewChange -> INFO 0f7[0m Replica 3 sending view-change, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.330 [consensus/pbft] recvViewChange -> INFO 0f8[0m Replica 3 received view-change from replica 3, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.331 [consensus/pbft] recvViewChange -> INFO 0f9[0m Replica 3 received view-change from replica 4, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.331 [consensus/pbft] recvViewChange -> INFO 0fa[0m Replica 3 received view-change from replica 7, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.331 [consensus/pbft] recvViewChange -> INFO 0fb[0m Replica 3 received view-change from replica 5, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.331 [consensus/pbft] recvViewChange -> INFO 0fc[0m Replica 3 received view-change from replica 6, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.334 [consensus/pbft] recvNewView -> INFO 0fd[0m Replica 3 received new-view 1
+14:40:41.334 [consensus/pbft] processNewView2 -> INFO 0fe[0m Replica 3 accepting new-view to view 1
+14:40:41.451 [consensus/pbft] executeOne -> INFO 0ff[0m Replica 3 executing/committing request batch for view=1/seqNo=61 and digest uzdChfJ2lBPJQ6epR4INqCe88A4MMrwZoNuywST5WyaELa/asKRABSdHgg+EeHDR6Z8j4q2W3bIMRawAr5TR1Q==
+14:40:41.496 [consensus/pbft] execDoneSync -> INFO 100[0m Replica 3 finished execution 61, trying next
+14:40:41.496 [consensus/pbft] processNewView -> INFO 101[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+[33m14:40:41.657 [consensus/pbft] recvPrePrepare -> WARN 102[0m Pre-prepare from other than primary: got 0, should be 1
+14:40:42.229 [consensus/pbft] executeOne -> INFO 103[0m Replica 3 executing/committing request batch for view=1/seqNo=62 and digest CyOC83vtDbbbbSn4DTgy902L00z8iaCDBYdFgHTLoGwJBvYNurN26VRa3oLltvw0t+gx3Ix7p76LLcYWxXVGdw==
+14:40:42.268 [consensus/pbft] execDoneSync -> INFO 104[0m Replica 3 finished execution 62, trying next
+14:40:42.268 [consensus/pbft] processNewView -> INFO 105[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+[33m14:40:42.429 [consensus/pbft] recvPrePrepare -> WARN 106[0m Pre-prepare from other than primary: got 0, should be 1
+[33m14:40:43.084 [consensus/pbft] recvCommit -> WARN 107[0m Replica 3 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 60
+14:40:43.100 [consensus/pbft] executeOne -> INFO 108[0m Replica 3 executing/committing request batch for view=1/seqNo=63 and digest DXPofQZOZmLxgpOb+8q7JdW3usksNf1rA6gowywYQjcBt4f655QmG4Oz30pIGnaUkmeSbDE/5xzKKWEJoHbavA==
+14:40:43.138 [consensus/pbft] execDoneSync -> INFO 109[0m Replica 3 finished execution 63, trying next
+14:40:43.138 [consensus/pbft] processNewView -> INFO 10a[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:43.198 [consensus/pbft] recvViewChange -> INFO 10b[0m Replica 3 received view-change from replica 0, v:1, h:60, |C|:1, |P|:1, |Q|:3
+14:40:44.153 [consensus/pbft] executeOne -> INFO 10c[0m Replica 3 executing/committing request batch for view=1/seqNo=64 and digest e58Lv80xTsGRjx6HMGRCBsgPNa0GNy2KhHIersKGwSTWnjVeyIUoJpegQoOELbbJc5prj8v6lwYTz9GAWSeH3A==
+14:40:44.175 [consensus/pbft] execDoneSync -> INFO 10d[0m Replica 3 finished execution 64, trying next
+14:40:44.175 [consensus/pbft] processNewView -> INFO 10e[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:45.232 [consensus/pbft] executeOne -> INFO 10f[0m Replica 3 executing/committing request batch for view=1/seqNo=65 and digest oL9HHCCQiLpZVfo2Y3OmpRNz4rOAsU1HVSsV9dA59YG42xreLl4f4LMaKZEeVG6KnPJnOVop6BK4vxJO/mMzqg==
+14:40:45.271 [consensus/pbft] execDoneSync -> INFO 110[0m Replica 3 finished execution 65, trying next
+14:40:45.272 [consensus/pbft] processNewView -> INFO 111[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:45.801 [consensus/pbft] executeOne -> INFO 112[0m Replica 3 executing/committing request batch for view=1/seqNo=66 and digest O5M9yc+D/upXoIrcuVccgkITk221zsEuukNGOijSX4kLrOR+InXL0tAmSH6RnP4e9vlDbp1OnGn4wYfOsRaMlw==
+14:40:45.844 [consensus/pbft] execDoneSync -> INFO 113[0m Replica 3 finished execution 66, trying next
+14:40:45.844 [consensus/pbft] processNewView -> INFO 114[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:46.798 [consensus/pbft] executeOne -> INFO 115[0m Replica 3 executing/committing request batch for view=1/seqNo=67 and digest RgqxurjvD+Meo8zJa9gFx4x8gTScbkn0pmnrqGFEJlYQPQwx5D8Tth7tzUuU3GacTuxLwXmesso5/AA8j/UdtQ==
+14:40:46.809 [consensus/pbft] execDoneSync -> INFO 116[0m Replica 3 finished execution 67, trying next
+14:40:46.809 [consensus/pbft] processNewView -> INFO 117[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:47.829 [consensus/pbft] executeOne -> INFO 118[0m Replica 3 executing/committing request batch for view=1/seqNo=68 and digest nJreAe3Olor3/poQNY8jZk2SAqVm8Hs1XXEY4ZbywbHJugDPXJI+w6i0HBt2e0R13V9Hxjp60NhIT7GcTvmgeg==
+14:40:47.845 [consensus/pbft] execDoneSync -> INFO 119[0m Replica 3 finished execution 68, trying next
+14:40:47.845 [consensus/pbft] processNewView -> INFO 11a[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:48.900 [consensus/pbft] executeOne -> INFO 11b[0m Replica 3 executing/committing request batch for view=1/seqNo=69 and digest yAslA/XiF0Fo9s+k+IV1c3mgHHZNLE6H5JqYsuLQurYHyj9u7q3mprYaAy0we6PQmcVlGXCyMAy/kuDCHsQ1mQ==
+14:40:48.948 [consensus/pbft] execDoneSync -> INFO 11c[0m Replica 3 finished execution 69, trying next
+14:40:48.948 [consensus/pbft] processNewView -> INFO 11d[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:49.961 [consensus/pbft] executeOne -> INFO 11e[0m Replica 3 executing/committing request batch for view=1/seqNo=70 and digest LE3v1htqTNR8ouP9EBlKSd6KBfD7lRp5F4thCAzLX/1RwY3h7SfvZREchVPI7PEribeFH2Uur0trm/JDDbpj0A==
+14:40:49.997 [consensus/pbft] execDoneSync -> INFO 11f[0m Replica 3 finished execution 70, trying next
+14:40:49.998 [consensus/pbft] processNewView -> INFO 120[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:49.998 [consensus/pbft] processNewView -> INFO 121[0m Replica 3 ignoring new-view from 1, v:1: we are active in view 1
+14:40:51.993 [consensus/pbft] recvViewChange -> INFO 122[0m Replica 3 received view-change from replica 5, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.994 [consensus/pbft] recvViewChange -> INFO 123[0m Replica 3 received view-change from replica 4, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.997 [consensus/pbft] recvViewChange -> INFO 124[0m Replica 3 received view-change from replica 6, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.997 [consensus/pbft] recvViewChange -> INFO 125[0m Replica 3 received f+1 view-change messages, triggering view-change to view 2
+14:40:51.997 [consensus/pbft] sendViewChange -> INFO 126[0m Replica 3 sending view-change, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.997 [consensus/pbft] recvViewChange -> INFO 127[0m Replica 3 received view-change from replica 3, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.998 [consensus/pbft] recvViewChange -> INFO 128[0m Replica 3 received view-change from replica 0, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.998 [consensus/pbft] recvViewChange -> INFO 129[0m Replica 3 received view-change from replica 2, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.998 [consensus/pbft] recvViewChange -> INFO 12a[0m Replica 3 received view-change from replica 1, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.998 [consensus/pbft] recvViewChange -> INFO 12b[0m Replica 3 received view-change from replica 7, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:51.999 [consensus/pbft] recvNewView -> INFO 12c[0m Replica 3 received new-view 2
+14:40:51.999 [consensus/pbft] processNewView2 -> INFO 12d[0m Replica 3 accepting new-view to view 2
+14:40:52.002 [consensus/pbft] executeOne -> INFO 12e[0m Replica 3 executing/committing null request for view=2/seqNo=71
+14:40:52.002 [consensus/pbft] execDoneSync -> INFO 12f[0m Replica 3 finished execution 71, trying next
+14:40:53.003 [consensus/pbft] executeOne -> INFO 130[0m Replica 3 executing/committing request batch for view=2/seqNo=72 and digest RfaUve8NRDKNrylkgCCZGoB+SvzpriCaH+teyBNUm9H0wNj6H4jhQ9PHluzDMrbvjySx7IoAB9+AlHiS8dwAfQ==
+14:40:53.004 [consensus/pbft] execDoneSync -> INFO 131[0m Replica 3 finished execution 72, trying next
+14:40:53.004 [consensus/pbft] processNewView -> INFO 132[0m Replica 3 ignoring new-view from 2, v:2: we are active in view 2
+14:40:55.004 [consensus/pbft] ProcessEvent -> INFO 133[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:40:55.004 [consensus/pbft] sendViewChange -> INFO 134[0m Replica 3 sending view-change, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 135[0m Replica 3 received view-change from replica 3, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 136[0m Replica 3 received view-change from replica 6, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 137[0m Replica 3 received view-change from replica 0, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 138[0m Replica 3 received view-change from replica 5, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 139[0m Replica 3 received view-change from replica 4, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.005 [consensus/pbft] recvViewChange -> INFO 13a[0m Replica 3 received view-change from replica 7, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.006 [consensus/pbft] sendNewView -> INFO 13b[0m Replica 3 is new primary, sending new-view, v:3, X:map[72:RfaUve8NRDKNrylkgCCZGoB+SvzpriCaH+teyBNUm9H0wNj6H4jhQ9PHluzDMrbvjySx7IoAB9+AlHiS8dwAfQ== 71:]
+14:40:55.006 [consensus/pbft] processNewView2 -> INFO 13c[0m Replica 3 accepting new-view to view 3
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 13d[0m Replica 3 received view-change from replica 1, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.021 [consensus/pbft] recvViewChange -> INFO 13e[0m Replica 3 received view-change from replica 2, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:56.007 [consensus/pbft] ProcessEvent -> INFO 13f[0m Replica 3 batch timer expired
+14:40:56.008 [consensus/pbft] sendBatch -> INFO 140[0m Creating batch with 345 requests
+14:40:56.105 [consensus/pbft] executeOne -> INFO 141[0m Replica 3 executing/committing request batch for view=3/seqNo=73 and digest u9/Za+FQvY2ZAs0uIi7yFzY2JXdYPdJlIeRpOejoIbq77zz2MYSjJCozgHCVz7K9g+NHFp6qypEOZ7jZ7z8XSA==
+14:40:56.135 [consensus/pbft] execDoneSync -> INFO 142[0m Replica 3 finished execution 73, trying next
+14:40:56.135 [consensus/pbft] processNewView -> INFO 143[0m Replica 3 ignoring new-view from 3, v:3: we are active in view 3
+14:40:58.137 [consensus/pbft] recvViewChange -> INFO 144[0m Replica 3 received view-change from replica 5, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.137 [consensus/pbft] recvViewChange -> INFO 145[0m Replica 3 received view-change from replica 6, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.137 [consensus/pbft] recvViewChange -> INFO 146[0m Replica 3 received view-change from replica 4, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.137 [consensus/pbft] recvViewChange -> INFO 147[0m Replica 3 received f+1 view-change messages, triggering view-change to view 4
+14:40:58.137 [consensus/pbft] sendViewChange -> INFO 148[0m Replica 3 sending view-change, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.138 [consensus/pbft] recvViewChange -> INFO 149[0m Replica 3 received view-change from replica 3, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.138 [consensus/pbft] recvViewChange -> INFO 14a[0m Replica 3 received view-change from replica 7, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.138 [consensus/pbft] recvViewChange -> INFO 14b[0m Replica 3 received view-change from replica 2, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.138 [consensus/pbft] recvViewChange -> INFO 14c[0m Replica 3 received view-change from replica 0, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.139 [consensus/pbft] recvViewChange -> INFO 14d[0m Replica 3 received view-change from replica 1, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.141 [consensus/pbft] recvNewView -> INFO 14e[0m Replica 3 received new-view 4
+14:40:58.141 [consensus/pbft] processNewView2 -> INFO 14f[0m Replica 3 accepting new-view to view 4
+14:40:59.151 [consensus/pbft] executeOne -> INFO 150[0m Replica 3 executing/committing request batch for view=4/seqNo=74 and digest uY8kCEs+KVHgWChE3hmbIoCbc6kHEu03z/S1DNUqOeKvOfgYCaKYW3yp6n4Gz7JcderSFVgzyFiow8FHpAWg1w==
+14:40:59.152 [consensus/pbft] execDoneSync -> INFO 151[0m Replica 3 finished execution 74, trying next
+14:40:59.152 [consensus/pbft] processNewView -> INFO 152[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:11.008 [consensus/pbft] executeOne -> INFO 153[0m Replica 3 executing/committing request batch for view=4/seqNo=75 and digest 24PuNMCp+0YpQfvW+P8wkQ+iBUaShLtc3u12V2BmzvbMG2Ag7SYDGoZ6mhAv3vdb1Bamy80ra+5JIPVN1p+TQQ==
+14:41:11.042 [consensus/pbft] execDoneSync -> INFO 154[0m Replica 3 finished execution 75, trying next
+14:41:11.042 [consensus/pbft] processNewView -> INFO 155[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:11.740 [consensus/pbft] executeOne -> INFO 156[0m Replica 3 executing/committing request batch for view=4/seqNo=76 and digest 0ENmTwPYfSn0vwTYn1KNGxp2dQjkZ1btF7TCB0hIMhVsvNncHPh+eGgiUsV+6EllWpbKM4wau5p970heYBIWBw==
+14:41:11.788 [consensus/pbft] execDoneSync -> INFO 157[0m Replica 3 finished execution 76, trying next
+14:41:11.788 [consensus/pbft] processNewView -> INFO 158[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:12.839 [consensus/pbft] executeOne -> INFO 159[0m Replica 3 executing/committing request batch for view=4/seqNo=77 and digest IsLd0323GJcLXYBkgcubqmtbdK4BdUygGZLsB2YO8Zr1rtEP6prYjAZvMBTdyXimzVDJjP7iE8Ki0Pv4XY5ovg==
+14:41:12.880 [consensus/pbft] execDoneSync -> INFO 15a[0m Replica 3 finished execution 77, trying next
+14:41:12.880 [consensus/pbft] processNewView -> INFO 15b[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:14.406 [consensus/pbft] executeOne -> INFO 15c[0m Replica 3 executing/committing request batch for view=4/seqNo=78 and digest WnJJU7Nhb8I7kOwqDflpGpGWlFPPVMJvqD7t3fKNJp7JmQ2Bh0fiK77r5ErWXAx85PKHbNdTGChCZLqN8QFwow==
+14:41:14.438 [consensus/pbft] execDoneSync -> INFO 15d[0m Replica 3 finished execution 78, trying next
+14:41:14.438 [consensus/pbft] processNewView -> INFO 15e[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+[33m14:41:14.593 [consensus/pbft] processMessage -> WARN 15f[0m Replica 3 ignoring request as it is too old
+14:41:15.197 [consensus/pbft] executeOne -> INFO 160[0m Replica 3 executing/committing request batch for view=4/seqNo=79 and digest ogaJImi+iCXv8iFcFus8myodGOoYju9qgC/2cfJttLMEmhgPcy0wBlWOcQnDfJamVk+Pvf1sTyaiFqRgG1RALA==
+14:41:15.240 [consensus/pbft] execDoneSync -> INFO 161[0m Replica 3 finished execution 79, trying next
+14:41:15.240 [consensus/pbft] processNewView -> INFO 162[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:16.252 [consensus/pbft] executeOne -> INFO 163[0m Replica 3 executing/committing request batch for view=4/seqNo=80 and digest VAgHgudQX+OM9BFrZhAzEPbULsvHM6sYUL/udwwhBlSmuJHB5iRBfwUM6Dwk1sFDAoQE7zT1m+4jrGLNED83Pw==
+14:41:16.275 [consensus/pbft] execDoneSync -> INFO 164[0m Replica 3 finished execution 80, trying next
+14:41:16.276 [consensus/pbft] processNewView -> INFO 165[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:16.283 [consensus/pbft] processNewView -> INFO 166[0m Replica 3 ignoring new-view from 4, v:4: we are active in view 4
+14:41:18.277 [consensus/pbft] ProcessEvent -> INFO 167[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:41:18.277 [consensus/pbft] sendViewChange -> INFO 168[0m Replica 3 sending view-change, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.277 [consensus/pbft] recvViewChange -> INFO 169[0m Replica 3 received view-change from replica 3, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.277 [consensus/pbft] recvViewChange -> INFO 16a[0m Replica 3 received view-change from replica 5, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.278 [consensus/pbft] recvViewChange -> INFO 16b[0m Replica 3 received view-change from replica 6, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.279 [consensus/pbft] recvViewChange -> INFO 16c[0m Replica 3 received view-change from replica 4, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.279 [consensus/pbft] recvViewChange -> INFO 16d[0m Replica 3 received view-change from replica 7, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.279 [consensus/pbft] recvViewChange -> INFO 16e[0m Replica 3 received view-change from replica 2, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.279 [consensus/pbft] recvViewChange -> INFO 16f[0m Replica 3 received view-change from replica 1, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.285 [consensus/pbft] recvNewView -> INFO 170[0m Replica 3 received new-view 5
+14:41:18.285 [consensus/pbft] processNewView2 -> INFO 171[0m Replica 3 accepting new-view to view 5
+14:41:18.288 [consensus/pbft] executeOne -> INFO 172[0m Replica 3 executing/committing null request for view=5/seqNo=81
+14:41:18.288 [consensus/pbft] execDoneSync -> INFO 173[0m Replica 3 finished execution 81, trying next
+14:41:18.854 [consensus/pbft] executeOne -> INFO 174[0m Replica 3 executing/committing request batch for view=5/seqNo=82 and digest kShIJoR19exMyH7GcD4qedJ1tBpHLEw4OQl3369NdkgOSUoL9viWRU03hSjl9R1ijR/whO+lcYwtDNZfU4y1nA==
+14:41:18.911 [consensus/pbft] execDoneSync -> INFO 175[0m Replica 3 finished execution 82, trying next
+14:41:18.912 [consensus/pbft] processNewView -> INFO 176[0m Replica 3 ignoring new-view from 5, v:5: we are active in view 5
+14:41:19.412 [consensus/pbft] executeOne -> INFO 177[0m Replica 3 executing/committing request batch for view=5/seqNo=83 and digest SdsR0w+35Z0D8QqW2xvrZI+/ohH4yhXZ226uC35LNHOU2jXgj+EhEsneN8i4NY+NDh8pOQellBcZ+l/TDTgDGw==
+14:41:19.454 [consensus/pbft] execDoneSync -> INFO 178[0m Replica 3 finished execution 83, trying next
+14:41:19.454 [consensus/pbft] processNewView -> INFO 179[0m Replica 3 ignoring new-view from 5, v:5: we are active in view 5
+14:41:20.200 [consensus/pbft] executeOne -> INFO 17a[0m Replica 3 executing/committing request batch for view=5/seqNo=84 and digest /hT+ti3YYpem5OBXvX9GHhM++dEeNAD8XhQvn072Bxw3mMwx8tmbW+fwMs90hb42TDUbTKeshIa4tuBltzcd1A==
+14:41:20.247 [consensus/pbft] execDoneSync -> INFO 17b[0m Replica 3 finished execution 84, trying next
+14:41:20.247 [consensus/pbft] processNewView -> INFO 17c[0m Replica 3 ignoring new-view from 5, v:5: we are active in view 5
+14:41:20.384 [consensus/pbft] recvViewChange -> INFO 17d[0m Replica 3 received view-change from replica 0, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:21.216 [consensus/pbft] executeOne -> INFO 17e[0m Replica 3 executing/committing request batch for view=5/seqNo=85 and digest ZywBb7iC9etMmTVEkMuDLJuQbbJDnfuSWSg5Obcx/DfclSQ4Jw9U5he+rRwmsxUAzCMz5MQstwX7VLwlKWFbcw==
+14:41:21.260 [consensus/pbft] execDoneSync -> INFO 17f[0m Replica 3 finished execution 85, trying next
+14:41:21.260 [consensus/pbft] processNewView -> INFO 180[0m Replica 3 ignoring new-view from 5, v:5: we are active in view 5
+14:41:22.236 [consensus/pbft] executeOne -> INFO 181[0m Replica 3 executing/committing request batch for view=5/seqNo=86 and digest 11gZareeuKJEsx0tj5O+r6u8Rd9NUrIBBRAlFtaCBAOaTNGhZ6u6K538hzO/Xuh6fgtBRJfqhq3ovjV5+ucKLA==
+14:41:22.250 [consensus/pbft] execDoneSync -> INFO 182[0m Replica 3 finished execution 86, trying next
+14:41:22.250 [consensus/pbft] processNewView -> INFO 183[0m Replica 3 ignoring new-view from 5, v:5: we are active in view 5
+14:41:24.251 [consensus/pbft] ProcessEvent -> INFO 184[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:41:24.251 [consensus/pbft] sendViewChange -> INFO 185[0m Replica 3 sending view-change, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.257 [consensus/pbft] recvViewChange -> INFO 186[0m Replica 3 received view-change from replica 3, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.257 [consensus/pbft] recvViewChange -> INFO 187[0m Replica 3 received view-change from replica 1, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.258 [consensus/pbft] recvViewChange -> INFO 188[0m Replica 3 received view-change from replica 4, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.258 [consensus/pbft] recvViewChange -> INFO 189[0m Replica 3 received view-change from replica 7, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.258 [consensus/pbft] recvViewChange -> INFO 18a[0m Replica 3 received view-change from replica 2, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.258 [consensus/pbft] recvViewChange -> INFO 18b[0m Replica 3 received view-change from replica 5, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.259 [consensus/pbft] recvViewChange -> INFO 18c[0m Replica 3 received view-change from replica 6, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.268 [consensus/pbft] recvNewView -> INFO 18d[0m Replica 3 received new-view 6
+14:41:24.269 [consensus/pbft] processNewView2 -> INFO 18e[0m Replica 3 accepting new-view to view 6
+14:41:24.276 [consensus/pbft] recvViewChange -> INFO 18f[0m Replica 3 received view-change from replica 0, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:25.290 [consensus/pbft] executeOne -> INFO 190[0m Replica 3 executing/committing request batch for view=6/seqNo=87 and digest 81h09FGSaqY4Vx/GzPD2NEBH1WEp5tTWhG8IZj/PDU6Ux0R8RdS6XENgXTuDqVbIZJX2gYo1XP9AmtwWxO/7jw==
+14:41:25.297 [consensus/pbft] execDoneSync -> INFO 191[0m Replica 3 finished execution 87, trying next
+14:41:25.297 [consensus/pbft] processNewView -> INFO 192[0m Replica 3 ignoring new-view from 6, v:6: we are active in view 6
+14:41:26.475 [consensus/pbft] executeOne -> INFO 193[0m Replica 3 executing/committing request batch for view=6/seqNo=88 and digest NYtd8nB+ocXVr43Xrcmv3j69UWga8316iBLnSpbExjkixqUS0xxamPlVj9ByIm3A2bT2eDHnkYuwm46Y5CD6Cg==
+14:41:26.490 [consensus/pbft] execDoneSync -> INFO 194[0m Replica 3 finished execution 88, trying next
+14:41:26.490 [consensus/pbft] processNewView -> INFO 195[0m Replica 3 ignoring new-view from 6, v:6: we are active in view 6
+14:41:28.490 [consensus/pbft] ProcessEvent -> INFO 196[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:41:28.490 [consensus/pbft] sendViewChange -> INFO 197[0m Replica 3 sending view-change, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.491 [consensus/pbft] recvViewChange -> INFO 198[0m Replica 3 received view-change from replica 3, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.493 [consensus/pbft] recvViewChange -> INFO 199[0m Replica 3 received view-change from replica 0, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.496 [consensus/pbft] recvViewChange -> INFO 19a[0m Replica 3 received view-change from replica 7, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.497 [consensus/pbft] recvViewChange -> INFO 19b[0m Replica 3 received view-change from replica 4, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.502 [consensus/pbft] recvViewChange -> INFO 19c[0m Replica 3 received view-change from replica 1, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.502 [consensus/pbft] recvViewChange -> INFO 19d[0m Replica 3 received view-change from replica 5, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.502 [consensus/pbft] recvViewChange -> INFO 19e[0m Replica 3 received view-change from replica 6, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.502 [consensus/pbft] recvViewChange -> INFO 19f[0m Replica 3 received view-change from replica 2, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.512 [consensus/pbft] recvNewView -> INFO 1a0[0m Replica 3 received new-view 7
+14:41:28.513 [consensus/pbft] processNewView2 -> INFO 1a1[0m Replica 3 accepting new-view to view 7
+14:41:29.512 [consensus/pbft] executeOne -> INFO 1a2[0m Replica 3 executing/committing request batch for view=7/seqNo=89 and digest xWVWd++Xnxl6SZp3A/EQCPjB5/n/dv9uLj74DMXPau1LhVi+lmekGdmMTcbvRsnGC04bxbNUV99GmssacvAl3A==
+14:41:29.514 [consensus/pbft] execDoneSync -> INFO 1a3[0m Replica 3 finished execution 89, trying next
+14:41:29.514 [consensus/pbft] processNewView -> INFO 1a4[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:43.988 [consensus/pbft] executeOne -> INFO 1a5[0m Replica 3 executing/committing request batch for view=7/seqNo=90 and digest 5e5fR796qAT2rbYP0LMdgP3e0QkaCE/vN+M+i8prI7nDchubzuAwms0jeq611ZxDNMn5zQmvQkqeFioQAspokA==
+14:41:44.029 [consensus/pbft] execDoneSync -> INFO 1a6[0m Replica 3 finished execution 90, trying next
+14:41:44.032 [consensus/pbft] processNewView -> INFO 1a7[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:44.038 [consensus/pbft] processNewView -> INFO 1a8[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:44.794 [consensus/pbft] executeOne -> INFO 1a9[0m Replica 3 executing/committing request batch for view=7/seqNo=91 and digest ekY/Ez7nBO7s3MvCm9+I9CzaSet8UAXmGslnhgTdNyXND79mFvU5ugghcbCHWTJPZGQ7+e2/nfx/WF1ByiV6Vw==
+14:41:44.838 [consensus/pbft] execDoneSync -> INFO 1aa[0m Replica 3 finished execution 91, trying next
+14:41:44.838 [consensus/pbft] processNewView -> INFO 1ab[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:45.812 [consensus/pbft] executeOne -> INFO 1ac[0m Replica 3 executing/committing request batch for view=7/seqNo=92 and digest gQwRqJ+65CgHEtEFj6bPQdFhkhs6TA6SjR5iDauMPYK18DvV3+Yap93US2+rwVd5lHzIlVYT8vgucK5GLc91Dw==
+14:41:45.825 [consensus/pbft] execDoneSync -> INFO 1ad[0m Replica 3 finished execution 92, trying next
+14:41:45.826 [consensus/pbft] processNewView -> INFO 1ae[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:46.542 [consensus/pbft] executeOne -> INFO 1af[0m Replica 3 executing/committing request batch for view=7/seqNo=93 and digest oP83dSPnu3sBN4K//lYE5qspIbdTi39NucEakyNQc3S4yQCY4mf3oYDKZsdWlvubVakAOaY1i9A1K79oZRmpig==
+14:41:46.585 [consensus/pbft] execDoneSync -> INFO 1b0[0m Replica 3 finished execution 93, trying next
+14:41:46.585 [consensus/pbft] processNewView -> INFO 1b1[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:47.366 [consensus/pbft] executeOne -> INFO 1b2[0m Replica 3 executing/committing request batch for view=7/seqNo=94 and digest VDYnsjGv+zGKzE1Yb63hUFyPifwlqh64GVFVtnWeZGXXVBqQNd6Xsn5gkOic8GklPwqosUQlRQAH/nnA0vGGNg==
+14:41:47.412 [consensus/pbft] execDoneSync -> INFO 1b3[0m Replica 3 finished execution 94, trying next
+14:41:47.412 [consensus/pbft] processNewView -> INFO 1b4[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:48.381 [consensus/pbft] executeOne -> INFO 1b5[0m Replica 3 executing/committing request batch for view=7/seqNo=95 and digest uI9gxI9JbGaZWSF2eIV6+0dRkGF3rmJWOzwgoOa4C3dDRalvDFKSq5YUxLedUXV3h3sRX8FaOTomGs7OFxkjrw==
+14:41:48.425 [consensus/pbft] execDoneSync -> INFO 1b6[0m Replica 3 finished execution 95, trying next
+14:41:48.425 [consensus/pbft] processNewView -> INFO 1b7[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:48.925 [consensus/pbft] executeOne -> INFO 1b8[0m Replica 3 executing/committing request batch for view=7/seqNo=96 and digest pWtRhOIlEyf0ui9+MTspvLlPdzQ+Um/+44trjk68SWce5eVbJ0PdW+nKHgXy9+lJnjD4pnPH7KNVQIwQLnnH6w==
+14:41:48.971 [consensus/pbft] execDoneSync -> INFO 1b9[0m Replica 3 finished execution 96, trying next
+14:41:48.971 [consensus/pbft] processNewView -> INFO 1ba[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:50.005 [consensus/pbft] executeOne -> INFO 1bb[0m Replica 3 executing/committing request batch for view=7/seqNo=97 and digest 9orfjrH+MkIPgMyQwXsKB1GRmCp6ANifJYHSQa/fSsXoMI3vml+fsJKYpIRRbOx7JPEnuKnxDud9/kS66SRQpg==
+14:41:50.040 [consensus/pbft] execDoneSync -> INFO 1bc[0m Replica 3 finished execution 97, trying next
+14:41:50.040 [consensus/pbft] processNewView -> INFO 1bd[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:51.053 [consensus/pbft] executeOne -> INFO 1be[0m Replica 3 executing/committing request batch for view=7/seqNo=98 and digest AuPxDRWqA7ZPU0+PJ/EWouvI0bq0v07jQKGsehpzRRbBdBK4igXuSAuYTTEVVRNjaShf0/QhooUD8EcrbF4mDQ==
+14:41:51.081 [consensus/pbft] execDoneSync -> INFO 1bf[0m Replica 3 finished execution 98, trying next
+14:41:51.081 [consensus/pbft] processNewView -> INFO 1c0[0m Replica 3 ignoring new-view from 7, v:7: we are active in view 7
+14:41:53.137 [consensus/pbft] ProcessEvent -> INFO 1c1[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:41:53.138 [consensus/pbft] sendViewChange -> INFO 1c2[0m Replica 3 sending view-change, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.138 [consensus/pbft] recvViewChange -> INFO 1c3[0m Replica 3 received view-change from replica 3, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.139 [consensus/pbft] recvViewChange -> INFO 1c4[0m Replica 3 received view-change from replica 6, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.140 [consensus/pbft] recvViewChange -> INFO 1c5[0m Replica 3 received view-change from replica 1, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.140 [consensus/pbft] recvViewChange -> INFO 1c6[0m Replica 3 received view-change from replica 4, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.140 [consensus/pbft] recvViewChange -> INFO 1c7[0m Replica 3 received view-change from replica 2, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.140 [consensus/pbft] recvViewChange -> INFO 1c8[0m Replica 3 received view-change from replica 5, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.143 [consensus/pbft] recvViewChange -> INFO 1c9[0m Replica 3 received view-change from replica 0, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.152 [consensus/pbft] recvViewChange -> INFO 1ca[0m Replica 3 received view-change from replica 7, v:8, h:90, |C|:1, |P|:8, |Q|:9
+14:41:53.156 [consensus/pbft] recvNewView -> INFO 1cb[0m Replica 3 received new-view 8
+14:41:53.157 [consensus/pbft] processNewView2 -> INFO 1cc[0m Replica 3 accepting new-view to view 8
+14:41:54.206 [consensus/pbft] executeOne -> INFO 1cd[0m Replica 3 executing/committing request batch for view=8/seqNo=99 and digest QTwNxXlOaScglzQo1RYFSosXjQzK3w2ZMrvS3evnrWHu6vTWcNz//GLO7PoO8esBkKLyV1bwwN27FMUlY/BVOA==
+14:41:54.223 [consensus/pbft] execDoneSync -> INFO 1ce[0m Replica 3 finished execution 99, trying next
+14:41:54.223 [consensus/pbft] processNewView -> INFO 1cf[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:41:57.522 [consensus/pbft] executeOne -> INFO 1d0[0m Replica 3 executing/committing request batch for view=8/seqNo=100 and digest GnhLIZ/Ef3Mt2C0SahGmsE1D5j4a0/Bhhbrv9f+175vnqGoqyxGEPr5rPE1js3Mh+cAMD07iy5GFz6GeeeK8kw==
+14:41:57.552 [consensus/pbft] execDoneSync -> INFO 1d1[0m Replica 3 finished execution 100, trying next
+14:41:57.553 [consensus/pbft] processNewView -> INFO 1d2[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:41:57.555 [consensus/pbft] processNewView -> INFO 1d3[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:41:58.628 [consensus/pbft] executeOne -> INFO 1d4[0m Replica 3 executing/committing request batch for view=8/seqNo=101 and digest W+6ZCoq0KP5HoPGKtP9MZcKYqkj6gseAxIVavjEoorBROlEH0XUtk5eQg5T/DZuxrA8hNhQ6sWSclxv4Kfe/Lg==
+14:41:58.636 [consensus/pbft] execDoneSync -> INFO 1d5[0m Replica 3 finished execution 101, trying next
+14:41:58.636 [consensus/pbft] processNewView -> INFO 1d6[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:14.771 [consensus/pbft] executeOne -> INFO 1d7[0m Replica 3 executing/committing request batch for view=8/seqNo=102 and digest 0EPkD3581FdXgVFqvIkum7VZc18HYR6X19sq9Jix3Szy03Xgk4YwufgpyTKbxazuU5G31iZNpg3dU0q8r3bOQg==
+14:42:14.814 [consensus/pbft] execDoneSync -> INFO 1d8[0m Replica 3 finished execution 102, trying next
+14:42:14.814 [consensus/pbft] processNewView -> INFO 1d9[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:15.788 [consensus/pbft] executeOne -> INFO 1da[0m Replica 3 executing/committing request batch for view=8/seqNo=103 and digest ir0Ub5Ox8OwKMyd06hCFmH5ZMrFIxLOGxto/bjW3DiYjvwx6MlH76utWUNd5h6WoQfHaTEVg6nDkrGdy76JxCA==
+14:42:15.830 [consensus/pbft] execDoneSync -> INFO 1db[0m Replica 3 finished execution 103, trying next
+14:42:15.830 [consensus/pbft] processNewView -> INFO 1dc[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:16.733 [consensus/pbft] executeOne -> INFO 1dd[0m Replica 3 executing/committing request batch for view=8/seqNo=104 and digest b4FNh8t3NglpQsfvnzutwmJS5Ob/weLcEWvkqmzHS8CJifDzwGsui3RWHA23EF43jC3lRUF/gaynhhLZzv/Z9g==
+14:42:16.776 [consensus/pbft] execDoneSync -> INFO 1de[0m Replica 3 finished execution 104, trying next
+14:42:16.776 [consensus/pbft] processNewView -> INFO 1df[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:17.865 [consensus/pbft] executeOne -> INFO 1e0[0m Replica 3 executing/committing request batch for view=8/seqNo=105 and digest nhUM2pzmMwv0AlLDeose6+8VHw8avTpjno0XR0SAiDmLnoJ+4JtFPvlZoO/QB0fHcT9s9q1Kp1MLzceerelGoA==
+14:42:17.902 [consensus/pbft] execDoneSync -> INFO 1e1[0m Replica 3 finished execution 105, trying next
+14:42:17.902 [consensus/pbft] processNewView -> INFO 1e2[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:20.513 [consensus/pbft] executeOne -> INFO 1e3[0m Replica 3 executing/committing request batch for view=8/seqNo=106 and digest faLC8DGzb7BIo5SRNnNcWY0VU38je9+y8KNTd3Q+SIjPBKFc3R0n4QtuPjeeF8nxZ3mKsj/oxgISRh3K2zx52g==
+14:42:20.557 [consensus/pbft] execDoneSync -> INFO 1e4[0m Replica 3 finished execution 106, trying next
+14:42:20.557 [consensus/pbft] processNewView -> INFO 1e5[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:21.617 [consensus/pbft] executeOne -> INFO 1e6[0m Replica 3 executing/committing request batch for view=8/seqNo=107 and digest DAEXqjiTRPIT6ygVGGKJ3I8SNjqE0U+PRCiSLemFCWH4b6ToEnMJ0hCAX/QuvtVpnl9tEZkLF+wlRt5nyT/7lw==
+14:42:21.660 [consensus/pbft] execDoneSync -> INFO 1e7[0m Replica 3 finished execution 107, trying next
+14:42:21.660 [consensus/pbft] processNewView -> INFO 1e8[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:22.701 [consensus/pbft] executeOne -> INFO 1e9[0m Replica 3 executing/committing request batch for view=8/seqNo=108 and digest H9G4eUaO+DAmambj2Pq4Dx5q2k+CkxH8EVxnaziauoYHFJj29jb195HUi4nfCi6eOsLdhxDYnanssw40wvDQDQ==
+14:42:22.734 [consensus/pbft] execDoneSync -> INFO 1ea[0m Replica 3 finished execution 108, trying next
+14:42:22.734 [consensus/pbft] processNewView -> INFO 1eb[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:45.946 [consensus/pbft] executeOne -> INFO 1ec[0m Replica 3 executing/committing request batch for view=8/seqNo=109 and digest /zPimR2p3cV/IPW4G5TqgWas4jpzhfoXaPPIeq1RV62z+242NLrH/CL47jsjYY0Cnh7DMaroxtayJzBleWtbQA==
+14:42:45.976 [consensus/pbft] execDoneSync -> INFO 1ed[0m Replica 3 finished execution 109, trying next
+14:42:45.976 [consensus/pbft] processNewView -> INFO 1ee[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.123 [consensus/pbft] executeOne -> INFO 1ef[0m Replica 3 executing/committing request batch for view=8/seqNo=110 and digest 0ZTQVRq6kQya85whwA0PhHtoiWgnbHr5+vLPY6fX18p7JHxslwwF6dR5jgQMZgLhxquQPnppYlFpOuthKE8c8w==
+14:42:47.168 [consensus/pbft] execDoneSync -> INFO 1f0[0m Replica 3 finished execution 110, trying next
+14:42:47.171 [consensus/pbft] processNewView -> INFO 1f1[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.172 [consensus/pbft] processNewView -> INFO 1f2[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.981 [consensus/pbft] executeOne -> INFO 1f3[0m Replica 3 executing/committing request batch for view=8/seqNo=111 and digest sks5BOU1BztcW1fQUuaE7+tEq76QumZZjRJqVn6QRjeG2PqHQyd6u9mM+1DQ7NsgKXYIAHbBuPYDImoCkV1OaQ==
+14:42:48.024 [consensus/pbft] execDoneSync -> INFO 1f4[0m Replica 3 finished execution 111, trying next
+14:42:48.024 [consensus/pbft] processNewView -> INFO 1f5[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:48.921 [consensus/pbft] executeOne -> INFO 1f6[0m Replica 3 executing/committing request batch for view=8/seqNo=112 and digest 84T1jCVRKc/A6BPpXwhIRJNRrm/U2zpKN3u7LzksNFlqov+Fgw0bR1nwHFADTKXsh5RiZSxrYqBLhLLXucbhCw==
+14:42:48.967 [consensus/pbft] execDoneSync -> INFO 1f7[0m Replica 3 finished execution 112, trying next
+14:42:48.967 [consensus/pbft] processNewView -> INFO 1f8[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+[33m14:42:49.299 [consensus/pbft] recvCommit -> WARN 1f9[0m Replica 3 ignoring commit for view=8/seqNo=109: not in-wv, in view 8, high water mark 110
+14:42:49.782 [consensus/pbft] executeOne -> INFO 1fa[0m Replica 3 executing/committing request batch for view=8/seqNo=113 and digest SUEdeGwnH5R2LrMTI2934rP8+LZ6BHVVXxvot9Hvynk3L66myBcV6R/G9RUOS9XDyoxuOCwT3BIpUcSjV8SSNA==
+14:42:49.827 [consensus/pbft] execDoneSync -> INFO 1fb[0m Replica 3 finished execution 113, trying next
+14:42:49.827 [consensus/pbft] processNewView -> INFO 1fc[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:50.893 [consensus/pbft] executeOne -> INFO 1fd[0m Replica 3 executing/committing request batch for view=8/seqNo=114 and digest fgJVEfFczv32W7joWAk3MT0VT7hu1SdxpAvlLr2hQVF9H0GltiXC/lo8Il/vlwqCE5rkXJebkOpC5MrRg/rTlw==
+14:42:50.913 [consensus/pbft] execDoneSync -> INFO 1fe[0m Replica 3 finished execution 114, trying next
+14:42:50.913 [consensus/pbft] processNewView -> INFO 1ff[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:51.944 [consensus/pbft] executeOne -> INFO 200[0m Replica 3 executing/committing request batch for view=8/seqNo=115 and digest ria7jfMNQsIb2hKcmKvX24GHWCcEsi8P8hSPpXc7IKx9gEjQnqhjfRJQZEZQp9LszLkxMaA1UO0WNbRTFatbuQ==
+14:42:51.959 [consensus/pbft] execDoneSync -> INFO 201[0m Replica 3 finished execution 115, trying next
+14:42:51.959 [consensus/pbft] processNewView -> INFO 202[0m Replica 3 ignoring new-view from 0, v:8: we are active in view 8
+14:42:57.636 [consensus/pbft] ProcessEvent -> INFO 203[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:42:57.636 [consensus/pbft] sendViewChange -> INFO 204[0m Replica 3 sending view-change, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.636 [consensus/pbft] recvViewChange -> INFO 205[0m Replica 3 received view-change from replica 3, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.637 [consensus/pbft] recvViewChange -> INFO 206[0m Replica 3 received view-change from replica 6, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.638 [consensus/pbft] recvViewChange -> INFO 207[0m Replica 3 received view-change from replica 5, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.638 [consensus/pbft] recvViewChange -> INFO 208[0m Replica 3 received view-change from replica 2, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.638 [consensus/pbft] recvViewChange -> INFO 209[0m Replica 3 received view-change from replica 7, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.638 [consensus/pbft] recvViewChange -> INFO 20a[0m Replica 3 received view-change from replica 1, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.639 [consensus/pbft] recvViewChange -> INFO 20b[0m Replica 3 received view-change from replica 4, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.647 [consensus/pbft] recvNewView -> INFO 20c[0m Replica 3 received new-view 9
+14:42:57.648 [consensus/pbft] processNewView2 -> INFO 20d[0m Replica 3 accepting new-view to view 9
+[33m14:42:57.993 [consensus/pbft] recvPrePrepare -> WARN 20e[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:58.231 [consensus/pbft] executeOne -> INFO 20f[0m Replica 3 executing/committing request batch for view=9/seqNo=116 and digest YKkLLgovGtqCVvu7TLQkNjzWZEHNlUExAAZrnkquPbP7ZwzEzZM4ep7TWvZvW0YxwehMXsJfjbQr12tYJ5LVCw==
+14:42:58.277 [consensus/pbft] execDoneSync -> INFO 210[0m Replica 3 finished execution 116, trying next
+14:42:58.277 [consensus/pbft] processNewView -> INFO 211[0m Replica 3 ignoring new-view from 1, v:9: we are active in view 9
+[33m14:42:58.581 [consensus/pbft] recvPrePrepare -> WARN 212[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:58.726 [consensus/pbft] executeOne -> INFO 213[0m Replica 3 executing/committing request batch for view=9/seqNo=117 and digest UGlEHAdJb+zzEdPRhQUc+d86wsdDYUHkQ4f84Ze3EAv4fi3SkeFmK1f9m2aYBpq87inqkzTdtP4meEByalu6UQ==
+14:42:58.772 [consensus/pbft] execDoneSync -> INFO 214[0m Replica 3 finished execution 117, trying next
+14:42:58.772 [consensus/pbft] processNewView -> INFO 215[0m Replica 3 ignoring new-view from 1, v:9: we are active in view 9
+[33m14:42:59.016 [consensus/pbft] recvPrePrepare -> WARN 216[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:59.057 [consensus/pbft] recvViewChange -> INFO 217[0m Replica 3 received view-change from replica 0, v:9, h:110, |C|:1, |P|:5, |Q|:8
+14:42:59.171 [consensus/pbft] executeOne -> INFO 218[0m Replica 3 executing/committing request batch for view=9/seqNo=118 and digest kR8N838MrbUuyEp/bHio3GC19Fml2MINA3TqlKv4UwqbqHviehH1nKy3ba4TgNLTni/gO7O9euXGmcmu+4/ToA==
+14:42:59.219 [consensus/pbft] execDoneSync -> INFO 219[0m Replica 3 finished execution 118, trying next
+14:42:59.219 [consensus/pbft] processNewView -> INFO 21a[0m Replica 3 ignoring new-view from 1, v:9: we are active in view 9
+14:43:00.163 [consensus/pbft] executeOne -> INFO 21b[0m Replica 3 executing/committing request batch for view=9/seqNo=119 and digest SLQv+ZJpEhrqPuy1XpY3n+OxogXYlJPg7Z8DGmYjE4D31yBjX0pEOGZ8xFyXgq1rsDUD9wHnmnL8KwRxaVMJmQ==
+14:43:00.168 [consensus/pbft] execDoneSync -> INFO 21c[0m Replica 3 finished execution 119, trying next
+14:43:00.168 [consensus/pbft] processNewView -> INFO 21d[0m Replica 3 ignoring new-view from 1, v:9: we are active in view 9
+14:43:02.168 [consensus/pbft] ProcessEvent -> INFO 21e[0m Replica 3 view change timer expired, sending view change: Batch outstanding requests
+14:43:02.169 [consensus/pbft] sendViewChange -> INFO 21f[0m Replica 3 sending view-change, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.169 [consensus/pbft] recvViewChange -> INFO 220[0m Replica 3 received view-change from replica 3, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.170 [consensus/pbft] recvViewChange -> INFO 221[0m Replica 3 received view-change from replica 0, v:10, h:110, |C|:1, |P|:9, |Q|:12
+14:43:02.171 [consensus/pbft] recvViewChange -> INFO 222[0m Replica 3 received view-change from replica 7, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.171 [consensus/pbft] recvViewChange -> INFO 223[0m Replica 3 received view-change from replica 4, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.172 [consensus/pbft] recvViewChange -> INFO 224[0m Replica 3 received view-change from replica 5, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.172 [consensus/pbft] recvViewChange -> INFO 225[0m Replica 3 received view-change from replica 2, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.172 [consensus/pbft] recvViewChange -> INFO 226[0m Replica 3 received view-change from replica 6, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.173 [consensus/pbft] recvViewChange -> INFO 227[0m Replica 3 received view-change from replica 1, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.186 [consensus/pbft] recvNewView -> INFO 228[0m Replica 3 received new-view 10
+14:43:02.187 [consensus/pbft] processNewView2 -> INFO 229[0m Replica 3 accepting new-view to view 10
+14:43:03.210 [consensus/pbft] executeOne -> INFO 22a[0m Replica 3 executing/committing request batch for view=10/seqNo=120 and digest Xre+bpfMj81WCmCL3KV1avyZv8r0MAhLEMQRG4Hfmizv62CtKS5qxeCeGAnhXjp7ld62afONhdzGqa4lYfDwaA==
+14:43:03.218 [consensus/pbft] execDoneSync -> INFO 22b[0m Replica 3 finished execution 120, trying next
+14:43:03.219 [consensus/pbft] processNewView -> INFO 22c[0m Replica 3 ignoring new-view from 2, v:10: we are active in view 10
+14:43:03.225 [consensus/pbft] processNewView -> INFO 22d[0m Replica 3 ignoring new-view from 2, v:10: we are active in view 10

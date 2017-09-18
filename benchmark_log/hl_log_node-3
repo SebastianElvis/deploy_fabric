@@ -1,0 +1,779 @@
+14:37:03.991 [peer] func1 -> INFO 001[0m Auto detected peer address: 155.98.39.104:7051
+14:37:03.991 [peer] func1 -> INFO 002[0m Auto detected peer address: 155.98.39.104:7051
+14:37:03.994 [nodeCmd] serve -> INFO 003[0m Security enabled status: false
+14:37:03.994 [eventhub_producer] start -> INFO 004[0m event processor started
+14:37:03.994 [nodeCmd] serve -> INFO 005[0m Privacy enabled status: false
+14:37:03.994 [db] open -> INFO 006[0m Setting rocksdb maxLogFileSize to 10485760
+14:37:03.995 [db] open -> INFO 007[0m Setting rocksdb keepLogFileNum to 10
+14:37:04.285 [chaincode] NewChaincodeSupport -> INFO 008[0m Chaincode support using peerAddress: 155.98.39.104:7051
+14:37:04.286 [sysccapi] RegisterSysCC -> INFO 009[0m system chaincode (noop,github.com/hyperledger/fabric/bddtests/syschaincode/noop) disabled
+14:37:04.286 [state] loadConfig -> INFO 00a[0m Loading configurations...
+14:37:04.286 [state] loadConfig -> INFO 00b[0m Configurations loaded. stateImplName=[buckettree], stateImplConfigs=map[numBuckets:%!s(int=1000003) maxGroupingAtEachLevel:%!s(int=5) bucketCacheSize:%!s(int=100)], deltaHistorySize=[500]
+14:37:04.286 [state] NewState -> INFO 00c[0m Initializing state implementation [buckettree]
+14:37:04.286 [buckettree] initConfig -> INFO 00d[0m configs passed during initialization = map[string]interface {}{"bucketCacheSize":100, "numBuckets":1000003, "maxGroupingAtEachLevel":5}
+14:37:04.286 [buckettree] initConfig -> INFO 00e[0m Initializing bucket tree state implemetation with configurations &{maxGroupingAtEachLevel:5 lowestLevel:9 levelToNumBucketsMap:map[8:200001 4:321 9:1000003 3:65 2:13 0:1 5:1601 7:40001 6:8001 1:3] hashFunc:0x949fd0}
+14:37:04.286 [buckettree] newBucketCache -> INFO 00f[0m Constructing bucket-cache with max bucket cache size = [100] MBs
+14:37:04.287 [buckettree] loadAllBucketNodesFromDB -> INFO 010[0m Loaded buckets data in cache. Total buckets in DB = [0]. Total cache size:=0
+14:37:04.287 [genesis] func1 -> INFO 011[0m Creating genesis block.
+14:37:04.290 [consensus/controller] NewConsenter -> INFO 012[0m Creating consensus plugin pbft
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 013[0m PBFT type = *pbft.obcBatch
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 014[0m PBFT Max number of validating peers (N) = 8
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 015[0m PBFT Max number of failing peers (f) = 2
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 016[0m PBFT byzantine flag = false
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 017[0m PBFT request timeout = 2s
+14:37:04.291 [consensus/pbft] newPbftCore -> INFO 018[0m PBFT view change timeout = 2s
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 019[0m PBFT Checkpoint period (K) = 10
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 01a[0m PBFT broadcast timeout = 1s
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 01b[0m PBFT Log multiplier = 4
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 01c[0m PBFT log size (L) = 40
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 01d[0m PBFT null requests disabled
+14:37:04.292 [consensus/pbft] newPbftCore -> INFO 01e[0m PBFT automatic view change disabled
+14:37:04.292 [consensus/pbft] restoreLastSeqNo -> INFO 01f[0m Replica 2 restored lastExec: 0
+14:37:04.292 [consensus/pbft] restoreState -> INFO 020[0m Replica 2 restored state: view: 0, seqNo: 0, pset: 0, qset: 0, reqBatches: 0, chkpts: 1 h: 0
+14:37:04.293 [consensus/pbft] newObcBatch -> INFO 021[0m PBFT Batch size = 500
+14:37:04.293 [consensus/pbft] newObcBatch -> INFO 022[0m PBFT Batch timeout = 1s
+14:37:04.293 [consensus/statetransfer] SyncToTarget -> INFO 023[0m Syncing to target 46b9dd2b0ba88d13233b3feb743eeb243fcd52ea62b81b82b50c27646ed5762fd75dc4ddd8c0f200cb05019d67b592f6fc821c49479ab48640292eacb3b7c4be for block number 0 with peers []
+14:37:04.293 [nodeCmd] serve -> INFO 024[0m Starting peer with ID=name:"vp2" , network ID=dev2, address=155.98.39.104:7051, rootnodes=pc344.emulab.net:7051, validator=true
+14:37:04.294 [consensus/statetransfer] blockThread -> INFO 025[0m Validated blockchain to the genesis block
+14:37:04.295 [consensus/pbft] ProcessEvent -> INFO 026[0m Replica 2 application caught up via state transfer, lastExec now 0
+14:37:04.296 [rest] StartOpenchainRESTServer -> INFO 027[0m Initializing the REST service on 0.0.0.0:7050, TLS is disabled.
+14:37:04.297 [consensus/statetransfer] blockThread -> INFO 028[0m Validated blockchain to the genesis block
+14:37:39.297 [consensus/pbft] executeOne -> INFO 029[0m Replica 2 executing/committing request batch for view=0/seqNo=1 and digest ZfnLXidBR6S1ux5gl91i3MWoE+fLOX/nHygchGaih4uDbHpLFTpqafaHae+su2bHSivbwh8CjaeCLg5t20vrzQ==
+14:37:39.306 [consensus/pbft] execDoneSync -> INFO 02a[0m Replica 2 finished execution 1, trying next
+14:37:40.313 [consensus/pbft] executeOne -> INFO 02b[0m Replica 2 executing/committing request batch for view=0/seqNo=2 and digest En4T6zEbrJJ+8E201/z/0RlsAXpa92VEGui4yqTnbMOFIRd9w9v4DYtPfItIw0pcnQQfLcroeSPST+ciXWH6Ng==
+14:37:40.321 [consensus/pbft] execDoneSync -> INFO 02c[0m Replica 2 finished execution 2, trying next
+14:37:41.323 [consensus/pbft] executeOne -> INFO 02d[0m Replica 2 executing/committing request batch for view=0/seqNo=3 and digest 5/nF6xD21yF8oQ+OjLiI3jjr2Wg/mHDd5G9B+z8SsyRlMCvgVFzkghsgMeYofIDNuriUyshzYS360QaHkTE/9Q==
+14:37:41.331 [consensus/pbft] execDoneSync -> INFO 02e[0m Replica 2 finished execution 3, trying next
+14:37:42.326 [consensus/pbft] executeOne -> INFO 02f[0m Replica 2 executing/committing request batch for view=0/seqNo=4 and digest cw/Jm+acOwRlTzUsHOV88IkohZvhAXTzGSCvRMBuMRjibrHs4gqFmoAqkfvLwyqup4gd0OV8E2EJCsuaR/fbKQ==
+14:37:42.338 [consensus/pbft] execDoneSync -> INFO 030[0m Replica 2 finished execution 4, trying next
+14:37:43.339 [consensus/pbft] executeOne -> INFO 031[0m Replica 2 executing/committing request batch for view=0/seqNo=5 and digest zJ4J/wie1FDAcx+CgbSrjIkRJVHCphumi7thakaOTzbJ58RjeGf0+2w4XgaLoSOGdcRkg057t0vNvm2PPlhttw==
+14:37:43.351 [consensus/pbft] execDoneSync -> INFO 032[0m Replica 2 finished execution 5, trying next
+14:37:44.354 [consensus/pbft] executeOne -> INFO 033[0m Replica 2 executing/committing request batch for view=0/seqNo=6 and digest 1C2VM9pJQil1D3qKSCP5gbzYEuHPBrzVw/vZcRALKVeChrrChumARbPAmnTMinh6zoeQiXqaC/XyzsZ/06nHXA==
+14:37:44.365 [consensus/pbft] execDoneSync -> INFO 034[0m Replica 2 finished execution 6, trying next
+14:37:45.359 [consensus/pbft] executeOne -> INFO 035[0m Replica 2 executing/committing request batch for view=0/seqNo=7 and digest lx+CKYe2XJvLF5i7tQylJu+D1QItv/7vDvKVqRZJPnT0gvESZKR2zHSdEOtwGUzY5+bogAj6DsI5r77KMjUn7g==
+14:37:45.368 [consensus/pbft] execDoneSync -> INFO 036[0m Replica 2 finished execution 7, trying next
+14:37:46.373 [consensus/pbft] executeOne -> INFO 037[0m Replica 2 executing/committing request batch for view=0/seqNo=8 and digest +OhDY3MuiiRvM5t6Y1vSl1WyyuZ7YAK6sEjQCg9pVqeghXvcG3n/+U3GNGN9/Hb7a4UaUf+IQ6ZgblB7Yk6QDQ==
+14:37:46.381 [consensus/pbft] execDoneSync -> INFO 038[0m Replica 2 finished execution 8, trying next
+14:37:47.380 [consensus/pbft] executeOne -> INFO 039[0m Replica 2 executing/committing request batch for view=0/seqNo=9 and digest p/KxIQXR0hqKZPa0gFH6cfgy1r+9xTog0v2622qeybGzv7aZrc/i3t4gm4iH5/UVwrWG5SKC+lp5ohEDir53DQ==
+14:37:47.389 [consensus/pbft] execDoneSync -> INFO 03a[0m Replica 2 finished execution 9, trying next
+14:37:48.371 [consensus/pbft] executeOne -> INFO 03b[0m Replica 2 executing/committing request batch for view=0/seqNo=10 and digest 2JF6VkwOPibW4HjHsmP0XCps626HDVOI4C6zCChwqtQd03DDFj0OT1Bn/t7pY004Op6cYwqxxQUkfP2MChE/kg==
+14:37:48.375 [consensus/pbft] execDoneSync -> INFO 03c[0m Replica 2 finished execution 10, trying next
+14:38:09.103 [consensus/pbft] executeOne -> INFO 03d[0m Replica 2 executing/committing request batch for view=0/seqNo=11 and digest 9jeDdsSdLley8bRXmqGv90Ks1byI21yV9G+qRqYpl9Dzx0xJz/JG1WzfilsgPOfRhEnUbYvJqLeN8kKovVZzQA==
+14:38:09.119 [consensus/pbft] execDoneSync -> INFO 03e[0m Replica 2 finished execution 11, trying next
+14:38:10.136 [consensus/pbft] executeOne -> INFO 03f[0m Replica 2 executing/committing request batch for view=0/seqNo=12 and digest j+Dp6O53sbQYgZm55DoJy1SXgN86HZdu6fXKhjLCLy0KHFN+AHexhB5c4yc/IFTJ6JSoYwF0n0HKgP94C3tVDg==
+14:38:10.155 [consensus/pbft] execDoneSync -> INFO 040[0m Replica 2 finished execution 12, trying next
+14:38:11.158 [consensus/pbft] executeOne -> INFO 041[0m Replica 2 executing/committing request batch for view=0/seqNo=13 and digest eKSXq6OjWDYencxCfj/6X1L1c6D5DE8pl51jAqxRKIO+fIVOhEyINfklrltOV2L4HNrjlnOV4Ogsu2/Z4GQDvQ==
+14:38:11.177 [consensus/pbft] execDoneSync -> INFO 042[0m Replica 2 finished execution 13, trying next
+14:38:12.181 [consensus/pbft] executeOne -> INFO 043[0m Replica 2 executing/committing request batch for view=0/seqNo=14 and digest UulwWEq4ohO9VyDcQKgDuXIiCwBY0Ru6G16Pir1lsgtf4EKvRZ1JXSFGFJdaYo62BUXdtSLbw0usO3W4ZV3hsA==
+14:38:12.201 [consensus/pbft] execDoneSync -> INFO 044[0m Replica 2 finished execution 14, trying next
+14:38:13.208 [consensus/pbft] executeOne -> INFO 045[0m Replica 2 executing/committing request batch for view=0/seqNo=15 and digest W43y6mt6JtfOnhIdVOQGEKjme7OkXaeUlkkXdKzvAxt+RQWNf6QqNv3gkuchtIp5WQeOdoopedkJ0ztfjYWPNw==
+14:38:13.224 [consensus/pbft] execDoneSync -> INFO 046[0m Replica 2 finished execution 15, trying next
+14:38:14.264 [consensus/pbft] executeOne -> INFO 047[0m Replica 2 executing/committing request batch for view=0/seqNo=16 and digest qtD8MDu2j3eJhR8HzIlo/IYaH6I7F1L5DN5W6HaLKEfU8U+9i3sO3z8pfHVz6a0zyR8/z4aWrTT2NETJESWdcA==
+14:38:14.280 [consensus/pbft] execDoneSync -> INFO 048[0m Replica 2 finished execution 16, trying next
+14:38:15.286 [consensus/pbft] executeOne -> INFO 049[0m Replica 2 executing/committing request batch for view=0/seqNo=17 and digest O8WQgSjem6khWPXQe2CbGAhHejpkyOAWjxU9keajyyKGfkgJtftfQY52kobeS6PUt8GSGp9dEFglpLtzSPY37g==
+14:38:15.305 [consensus/pbft] execDoneSync -> INFO 04a[0m Replica 2 finished execution 17, trying next
+14:38:16.309 [consensus/pbft] executeOne -> INFO 04b[0m Replica 2 executing/committing request batch for view=0/seqNo=18 and digest BdCDzW2jMkVWEELgppL6JouFnXbn/Vtp3jz2PF4Aas2En9e0BPNWuwtS+JrHkn9uajMnx1xNHAZRId9CoGpAHw==
+14:38:16.325 [consensus/pbft] execDoneSync -> INFO 04c[0m Replica 2 finished execution 18, trying next
+14:38:17.331 [consensus/pbft] executeOne -> INFO 04d[0m Replica 2 executing/committing request batch for view=0/seqNo=19 and digest L3p2LFWFZ2RWjr+CGQaj0cLEP+Wf+HABXFZUiOw0qDdmgAgzsB8ijci84wB55uYf2eYIsV91IqHEbhNZ+GaGtw==
+14:38:17.352 [consensus/pbft] execDoneSync -> INFO 04e[0m Replica 2 finished execution 19, trying next
+14:38:18.324 [consensus/pbft] executeOne -> INFO 04f[0m Replica 2 executing/committing request batch for view=0/seqNo=20 and digest HhPpvYQzUB5uwmiGSO0YFqscQgZs0pFo/2SmgnT5Z2JIUlC/y1Xi77OcegBJJ58frkjaSvQKLKAPOtpKbmFJNQ==
+14:38:18.331 [consensus/pbft] execDoneSync -> INFO 050[0m Replica 2 finished execution 20, trying next
+14:38:38.866 [consensus/pbft] executeOne -> INFO 051[0m Replica 2 executing/committing request batch for view=0/seqNo=21 and digest 03V4xZjz3sPTVjSy2vMJvyhSkenidIAxA9QKPp6K7hJ9WtspP0nWYwv7MTF5z9ufM3rsnsGPepl2wcljdTGq5g==
+14:38:38.895 [consensus/pbft] execDoneSync -> INFO 052[0m Replica 2 finished execution 21, trying next
+14:38:39.929 [consensus/pbft] executeOne -> INFO 053[0m Replica 2 executing/committing request batch for view=0/seqNo=22 and digest UarlcOst1wq0OExv17ixVP3U8NRTQSpqzwfymI0sZ7ZUyduchEtAIvp0WytgTh3Z5nTX42N4abC7G5tmgbf/+A==
+14:38:39.958 [consensus/pbft] execDoneSync -> INFO 054[0m Replica 2 finished execution 22, trying next
+14:38:40.992 [consensus/pbft] executeOne -> INFO 055[0m Replica 2 executing/committing request batch for view=0/seqNo=23 and digest Zj5kXKmOWmSB5It0A34HAXQdDJwYL8UIRvPE1TdDZJ/8SlbmWT14I4ymRGZo5Uk8zzCY75kB4TZZkHUnNdW3Nw==
+14:38:41.020 [consensus/pbft] execDoneSync -> INFO 056[0m Replica 2 finished execution 23, trying next
+14:38:42.067 [consensus/pbft] executeOne -> INFO 057[0m Replica 2 executing/committing request batch for view=0/seqNo=24 and digest wt1Oo/iDJ87L3jQzhSM5KN8O6ZXrcjDtim+Fz/K4cB8RsOpLydl9G+Mu1BdEBxGqz/Xjr4IAnhIYQWGZkvFfxQ==
+14:38:42.095 [consensus/pbft] execDoneSync -> INFO 058[0m Replica 2 finished execution 24, trying next
+14:38:43.123 [consensus/pbft] executeOne -> INFO 059[0m Replica 2 executing/committing request batch for view=0/seqNo=25 and digest ko5X8NbZc/3aw1BV2muxNwUmJimDlJkRIAYv8QZRsamlSJooE5ENlOVMXKy4M/WHtTm2iqNDYi8+gULLB/7D1Q==
+14:38:43.157 [consensus/pbft] execDoneSync -> INFO 05a[0m Replica 2 finished execution 25, trying next
+14:38:44.198 [consensus/pbft] executeOne -> INFO 05b[0m Replica 2 executing/committing request batch for view=0/seqNo=26 and digest GI8tqijNjbjVFYeuRLl2QDPqQbBG/KvODluu8kfypsjUe1T5fp9ZvnicxScQN3XHXIBZ+uO8uu9asThV/0l59Q==
+14:38:44.223 [consensus/pbft] execDoneSync -> INFO 05c[0m Replica 2 finished execution 26, trying next
+14:38:45.275 [consensus/pbft] executeOne -> INFO 05d[0m Replica 2 executing/committing request batch for view=0/seqNo=27 and digest 77REm38beXdxpBSRnykfFp3YZmjmmu3ebljYd1alcdOaQdvkECwGuKY0q6nPRvkcUnZ0eQ9fO1EfAOYqW4k2hA==
+14:38:45.299 [consensus/pbft] execDoneSync -> INFO 05e[0m Replica 2 finished execution 27, trying next
+14:38:46.348 [consensus/pbft] executeOne -> INFO 05f[0m Replica 2 executing/committing request batch for view=0/seqNo=28 and digest 1c5ASarHDBk8Jso9P4FmwT0f5ZkW/WTLEgZgQJc7CtEL65SDJgOWOMxpabe9EqGZSuEVnwVKXoEgRHoxrn9/nA==
+14:38:46.379 [consensus/pbft] execDoneSync -> INFO 060[0m Replica 2 finished execution 28, trying next
+14:38:47.412 [consensus/pbft] executeOne -> INFO 061[0m Replica 2 executing/committing request batch for view=0/seqNo=29 and digest KYkZdW0d8UoANU2fIPIOb3Qwd61c55at2sLgXDUyLeKsaJfa8meO2LBK90o9bqCgYre7RH8zhfYDosG6Cpp/2A==
+14:38:47.441 [consensus/pbft] execDoneSync -> INFO 062[0m Replica 2 finished execution 29, trying next
+14:38:48.415 [consensus/pbft] executeOne -> INFO 063[0m Replica 2 executing/committing request batch for view=0/seqNo=30 and digest kKT3j62V7oGi7Ve74K0uYHKwrtiXyMgnCBa3TqeIFTH0KPejSyZ0SivuMrECJH+TGoLVROUJCCWiQFf6S9nzzw==
+14:38:48.430 [consensus/pbft] execDoneSync -> INFO 064[0m Replica 2 finished execution 30, trying next
+14:39:08.814 [consensus/pbft] executeOne -> INFO 065[0m Replica 2 executing/committing request batch for view=0/seqNo=31 and digest akXy2wIhDeBlwZkr6fWUIC5RK+TP3srzrDldbAu9cFAT5UO3tR0fMx8eQZ2CLD/VHlSDh6pexRhHw0CZCqc9rg==
+14:39:08.837 [consensus/pbft] execDoneSync -> INFO 066[0m Replica 2 finished execution 31, trying next
+14:39:09.904 [consensus/pbft] executeOne -> INFO 067[0m Replica 2 executing/committing request batch for view=0/seqNo=32 and digest zNZDRFOxod49PkuTjcPWEQoqG8uiqJZuGu5MnzRaxXCcYoXGPG2HcIv/pLMVb97EIJDUuBUDHzJEJT03zzGQ9g==
+14:39:09.943 [consensus/pbft] execDoneSync -> INFO 068[0m Replica 2 finished execution 32, trying next
+14:39:11.021 [consensus/pbft] executeOne -> INFO 069[0m Replica 2 executing/committing request batch for view=0/seqNo=33 and digest b121C6MrJixyIOb26QrTvBssgJDLSGgrqxtB123SbsBdJ+OMmVyh+YIsuRbCTQW2IAOLtX3s4lMIcW8y433oaA==
+14:39:11.063 [consensus/pbft] execDoneSync -> INFO 06a[0m Replica 2 finished execution 33, trying next
+14:39:12.126 [consensus/pbft] executeOne -> INFO 06b[0m Replica 2 executing/committing request batch for view=0/seqNo=34 and digest ysV3EUXrbuaJvZbFx3kMmguWhZtRQ/X72f96DGTTfnJkkQBYwEt9gaC/4rSaHDcYyyysIxpAKBNo7l7VhydyAw==
+14:39:12.164 [consensus/pbft] execDoneSync -> INFO 06c[0m Replica 2 finished execution 34, trying next
+14:39:13.249 [consensus/pbft] executeOne -> INFO 06d[0m Replica 2 executing/committing request batch for view=0/seqNo=35 and digest b8hCptlL9v2BDYX+aLJkSOYhzcTb2MaVzyXyr9DXI43XdokflTbn8MA76vS1V1ne9YFtIIvELO0bbwcERymHXg==
+14:39:13.287 [consensus/pbft] execDoneSync -> INFO 06e[0m Replica 2 finished execution 35, trying next
+14:39:14.350 [consensus/pbft] executeOne -> INFO 06f[0m Replica 2 executing/committing request batch for view=0/seqNo=36 and digest i8OosNXtgNlGwFDfed9ENXg/fXKiak7LfZ+UdOO16eiUGuvWSUsR4JCNEIlJqTczzyq7Si9npEgjb4yztyHAFA==
+14:39:14.389 [consensus/pbft] execDoneSync -> INFO 070[0m Replica 2 finished execution 36, trying next
+14:39:15.438 [consensus/pbft] executeOne -> INFO 071[0m Replica 2 executing/committing request batch for view=0/seqNo=37 and digest 9VrdqJ9vZVVwPP04iFZ6WiNHQkZ//xsSFh2cIH/IbUn+sY/R94TmNC9EHu76FJkg8q6KvaufVf1JJZAJkN8AEg==
+14:39:15.479 [consensus/pbft] execDoneSync -> INFO 072[0m Replica 2 finished execution 37, trying next
+14:39:16.545 [consensus/pbft] executeOne -> INFO 073[0m Replica 2 executing/committing request batch for view=0/seqNo=38 and digest WAgIN3sy0HM3dsTApKee4qZr09SNAvxxJ4jvPc91bXoG/Qp3RYh6wVWCk3JgDF7o/nF6Ught6+qk6T40ZYBeiA==
+14:39:16.584 [consensus/pbft] execDoneSync -> INFO 074[0m Replica 2 finished execution 38, trying next
+14:39:17.648 [consensus/pbft] executeOne -> INFO 075[0m Replica 2 executing/committing request batch for view=0/seqNo=39 and digest iCqXj9f/21ahZFQc7+Gya028oHN1/ZHdxyqnKwWzgJQZP1AfklgyNqa0H8KZzAdJwB1up/wy6612VyQS1+2MXQ==
+14:39:17.686 [consensus/pbft] execDoneSync -> INFO 076[0m Replica 2 finished execution 39, trying next
+14:39:18.649 [consensus/pbft] executeOne -> INFO 077[0m Replica 2 executing/committing request batch for view=0/seqNo=40 and digest 7ydckg7EVhPaPqGIIP1MDbJIRADWcXQXl3dkJPfIumIjhpjnHWF9RYy6COTbvAvYg6rp7lsboMkVEqzpzBEiXA==
+14:39:18.656 [consensus/pbft] execDoneSync -> INFO 078[0m Replica 2 finished execution 40, trying next
+14:39:38.842 [consensus/pbft] executeOne -> INFO 079[0m Replica 2 executing/committing request batch for view=0/seqNo=41 and digest 9oP4GC3HKGvlH/qAjBHkqAihbxurXDE2uf6zdO0UoYDOYRonRscyOgvJCZAGwlX28pVRVcSiDZIQSVVbhOb22g==
+14:39:38.862 [consensus/pbft] execDoneSync -> INFO 07a[0m Replica 2 finished execution 41, trying next
+14:39:40.023 [consensus/pbft] executeOne -> INFO 07b[0m Replica 2 executing/committing request batch for view=0/seqNo=42 and digest 3GKWrROxMQOnd2eZhSZ1SjFNSQaFKybrvnovfJF06A+c9i8MR8LHsnUnaKyOGerliFNxVIF3EguyVG9HHTBbbw==
+14:39:40.066 [consensus/pbft] execDoneSync -> INFO 07c[0m Replica 2 finished execution 42, trying next
+14:39:42.346 [consensus/pbft] ProcessEvent -> INFO 07d[0m Replica 2 view change timer expired, sending view change: Batch outstanding requests
+14:39:42.346 [consensus/pbft] sendViewChange -> INFO 07e[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:42.346 [consensus/pbft] recvViewChange -> INFO 07f[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:42.463 [consensus/pbft] recvPrepare -> WARN 080[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.465 [consensus/pbft] recvPrepare -> WARN 081[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.467 [consensus/pbft] recvPrepare -> WARN 082[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.476 [consensus/pbft] recvPrepare -> WARN 083[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.486 [consensus/pbft] recvPrepare -> WARN 084[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.486 [consensus/pbft] recvCommit -> WARN 085[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:42.486 [consensus/pbft] recvCommit -> WARN 086[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:42.487 [consensus/pbft] recvCommit -> WARN 087[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:42.487 [consensus/pbft] recvCommit -> WARN 088[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:42.487 [consensus/pbft] recvCommit -> WARN 089[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:42.489 [consensus/pbft] recvPrepare -> WARN 08a[0m Replica 2 ignoring prepare for view=0/seqNo=44: not in-wv, in view 1, low water mark 40
+[33m14:39:42.489 [consensus/pbft] recvCommit -> WARN 08b[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:43.248 [consensus/pbft] recvPrepare -> WARN 08c[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.251 [consensus/pbft] recvPrepare -> WARN 08d[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.289 [consensus/pbft] recvPrepare -> WARN 08e[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.294 [consensus/pbft] recvPrepare -> WARN 08f[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.295 [consensus/pbft] recvPrepare -> WARN 090[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.296 [consensus/pbft] recvCommit -> WARN 091[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.296 [consensus/pbft] recvCommit -> WARN 092[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.296 [consensus/pbft] recvCommit -> WARN 093[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.296 [consensus/pbft] recvCommit -> WARN 094[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.296 [consensus/pbft] recvCommit -> WARN 095[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.300 [consensus/pbft] recvPrepare -> WARN 096[0m Replica 2 ignoring prepare for view=0/seqNo=45: not in-wv, in view 1, low water mark 40
+[33m14:39:43.301 [consensus/pbft] recvCommit -> WARN 097[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+[33m14:39:43.344 [consensus/pbft] recvCommit -> WARN 098[0m Replica 2 ignoring commit for view=0/seqNo=44: not in-wv, in view 1, high water mark 40
+[33m14:39:43.383 [consensus/pbft] recvCommit -> WARN 099[0m Replica 2 ignoring commit for view=0/seqNo=45: not in-wv, in view 1, high water mark 40
+14:39:44.347 [consensus/pbft] sendViewChange -> INFO 09a[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:44.347 [consensus/pbft] recvViewChange -> INFO 09b[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:44.347 [consensus/pbft] recvViewChange -> WARN 09c[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:39:44.564 [consensus/pbft] recvPrepare -> WARN 09d[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.567 [consensus/pbft] recvPrepare -> WARN 09e[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.572 [consensus/pbft] recvPrepare -> WARN 09f[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.573 [consensus/pbft] recvPrepare -> WARN 0a0[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.582 [consensus/pbft] recvPrepare -> WARN 0a1[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.582 [consensus/pbft] recvCommit -> WARN 0a2[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.583 [consensus/pbft] recvCommit -> WARN 0a3[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.583 [consensus/pbft] recvCommit -> WARN 0a4[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.583 [consensus/pbft] recvCommit -> WARN 0a5[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.583 [consensus/pbft] recvCommit -> WARN 0a6[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.585 [consensus/pbft] recvPrepare -> WARN 0a7[0m Replica 2 ignoring prepare for view=0/seqNo=46: not in-wv, in view 1, low water mark 40
+[33m14:39:44.585 [consensus/pbft] recvCommit -> WARN 0a8[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:44.796 [consensus/pbft] recvCommit -> WARN 0a9[0m Replica 2 ignoring commit for view=0/seqNo=46: not in-wv, in view 1, high water mark 40
+[33m14:39:45.943 [consensus/pbft] recvPrepare -> WARN 0aa[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.957 [consensus/pbft] recvPrepare -> WARN 0ab[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.972 [consensus/pbft] recvPrepare -> WARN 0ac[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.981 [consensus/pbft] recvPrepare -> WARN 0ad[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.994 [consensus/pbft] recvCommit -> WARN 0ae[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:45.994 [consensus/pbft] recvPrepare -> WARN 0af[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.994 [consensus/pbft] recvPrepare -> WARN 0b0[0m Replica 2 ignoring prepare for view=0/seqNo=47: not in-wv, in view 1, low water mark 40
+[33m14:39:45.995 [consensus/pbft] recvCommit -> WARN 0b1[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:45.995 [consensus/pbft] recvCommit -> WARN 0b2[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:45.995 [consensus/pbft] recvCommit -> WARN 0b3[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:45.995 [consensus/pbft] recvCommit -> WARN 0b4[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:45.995 [consensus/pbft] recvCommit -> WARN 0b5[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+14:39:46.347 [consensus/pbft] sendViewChange -> INFO 0b6[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:46.348 [consensus/pbft] recvViewChange -> INFO 0b7[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:46.348 [consensus/pbft] recvViewChange -> WARN 0b8[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:39:46.863 [consensus/pbft] recvPrepare -> WARN 0b9[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:46.881 [consensus/pbft] recvPrepare -> WARN 0ba[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:46.882 [consensus/pbft] recvPrepare -> WARN 0bb[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:46.887 [consensus/pbft] recvPrepare -> WARN 0bc[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:46.952 [consensus/pbft] recvCommit -> WARN 0bd[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:46.952 [consensus/pbft] recvPrepare -> WARN 0be[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:46.953 [consensus/pbft] recvCommit -> WARN 0bf[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:46.953 [consensus/pbft] recvCommit -> WARN 0c0[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:46.953 [consensus/pbft] recvCommit -> WARN 0c1[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:46.953 [consensus/pbft] recvCommit -> WARN 0c2[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:47.036 [consensus/pbft] recvCommit -> WARN 0c3[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:47.036 [consensus/pbft] recvPrepare -> WARN 0c4[0m Replica 2 ignoring prepare for view=0/seqNo=48: not in-wv, in view 1, low water mark 40
+[33m14:39:47.925 [consensus/pbft] recvPrepare -> WARN 0c5[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.928 [consensus/pbft] recvPrepare -> WARN 0c6[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.939 [consensus/pbft] recvPrepare -> WARN 0c7[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.942 [consensus/pbft] recvPrepare -> WARN 0c8[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.953 [consensus/pbft] recvPrepare -> WARN 0c9[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.954 [consensus/pbft] recvCommit -> WARN 0ca[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:47.954 [consensus/pbft] recvCommit -> WARN 0cb[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:47.954 [consensus/pbft] recvCommit -> WARN 0cc[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:47.955 [consensus/pbft] recvCommit -> WARN 0cd[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:47.955 [consensus/pbft] recvCommit -> WARN 0ce[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:47.956 [consensus/pbft] recvPrepare -> WARN 0cf[0m Replica 2 ignoring prepare for view=0/seqNo=49: not in-wv, in view 1, low water mark 40
+[33m14:39:47.957 [consensus/pbft] recvCommit -> WARN 0d0[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+[33m14:39:48.102 [consensus/pbft] recvCommit -> WARN 0d1[0m Replica 2 ignoring commit for view=0/seqNo=47: not in-wv, in view 1, high water mark 40
+[33m14:39:48.121 [consensus/pbft] recvCommit -> WARN 0d2[0m Replica 2 ignoring commit for view=0/seqNo=48: not in-wv, in view 1, high water mark 40
+[33m14:39:48.122 [consensus/pbft] recvCommit -> WARN 0d3[0m Replica 2 ignoring commit for view=0/seqNo=49: not in-wv, in view 1, high water mark 40
+14:39:48.348 [consensus/pbft] sendViewChange -> INFO 0d4[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:48.348 [consensus/pbft] recvViewChange -> INFO 0d5[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:48.349 [consensus/pbft] recvViewChange -> WARN 0d6[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:39:48.977 [consensus/pbft] recvPrepare -> WARN 0d7[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.988 [consensus/pbft] recvPrepare -> WARN 0d8[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.990 [consensus/pbft] recvPrepare -> WARN 0d9[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.994 [consensus/pbft] recvPrepare -> WARN 0da[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.995 [consensus/pbft] recvPrepare -> WARN 0db[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.995 [consensus/pbft] recvCommit -> WARN 0dc[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.995 [consensus/pbft] recvCommit -> WARN 0dd[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.996 [consensus/pbft] recvCommit -> WARN 0de[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.996 [consensus/pbft] recvCommit -> WARN 0df[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.996 [consensus/pbft] recvCommit -> WARN 0e0[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.996 [consensus/pbft] recvPrepare -> WARN 0e1[0m Replica 2 ignoring prepare for view=0/seqNo=50: not in-wv, in view 1, low water mark 40
+[33m14:39:48.996 [consensus/pbft] recvCommit -> WARN 0e2[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+[33m14:39:48.997 [consensus/pbft] recvCommit -> WARN 0e3[0m Replica 2 ignoring commit for view=0/seqNo=50: not in-wv, in view 1, high water mark 40
+14:39:50.349 [consensus/pbft] sendViewChange -> INFO 0e4[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:50.349 [consensus/pbft] recvViewChange -> INFO 0e5[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:50.349 [consensus/pbft] recvViewChange -> WARN 0e6[0m Replica 2 already has a view change message for view 1 from replica 2
+14:39:52.350 [consensus/pbft] sendViewChange -> INFO 0e7[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:52.350 [consensus/pbft] recvViewChange -> INFO 0e8[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:52.350 [consensus/pbft] recvViewChange -> WARN 0e9[0m Replica 2 already has a view change message for view 1 from replica 2
+14:39:54.350 [consensus/pbft] sendViewChange -> INFO 0ea[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:54.351 [consensus/pbft] recvViewChange -> INFO 0eb[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:54.351 [consensus/pbft] recvViewChange -> WARN 0ec[0m Replica 2 already has a view change message for view 1 from replica 2
+14:39:56.351 [consensus/pbft] sendViewChange -> INFO 0ed[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:56.351 [consensus/pbft] recvViewChange -> INFO 0ee[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:56.352 [consensus/pbft] recvViewChange -> WARN 0ef[0m Replica 2 already has a view change message for view 1 from replica 2
+14:39:58.352 [consensus/pbft] sendViewChange -> INFO 0f0[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:39:58.352 [consensus/pbft] recvViewChange -> INFO 0f1[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:39:58.352 [consensus/pbft] recvViewChange -> WARN 0f2[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:00.353 [consensus/pbft] sendViewChange -> INFO 0f3[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:00.353 [consensus/pbft] recvViewChange -> INFO 0f4[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:00.353 [consensus/pbft] recvViewChange -> WARN 0f5[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:02.353 [consensus/pbft] sendViewChange -> INFO 0f6[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:02.354 [consensus/pbft] recvViewChange -> INFO 0f7[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:02.354 [consensus/pbft] recvViewChange -> WARN 0f8[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:04.354 [consensus/pbft] sendViewChange -> INFO 0f9[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:04.355 [consensus/pbft] recvViewChange -> INFO 0fa[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:04.355 [consensus/pbft] recvViewChange -> WARN 0fb[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:06.355 [consensus/pbft] sendViewChange -> INFO 0fc[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:06.355 [consensus/pbft] recvViewChange -> INFO 0fd[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:06.356 [consensus/pbft] recvViewChange -> WARN 0fe[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:08.356 [consensus/pbft] sendViewChange -> INFO 0ff[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:08.356 [consensus/pbft] recvViewChange -> INFO 100[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:08.356 [consensus/pbft] recvViewChange -> WARN 101[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:09.196 [consensus/pbft] recvPrepare -> WARN 102[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.217 [consensus/pbft] recvPrepare -> WARN 103[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.236 [consensus/pbft] recvPrepare -> WARN 104[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.237 [consensus/pbft] recvPrepare -> WARN 105[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.240 [consensus/pbft] recvCommit -> WARN 106[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.240 [consensus/pbft] recvPrepare -> WARN 107[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.241 [consensus/pbft] recvCommit -> WARN 108[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.241 [consensus/pbft] recvCommit -> WARN 109[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.242 [consensus/pbft] recvCommit -> WARN 10a[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.243 [consensus/pbft] recvCommit -> WARN 10b[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.244 [consensus/pbft] recvPrepare -> WARN 10c[0m Replica 2 ignoring prepare for view=0/seqNo=51: not in-wv, in view 1, low water mark 40
+[33m14:40:09.245 [consensus/pbft] recvCommit -> WARN 10d[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+[33m14:40:09.671 [consensus/pbft] recvCommit -> WARN 10e[0m Replica 2 ignoring commit for view=0/seqNo=51: not in-wv, in view 1, high water mark 40
+14:40:10.356 [consensus/pbft] sendViewChange -> INFO 10f[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:10.357 [consensus/pbft] recvViewChange -> INFO 110[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:10.357 [consensus/pbft] recvViewChange -> WARN 111[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:10.507 [consensus/pbft] recvPrepare -> WARN 112[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.511 [consensus/pbft] recvPrepare -> WARN 113[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.518 [consensus/pbft] recvPrepare -> WARN 114[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.523 [consensus/pbft] recvPrepare -> WARN 115[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.567 [consensus/pbft] recvCommit -> WARN 116[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:10.567 [consensus/pbft] recvPrepare -> WARN 117[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.567 [consensus/pbft] recvCommit -> WARN 118[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:10.567 [consensus/pbft] recvCommit -> WARN 119[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:10.567 [consensus/pbft] recvPrepare -> WARN 11a[0m Replica 2 ignoring prepare for view=0/seqNo=52: not in-wv, in view 1, low water mark 40
+[33m14:40:10.568 [consensus/pbft] recvCommit -> WARN 11b[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:10.568 [consensus/pbft] recvCommit -> WARN 11c[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:10.568 [consensus/pbft] recvCommit -> WARN 11d[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:11.661 [consensus/pbft] recvPrepare -> WARN 11e[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.677 [consensus/pbft] recvPrepare -> WARN 11f[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.684 [consensus/pbft] recvPrepare -> WARN 120[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.688 [consensus/pbft] recvPrepare -> WARN 121[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.692 [consensus/pbft] recvPrepare -> WARN 122[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.693 [consensus/pbft] recvCommit -> WARN 123[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:11.693 [consensus/pbft] recvCommit -> WARN 124[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:11.693 [consensus/pbft] recvCommit -> WARN 125[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:11.693 [consensus/pbft] recvCommit -> WARN 126[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:11.693 [consensus/pbft] recvPrepare -> WARN 127[0m Replica 2 ignoring prepare for view=0/seqNo=53: not in-wv, in view 1, low water mark 40
+[33m14:40:11.694 [consensus/pbft] recvCommit -> WARN 128[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:11.695 [consensus/pbft] recvCommit -> WARN 129[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+[33m14:40:12.066 [consensus/pbft] recvCommit -> WARN 12a[0m Replica 2 ignoring commit for view=0/seqNo=52: not in-wv, in view 1, high water mark 40
+[33m14:40:12.066 [consensus/pbft] recvCommit -> WARN 12b[0m Replica 2 ignoring commit for view=0/seqNo=53: not in-wv, in view 1, high water mark 40
+14:40:12.357 [consensus/pbft] sendViewChange -> INFO 12c[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:12.358 [consensus/pbft] recvViewChange -> INFO 12d[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:12.358 [consensus/pbft] recvViewChange -> WARN 12e[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:12.878 [consensus/pbft] recvPrepare -> WARN 12f[0m Replica 2 ignoring prepare for view=0/seqNo=54: not in-wv, in view 1, low water mark 40
+[33m14:40:12.882 [consensus/pbft] recvPrepare -> WARN 130[0m Replica 2 ignoring prepare for view=0/seqNo=54: not in-wv, in view 1, low water mark 40
+[33m14:40:12.891 [consensus/pbft] recvPrepare -> WARN 131[0m Replica 2 ignoring prepare for view=0/seqNo=54: not in-wv, in view 1, low water mark 40
+[33m14:40:12.896 [consensus/pbft] recvPrepare -> WARN 132[0m Replica 2 ignoring prepare for view=0/seqNo=54: not in-wv, in view 1, low water mark 40
+[33m14:40:12.900 [consensus/pbft] recvPrepare -> WARN 133[0m Replica 2 ignoring prepare for view=0/seqNo=54: not in-wv, in view 1, low water mark 40
+[33m14:40:12.901 [consensus/pbft] recvCommit -> WARN 134[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+[33m14:40:12.901 [consensus/pbft] recvCommit -> WARN 135[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+[33m14:40:12.901 [consensus/pbft] recvCommit -> WARN 136[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+[33m14:40:12.901 [consensus/pbft] recvCommit -> WARN 137[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+[33m14:40:12.901 [consensus/pbft] recvCommit -> WARN 138[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+[33m14:40:13.065 [consensus/pbft] recvCommit -> WARN 139[0m Replica 2 ignoring commit for view=0/seqNo=54: not in-wv, in view 1, high water mark 40
+14:40:14.068 [consensus/pbft] recvViewChange -> INFO 13a[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:14.089 [consensus/pbft] recvPrepare -> WARN 13b[0m Replica 2 ignoring prepare for view=0/seqNo=55: not in-wv, in view 1, low water mark 40
+[33m14:40:14.092 [consensus/pbft] recvPrepare -> WARN 13c[0m Replica 2 ignoring prepare for view=0/seqNo=55: not in-wv, in view 1, low water mark 40
+[33m14:40:14.092 [consensus/pbft] recvPrepare -> WARN 13d[0m Replica 2 ignoring prepare for view=0/seqNo=55: not in-wv, in view 1, low water mark 40
+[33m14:40:14.096 [consensus/pbft] recvPrepare -> WARN 13e[0m Replica 2 ignoring prepare for view=0/seqNo=55: not in-wv, in view 1, low water mark 40
+[33m14:40:14.100 [consensus/pbft] recvPrepare -> WARN 13f[0m Replica 2 ignoring prepare for view=0/seqNo=55: not in-wv, in view 1, low water mark 40
+[33m14:40:14.102 [consensus/pbft] recvCommit -> WARN 140[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+[33m14:40:14.102 [consensus/pbft] recvCommit -> WARN 141[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+[33m14:40:14.102 [consensus/pbft] recvCommit -> WARN 142[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+[33m14:40:14.102 [consensus/pbft] recvCommit -> WARN 143[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+[33m14:40:14.105 [consensus/pbft] recvCommit -> WARN 144[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+[33m14:40:14.160 [consensus/pbft] recvCommit -> WARN 145[0m Replica 2 ignoring commit for view=0/seqNo=55: not in-wv, in view 1, high water mark 40
+14:40:14.358 [consensus/pbft] sendViewChange -> INFO 146[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:14.358 [consensus/pbft] recvViewChange -> INFO 147[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:14.359 [consensus/pbft] recvViewChange -> WARN 148[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:15.447 [consensus/pbft] recvPrepare -> WARN 149[0m Replica 2 ignoring prepare for view=0/seqNo=56: not in-wv, in view 1, low water mark 40
+[33m14:40:15.453 [consensus/pbft] recvPrepare -> WARN 14a[0m Replica 2 ignoring prepare for view=0/seqNo=56: not in-wv, in view 1, low water mark 40
+[33m14:40:15.460 [consensus/pbft] recvPrepare -> WARN 14b[0m Replica 2 ignoring prepare for view=0/seqNo=56: not in-wv, in view 1, low water mark 40
+[33m14:40:15.464 [consensus/pbft] recvPrepare -> WARN 14c[0m Replica 2 ignoring prepare for view=0/seqNo=56: not in-wv, in view 1, low water mark 40
+[33m14:40:15.467 [consensus/pbft] recvPrepare -> WARN 14d[0m Replica 2 ignoring prepare for view=0/seqNo=56: not in-wv, in view 1, low water mark 40
+[33m14:40:15.468 [consensus/pbft] recvCommit -> WARN 14e[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+[33m14:40:15.468 [consensus/pbft] recvCommit -> WARN 14f[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+[33m14:40:15.468 [consensus/pbft] recvCommit -> WARN 150[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+[33m14:40:15.468 [consensus/pbft] recvCommit -> WARN 151[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+[33m14:40:15.469 [consensus/pbft] recvCommit -> WARN 152[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+[33m14:40:15.472 [consensus/pbft] recvCommit -> WARN 153[0m Replica 2 ignoring commit for view=0/seqNo=56: not in-wv, in view 1, high water mark 40
+14:40:16.069 [consensus/pbft] recvViewChange -> INFO 154[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:16.069 [consensus/pbft] recvViewChange -> WARN 155[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:16.359 [consensus/pbft] sendViewChange -> INFO 156[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:16.359 [consensus/pbft] recvViewChange -> INFO 157[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:16.359 [consensus/pbft] recvViewChange -> WARN 158[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:16.575 [consensus/pbft] recvPrepare -> WARN 159[0m Replica 2 ignoring prepare for view=0/seqNo=57: not in-wv, in view 1, low water mark 40
+[33m14:40:16.594 [consensus/pbft] recvPrepare -> WARN 15a[0m Replica 2 ignoring prepare for view=0/seqNo=57: not in-wv, in view 1, low water mark 40
+[33m14:40:16.599 [consensus/pbft] recvPrepare -> WARN 15b[0m Replica 2 ignoring prepare for view=0/seqNo=57: not in-wv, in view 1, low water mark 40
+[33m14:40:16.645 [consensus/pbft] recvPrepare -> WARN 15c[0m Replica 2 ignoring prepare for view=0/seqNo=57: not in-wv, in view 1, low water mark 40
+[33m14:40:16.745 [consensus/pbft] recvCommit -> WARN 15d[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:16.745 [consensus/pbft] recvPrepare -> WARN 15e[0m Replica 2 ignoring prepare for view=0/seqNo=57: not in-wv, in view 1, low water mark 40
+[33m14:40:16.746 [consensus/pbft] recvCommit -> WARN 15f[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:16.746 [consensus/pbft] recvCommit -> WARN 160[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:16.747 [consensus/pbft] recvCommit -> WARN 161[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:16.747 [consensus/pbft] recvCommit -> WARN 162[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:17.414 [consensus/pbft] recvCommit -> WARN 163[0m Replica 2 ignoring commit for view=0/seqNo=57: not in-wv, in view 1, high water mark 40
+[33m14:40:17.586 [consensus/pbft] recvPrepare -> WARN 164[0m Replica 2 ignoring prepare for view=0/seqNo=58: not in-wv, in view 1, low water mark 40
+[33m14:40:17.589 [consensus/pbft] recvPrepare -> WARN 165[0m Replica 2 ignoring prepare for view=0/seqNo=58: not in-wv, in view 1, low water mark 40
+[33m14:40:17.603 [consensus/pbft] recvPrepare -> WARN 166[0m Replica 2 ignoring prepare for view=0/seqNo=58: not in-wv, in view 1, low water mark 40
+[33m14:40:17.607 [consensus/pbft] recvPrepare -> WARN 167[0m Replica 2 ignoring prepare for view=0/seqNo=58: not in-wv, in view 1, low water mark 40
+[33m14:40:17.695 [consensus/pbft] recvCommit -> WARN 168[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+[33m14:40:17.695 [consensus/pbft] recvPrepare -> WARN 169[0m Replica 2 ignoring prepare for view=0/seqNo=58: not in-wv, in view 1, low water mark 40
+[33m14:40:17.696 [consensus/pbft] recvCommit -> WARN 16a[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+[33m14:40:17.696 [consensus/pbft] recvCommit -> WARN 16b[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+[33m14:40:17.696 [consensus/pbft] recvCommit -> WARN 16c[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+[33m14:40:17.696 [consensus/pbft] recvCommit -> WARN 16d[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+14:40:18.070 [consensus/pbft] recvViewChange -> INFO 16e[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:18.070 [consensus/pbft] recvViewChange -> WARN 16f[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:18.360 [consensus/pbft] sendViewChange -> INFO 170[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:18.360 [consensus/pbft] recvViewChange -> INFO 171[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:18.360 [consensus/pbft] recvViewChange -> WARN 172[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:18.444 [consensus/pbft] recvPrepare -> WARN 173[0m Replica 2 ignoring prepare for view=0/seqNo=59: not in-wv, in view 1, low water mark 40
+[33m14:40:18.463 [consensus/pbft] recvPrepare -> WARN 174[0m Replica 2 ignoring prepare for view=0/seqNo=59: not in-wv, in view 1, low water mark 40
+[33m14:40:18.468 [consensus/pbft] recvPrepare -> WARN 175[0m Replica 2 ignoring prepare for view=0/seqNo=59: not in-wv, in view 1, low water mark 40
+[33m14:40:18.468 [consensus/pbft] recvPrepare -> WARN 176[0m Replica 2 ignoring prepare for view=0/seqNo=59: not in-wv, in view 1, low water mark 40
+[33m14:40:18.469 [consensus/pbft] recvPrepare -> WARN 177[0m Replica 2 ignoring prepare for view=0/seqNo=59: not in-wv, in view 1, low water mark 40
+[33m14:40:18.469 [consensus/pbft] recvCommit -> WARN 178[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:18.469 [consensus/pbft] recvCommit -> WARN 179[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:18.469 [consensus/pbft] recvCommit -> WARN 17a[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:18.470 [consensus/pbft] recvCommit -> WARN 17b[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:18.470 [consensus/pbft] recvCommit -> WARN 17c[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:18.726 [consensus/pbft] recvCommit -> WARN 17d[0m Replica 2 ignoring commit for view=0/seqNo=58: not in-wv, in view 1, high water mark 40
+[33m14:40:18.726 [consensus/pbft] recvCommit -> WARN 17e[0m Replica 2 ignoring commit for view=0/seqNo=59: not in-wv, in view 1, high water mark 40
+[33m14:40:19.482 [consensus/pbft] recvPrepare -> WARN 17f[0m Replica 2 ignoring prepare for view=0/seqNo=60: not in-wv, in view 1, low water mark 40
+[33m14:40:19.483 [consensus/pbft] recvPrepare -> WARN 180[0m Replica 2 ignoring prepare for view=0/seqNo=60: not in-wv, in view 1, low water mark 40
+[33m14:40:19.484 [consensus/pbft] recvPrepare -> WARN 181[0m Replica 2 ignoring prepare for view=0/seqNo=60: not in-wv, in view 1, low water mark 40
+[33m14:40:19.484 [consensus/pbft] recvPrepare -> WARN 182[0m Replica 2 ignoring prepare for view=0/seqNo=60: not in-wv, in view 1, low water mark 40
+[33m14:40:19.487 [consensus/pbft] recvPrepare -> WARN 183[0m Replica 2 ignoring prepare for view=0/seqNo=60: not in-wv, in view 1, low water mark 40
+[33m14:40:19.487 [consensus/pbft] recvCommit -> WARN 184[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+[33m14:40:19.487 [consensus/pbft] recvCommit -> WARN 185[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+[33m14:40:19.487 [consensus/pbft] recvCommit -> WARN 186[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+[33m14:40:19.488 [consensus/pbft] recvCommit -> WARN 187[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+[33m14:40:19.488 [consensus/pbft] recvCommit -> WARN 188[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+[33m14:40:19.489 [consensus/pbft] recvCommit -> WARN 189[0m Replica 2 ignoring commit for view=0/seqNo=60: not in-wv, in view 1, high water mark 40
+14:40:20.070 [consensus/pbft] recvViewChange -> INFO 18a[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:20.070 [consensus/pbft] recvViewChange -> WARN 18b[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:20.360 [consensus/pbft] sendViewChange -> INFO 18c[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:20.361 [consensus/pbft] recvViewChange -> INFO 18d[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:20.361 [consensus/pbft] recvViewChange -> WARN 18e[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:22.070 [consensus/pbft] recvViewChange -> INFO 18f[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:22.071 [consensus/pbft] recvViewChange -> WARN 190[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:22.361 [consensus/pbft] sendViewChange -> INFO 191[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:22.362 [consensus/pbft] recvViewChange -> INFO 192[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:22.362 [consensus/pbft] recvViewChange -> WARN 193[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:24.072 [consensus/pbft] recvViewChange -> INFO 194[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:24.072 [consensus/pbft] recvViewChange -> WARN 195[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:24.362 [consensus/pbft] sendViewChange -> INFO 196[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:24.362 [consensus/pbft] recvViewChange -> INFO 197[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:24.362 [consensus/pbft] recvViewChange -> WARN 198[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:26.072 [consensus/pbft] recvViewChange -> INFO 199[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:26.072 [consensus/pbft] recvViewChange -> WARN 19a[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:26.363 [consensus/pbft] sendViewChange -> INFO 19b[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:26.363 [consensus/pbft] recvViewChange -> INFO 19c[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:26.363 [consensus/pbft] recvViewChange -> WARN 19d[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:28.073 [consensus/pbft] recvViewChange -> INFO 19e[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:28.073 [consensus/pbft] recvViewChange -> WARN 19f[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:28.364 [consensus/pbft] sendViewChange -> INFO 1a0[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:28.364 [consensus/pbft] recvViewChange -> INFO 1a1[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:28.364 [consensus/pbft] recvViewChange -> WARN 1a2[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:30.074 [consensus/pbft] recvViewChange -> INFO 1a3[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:30.074 [consensus/pbft] recvViewChange -> WARN 1a4[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:30.364 [consensus/pbft] sendViewChange -> INFO 1a5[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:30.365 [consensus/pbft] recvViewChange -> INFO 1a6[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:30.365 [consensus/pbft] recvViewChange -> WARN 1a7[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:32.075 [consensus/pbft] recvViewChange -> INFO 1a8[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:32.075 [consensus/pbft] recvViewChange -> WARN 1a9[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:32.365 [consensus/pbft] sendViewChange -> INFO 1aa[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:32.365 [consensus/pbft] recvViewChange -> INFO 1ab[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:32.366 [consensus/pbft] recvViewChange -> WARN 1ac[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:34.075 [consensus/pbft] recvViewChange -> INFO 1ad[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:34.075 [consensus/pbft] recvViewChange -> WARN 1ae[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:34.366 [consensus/pbft] sendViewChange -> INFO 1af[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:34.366 [consensus/pbft] recvViewChange -> INFO 1b0[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:34.366 [consensus/pbft] recvViewChange -> WARN 1b1[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:36.076 [consensus/pbft] recvViewChange -> INFO 1b2[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:36.076 [consensus/pbft] recvViewChange -> WARN 1b3[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:36.367 [consensus/pbft] sendViewChange -> INFO 1b4[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:36.367 [consensus/pbft] recvViewChange -> INFO 1b5[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:36.367 [consensus/pbft] recvViewChange -> WARN 1b6[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:38.077 [consensus/pbft] recvViewChange -> INFO 1b7[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:38.077 [consensus/pbft] recvViewChange -> WARN 1b8[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:38.367 [consensus/pbft] sendViewChange -> INFO 1b9[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:38.368 [consensus/pbft] recvViewChange -> INFO 1ba[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:38.368 [consensus/pbft] recvViewChange -> WARN 1bb[0m Replica 2 already has a view change message for view 1 from replica 2
+14:40:40.077 [consensus/pbft] recvViewChange -> INFO 1bc[0m Replica 2 received view-change from replica 1, v:1, h:50, |C|:1, |P|:3, |Q|:3
+[33m14:40:40.077 [consensus/pbft] recvViewChange -> WARN 1bd[0m Replica 2 already has a view change message for view 1 from replica 1
+14:40:40.368 [consensus/pbft] sendViewChange -> INFO 1be[0m Replica 2 sending view-change, v:1, h:40, |C|:1, |P|:2, |Q|:2
+14:40:40.368 [consensus/pbft] recvViewChange -> INFO 1bf[0m Replica 2 received view-change from replica 2, v:1, h:40, |C|:1, |P|:2, |Q|:2
+[33m14:40:40.369 [consensus/pbft] recvViewChange -> WARN 1c0[0m Replica 2 already has a view change message for view 1 from replica 2
+[33m14:40:40.765 [consensus/pbft] recvPrepare -> WARN 1c1[0m Replica 2 ignoring prepare for view=0/seqNo=61: not in-wv, in view 1, low water mark 40
+[33m14:40:40.800 [consensus/pbft] recvPrepare -> WARN 1c2[0m Replica 2 ignoring prepare for view=0/seqNo=61: not in-wv, in view 1, low water mark 40
+[33m14:40:40.812 [consensus/pbft] recvPrepare -> WARN 1c3[0m Replica 2 ignoring prepare for view=0/seqNo=61: not in-wv, in view 1, low water mark 40
+[33m14:40:40.816 [consensus/pbft] recvPrepare -> WARN 1c4[0m Replica 2 ignoring prepare for view=0/seqNo=61: not in-wv, in view 1, low water mark 40
+[33m14:40:40.818 [consensus/pbft] recvPrepare -> WARN 1c5[0m Replica 2 ignoring prepare for view=0/seqNo=61: not in-wv, in view 1, low water mark 40
+[33m14:40:40.818 [consensus/pbft] recvCommit -> WARN 1c6[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 40
+[33m14:40:40.819 [consensus/pbft] recvCommit -> WARN 1c7[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 40
+[33m14:40:40.819 [consensus/pbft] recvCommit -> WARN 1c8[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 40
+[33m14:40:40.819 [consensus/pbft] recvCommit -> WARN 1c9[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 40
+[33m14:40:40.819 [consensus/pbft] recvCommit -> WARN 1ca[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 40
+14:40:41.343 [consensus/pbft] recvViewChange -> INFO 1cb[0m Replica 2 received view-change from replica 7, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.343 [consensus/pbft] recvViewChange -> INFO 1cc[0m Replica 2 received view-change from replica 3, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.344 [consensus/pbft] recvViewChange -> INFO 1cd[0m Replica 2 received view-change from replica 5, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.344 [consensus/pbft] recvViewChange -> INFO 1ce[0m Replica 2 received view-change from replica 4, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.344 [consensus/pbft] recvViewChange -> INFO 1cf[0m Replica 2 received view-change from replica 6, v:1, h:60, |C|:1, |P|:1, |Q|:1
+14:40:41.347 [consensus/pbft] recvNewView -> INFO 1d0[0m Replica 2 received new-view 1
+14:40:41.347 [consensus/pbft] processNewView -> INFO 1d1[0m Replica 2 cannot execute to the view change checkpoint with seqNo 60
+[33m14:40:41.347 [consensus/pbft] processNewView -> WARN 1d2[0m Replica 2 missing base checkpoint 60 (CD0SQNVF4YnfxFC3+KnJoswVQT1igs7YbW+y6qEpyFBB7Fe9Y5soXesUasCHDEC+dCgr6/ig9oorVjAKfJ2kmcK2lBAaQIUhT4Jgnt4Xnq39674qszQo+M7SPNE8/cRKBuUUM8nhWCJ0O6Cc2z2YqSKNtQ642AjkombNNj2m2DoQ3piMiSk=), our most recent execution 42
+[33m14:40:41.347 [consensus/pbft] processNewView -> WARN 1d3[0m Replica 2 missing assigned, non-checkpointed request batch uzdChfJ2lBPJQ6epR4INqCe88A4MMrwZoNuywST5WyaELa/asKRABSdHgg+EeHDR6Z8j4q2W3bIMRawAr5TR1Q==
+[33m14:40:41.347 [consensus/pbft] processNewView -> WARN 1d4[0m Replica 2 requesting to fetch batch uzdChfJ2lBPJQ6epR4INqCe88A4MMrwZoNuywST5WyaELa/asKRABSdHgg+EeHDR6Z8j4q2W3bIMRawAr5TR1Q==
+14:40:41.347 [consensus/statetransfer] SyncToTarget -> INFO 1d5[0m Syncing to target d545e189dfc450b7f8a9c9a2cc15413d6282ced86d6fb2eaa129c85041ec57bd639b285deb146ac0870c40be74282bebf8a0f68a2b56300a7c9da499c2b69410 for block number 60 with peers [name:"vp6"  name:"vp3"  name:"vp5"  name:"vp7" ]
+14:40:41.422 [consensus/pbft] processNewView -> INFO 1d6[0m Replica 2 cannot execute to the view change checkpoint with seqNo 60
+[33m14:40:41.422 [consensus/pbft] processNewView -> WARN 1d7[0m Replica 2 missing base checkpoint 60 (CD0SQNVF4YnfxFC3+KnJoswVQT1igs7YbW+y6qEpyFBB7Fe9Y5soXesUasCHDEC+dCgr6/ig9oorVjAKfJ2kmcK2lBAaQIUhT4Jgnt4Xnq39674qszQo+M7SPNE8/cRKBuUUM8nhWCJ0O6Cc2z2YqSKNtQ642AjkombNNj2m2DoQ3piMiSk=), our most recent execution 42
+14:40:41.422 [consensus/pbft] processNewView2 -> INFO 1d8[0m Replica 2 accepting new-view to view 1
+14:40:41.434 [consensus/statetransfer] blockThread -> INFO 1d9[0m Validated blockchain to the genesis block
+14:40:41.450 [consensus/pbft] ProcessEvent -> INFO 1da[0m Replica 2 application caught up via state transfer, lastExec now 60
+14:40:41.472 [consensus/pbft] executeOne -> INFO 1db[0m Replica 2 executing/committing request batch for view=1/seqNo=61 and digest uzdChfJ2lBPJQ6epR4INqCe88A4MMrwZoNuywST5WyaELa/asKRABSdHgg+EeHDR6Z8j4q2W3bIMRawAr5TR1Q==
+14:40:41.518 [consensus/pbft] execDoneSync -> INFO 1dc[0m Replica 2 finished execution 61, trying next
+14:40:41.518 [consensus/pbft] processNewView -> INFO 1dd[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+[33m14:40:41.652 [consensus/pbft] recvPrePrepare -> WARN 1de[0m Pre-prepare from other than primary: got 0, should be 1
+14:40:42.241 [consensus/pbft] executeOne -> INFO 1df[0m Replica 2 executing/committing request batch for view=1/seqNo=62 and digest CyOC83vtDbbbbSn4DTgy902L00z8iaCDBYdFgHTLoGwJBvYNurN26VRa3oLltvw0t+gx3Ix7p76LLcYWxXVGdw==
+14:40:42.286 [consensus/pbft] execDoneSync -> INFO 1e0[0m Replica 2 finished execution 62, trying next
+14:40:42.286 [consensus/pbft] processNewView -> INFO 1e1[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+[33m14:40:42.461 [consensus/pbft] recvPrePrepare -> WARN 1e2[0m Pre-prepare from other than primary: got 0, should be 1
+[33m14:40:43.097 [consensus/pbft] recvCommit -> WARN 1e3[0m Replica 2 ignoring commit for view=0/seqNo=61: not in-wv, in view 1, high water mark 60
+14:40:43.113 [consensus/pbft] executeOne -> INFO 1e4[0m Replica 2 executing/committing request batch for view=1/seqNo=63 and digest DXPofQZOZmLxgpOb+8q7JdW3usksNf1rA6gowywYQjcBt4f655QmG4Oz30pIGnaUkmeSbDE/5xzKKWEJoHbavA==
+14:40:43.160 [consensus/pbft] execDoneSync -> INFO 1e5[0m Replica 2 finished execution 63, trying next
+14:40:43.160 [consensus/pbft] processNewView -> INFO 1e6[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:43.211 [consensus/pbft] recvViewChange -> INFO 1e7[0m Replica 2 received view-change from replica 0, v:1, h:60, |C|:1, |P|:1, |Q|:3
+14:40:44.162 [consensus/pbft] executeOne -> INFO 1e8[0m Replica 2 executing/committing request batch for view=1/seqNo=64 and digest e58Lv80xTsGRjx6HMGRCBsgPNa0GNy2KhHIersKGwSTWnjVeyIUoJpegQoOELbbJc5prj8v6lwYTz9GAWSeH3A==
+14:40:44.184 [consensus/pbft] execDoneSync -> INFO 1e9[0m Replica 2 finished execution 64, trying next
+14:40:44.184 [consensus/pbft] processNewView -> INFO 1ea[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:45.245 [consensus/pbft] executeOne -> INFO 1eb[0m Replica 2 executing/committing request batch for view=1/seqNo=65 and digest oL9HHCCQiLpZVfo2Y3OmpRNz4rOAsU1HVSsV9dA59YG42xreLl4f4LMaKZEeVG6KnPJnOVop6BK4vxJO/mMzqg==
+14:40:45.288 [consensus/pbft] execDoneSync -> INFO 1ec[0m Replica 2 finished execution 65, trying next
+14:40:45.288 [consensus/pbft] processNewView -> INFO 1ed[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:45.814 [consensus/pbft] executeOne -> INFO 1ee[0m Replica 2 executing/committing request batch for view=1/seqNo=66 and digest O5M9yc+D/upXoIrcuVccgkITk221zsEuukNGOijSX4kLrOR+InXL0tAmSH6RnP4e9vlDbp1OnGn4wYfOsRaMlw==
+14:40:45.857 [consensus/pbft] execDoneSync -> INFO 1ef[0m Replica 2 finished execution 66, trying next
+14:40:45.857 [consensus/pbft] processNewView -> INFO 1f0[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:46.813 [consensus/pbft] executeOne -> INFO 1f1[0m Replica 2 executing/committing request batch for view=1/seqNo=67 and digest RgqxurjvD+Meo8zJa9gFx4x8gTScbkn0pmnrqGFEJlYQPQwx5D8Tth7tzUuU3GacTuxLwXmesso5/AA8j/UdtQ==
+14:40:46.823 [consensus/pbft] execDoneSync -> INFO 1f2[0m Replica 2 finished execution 67, trying next
+14:40:46.823 [consensus/pbft] processNewView -> INFO 1f3[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:47.841 [consensus/pbft] executeOne -> INFO 1f4[0m Replica 2 executing/committing request batch for view=1/seqNo=68 and digest nJreAe3Olor3/poQNY8jZk2SAqVm8Hs1XXEY4ZbywbHJugDPXJI+w6i0HBt2e0R13V9Hxjp60NhIT7GcTvmgeg==
+14:40:47.858 [consensus/pbft] execDoneSync -> INFO 1f5[0m Replica 2 finished execution 68, trying next
+14:40:47.858 [consensus/pbft] processNewView -> INFO 1f6[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:48.913 [consensus/pbft] executeOne -> INFO 1f7[0m Replica 2 executing/committing request batch for view=1/seqNo=69 and digest yAslA/XiF0Fo9s+k+IV1c3mgHHZNLE6H5JqYsuLQurYHyj9u7q3mprYaAy0we6PQmcVlGXCyMAy/kuDCHsQ1mQ==
+14:40:48.961 [consensus/pbft] execDoneSync -> INFO 1f8[0m Replica 2 finished execution 69, trying next
+14:40:48.961 [consensus/pbft] processNewView -> INFO 1f9[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:49.974 [consensus/pbft] executeOne -> INFO 1fa[0m Replica 2 executing/committing request batch for view=1/seqNo=70 and digest LE3v1htqTNR8ouP9EBlKSd6KBfD7lRp5F4thCAzLX/1RwY3h7SfvZREchVPI7PEribeFH2Uur0trm/JDDbpj0A==
+14:40:50.010 [consensus/pbft] execDoneSync -> INFO 1fb[0m Replica 2 finished execution 70, trying next
+14:40:50.011 [consensus/pbft] processNewView -> INFO 1fc[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:50.011 [consensus/pbft] processNewView -> INFO 1fd[0m Replica 2 ignoring new-view from 1, v:1: we are active in view 1
+14:40:52.006 [consensus/pbft] recvViewChange -> INFO 1fe[0m Replica 2 received view-change from replica 5, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.007 [consensus/pbft] recvViewChange -> INFO 1ff[0m Replica 2 received view-change from replica 4, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.009 [consensus/pbft] recvViewChange -> INFO 200[0m Replica 2 received view-change from replica 6, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.009 [consensus/pbft] recvViewChange -> INFO 201[0m Replica 2 received f+1 view-change messages, triggering view-change to view 2
+14:40:52.010 [consensus/pbft] sendViewChange -> INFO 202[0m Replica 2 sending view-change, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.010 [consensus/pbft] recvViewChange -> INFO 203[0m Replica 2 received view-change from replica 2, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.010 [consensus/pbft] recvViewChange -> INFO 204[0m Replica 2 received view-change from replica 3, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.010 [consensus/pbft] recvViewChange -> INFO 205[0m Replica 2 received view-change from replica 7, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.010 [consensus/pbft] sendNewView -> INFO 206[0m Replica 2 is new primary, sending new-view, v:2, X:map[71:]
+14:40:52.011 [consensus/pbft] processNewView2 -> INFO 207[0m Replica 2 accepting new-view to view 2
+14:40:52.011 [consensus/pbft] recvViewChange -> INFO 208[0m Replica 2 received view-change from replica 0, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.011 [consensus/pbft] recvViewChange -> INFO 209[0m Replica 2 received view-change from replica 1, v:2, h:70, |C|:1, |P|:0, |Q|:0
+14:40:52.014 [consensus/pbft] executeOne -> INFO 20a[0m Replica 2 executing/committing null request for view=2/seqNo=71
+14:40:52.015 [consensus/pbft] execDoneSync -> INFO 20b[0m Replica 2 finished execution 71, trying next
+14:40:53.012 [consensus/pbft] ProcessEvent -> INFO 20c[0m Replica 2 batch timer expired
+14:40:53.012 [consensus/pbft] sendBatch -> INFO 20d[0m Creating batch with 2 requests
+14:40:53.015 [consensus/pbft] executeOne -> INFO 20e[0m Replica 2 executing/committing request batch for view=2/seqNo=72 and digest RfaUve8NRDKNrylkgCCZGoB+SvzpriCaH+teyBNUm9H0wNj6H4jhQ9PHluzDMrbvjySx7IoAB9+AlHiS8dwAfQ==
+14:40:53.016 [consensus/pbft] execDoneSync -> INFO 20f[0m Replica 2 finished execution 72, trying next
+14:40:53.016 [consensus/pbft] processNewView -> INFO 210[0m Replica 2 ignoring new-view from 2, v:2: we are active in view 2
+14:40:55.017 [consensus/pbft] recvViewChange -> INFO 211[0m Replica 2 received view-change from replica 6, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.017 [consensus/pbft] recvViewChange -> INFO 212[0m Replica 2 received view-change from replica 5, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 213[0m Replica 2 received view-change from replica 0, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 214[0m Replica 2 received f+1 view-change messages, triggering view-change to view 3
+14:40:55.018 [consensus/pbft] sendViewChange -> INFO 215[0m Replica 2 sending view-change, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 216[0m Replica 2 received view-change from replica 2, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 217[0m Replica 2 received view-change from replica 7, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.018 [consensus/pbft] recvViewChange -> INFO 218[0m Replica 2 received view-change from replica 3, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.019 [consensus/pbft] recvViewChange -> INFO 219[0m Replica 2 received view-change from replica 4, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.019 [consensus/pbft] recvViewChange -> INFO 21a[0m Replica 2 received view-change from replica 1, v:3, h:70, |C|:1, |P|:2, |Q|:2
+14:40:55.021 [consensus/pbft] recvNewView -> INFO 21b[0m Replica 2 received new-view 3
+14:40:55.022 [consensus/pbft] processNewView2 -> INFO 21c[0m Replica 2 accepting new-view to view 3
+14:40:56.117 [consensus/pbft] executeOne -> INFO 21d[0m Replica 2 executing/committing request batch for view=3/seqNo=73 and digest u9/Za+FQvY2ZAs0uIi7yFzY2JXdYPdJlIeRpOejoIbq77zz2MYSjJCozgHCVz7K9g+NHFp6qypEOZ7jZ7z8XSA==
+14:40:56.147 [consensus/pbft] execDoneSync -> INFO 21e[0m Replica 2 finished execution 73, trying next
+14:40:56.147 [consensus/pbft] processNewView -> INFO 21f[0m Replica 2 ignoring new-view from 3, v:3: we are active in view 3
+14:40:58.149 [consensus/pbft] recvViewChange -> INFO 220[0m Replica 2 received view-change from replica 5, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.149 [consensus/pbft] recvViewChange -> INFO 221[0m Replica 2 received view-change from replica 6, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.149 [consensus/pbft] recvViewChange -> INFO 222[0m Replica 2 received view-change from replica 4, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.149 [consensus/pbft] recvViewChange -> INFO 223[0m Replica 2 received f+1 view-change messages, triggering view-change to view 4
+14:40:58.149 [consensus/pbft] sendViewChange -> INFO 224[0m Replica 2 sending view-change, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.150 [consensus/pbft] recvViewChange -> INFO 225[0m Replica 2 received view-change from replica 2, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.150 [consensus/pbft] recvViewChange -> INFO 226[0m Replica 2 received view-change from replica 7, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.150 [consensus/pbft] recvViewChange -> INFO 227[0m Replica 2 received view-change from replica 3, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.150 [consensus/pbft] recvViewChange -> INFO 228[0m Replica 2 received view-change from replica 0, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.151 [consensus/pbft] recvViewChange -> INFO 229[0m Replica 2 received view-change from replica 1, v:4, h:70, |C|:1, |P|:3, |Q|:3
+14:40:58.160 [consensus/pbft] recvNewView -> INFO 22a[0m Replica 2 received new-view 4
+14:40:58.161 [consensus/pbft] processNewView2 -> INFO 22b[0m Replica 2 accepting new-view to view 4
+14:40:59.164 [consensus/pbft] executeOne -> INFO 22c[0m Replica 2 executing/committing request batch for view=4/seqNo=74 and digest uY8kCEs+KVHgWChE3hmbIoCbc6kHEu03z/S1DNUqOeKvOfgYCaKYW3yp6n4Gz7JcderSFVgzyFiow8FHpAWg1w==
+14:40:59.165 [consensus/pbft] execDoneSync -> INFO 22d[0m Replica 2 finished execution 74, trying next
+14:40:59.165 [consensus/pbft] processNewView -> INFO 22e[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:11.020 [consensus/pbft] executeOne -> INFO 22f[0m Replica 2 executing/committing request batch for view=4/seqNo=75 and digest 24PuNMCp+0YpQfvW+P8wkQ+iBUaShLtc3u12V2BmzvbMG2Ag7SYDGoZ6mhAv3vdb1Bamy80ra+5JIPVN1p+TQQ==
+14:41:11.054 [consensus/pbft] execDoneSync -> INFO 230[0m Replica 2 finished execution 75, trying next
+14:41:11.054 [consensus/pbft] processNewView -> INFO 231[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:11.752 [consensus/pbft] executeOne -> INFO 232[0m Replica 2 executing/committing request batch for view=4/seqNo=76 and digest 0ENmTwPYfSn0vwTYn1KNGxp2dQjkZ1btF7TCB0hIMhVsvNncHPh+eGgiUsV+6EllWpbKM4wau5p970heYBIWBw==
+14:41:11.798 [consensus/pbft] execDoneSync -> INFO 233[0m Replica 2 finished execution 76, trying next
+14:41:11.798 [consensus/pbft] processNewView -> INFO 234[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:12.851 [consensus/pbft] executeOne -> INFO 235[0m Replica 2 executing/committing request batch for view=4/seqNo=77 and digest IsLd0323GJcLXYBkgcubqmtbdK4BdUygGZLsB2YO8Zr1rtEP6prYjAZvMBTdyXimzVDJjP7iE8Ki0Pv4XY5ovg==
+14:41:12.891 [consensus/pbft] execDoneSync -> INFO 236[0m Replica 2 finished execution 77, trying next
+14:41:12.891 [consensus/pbft] processNewView -> INFO 237[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:14.419 [consensus/pbft] executeOne -> INFO 238[0m Replica 2 executing/committing request batch for view=4/seqNo=78 and digest WnJJU7Nhb8I7kOwqDflpGpGWlFPPVMJvqD7t3fKNJp7JmQ2Bh0fiK77r5ErWXAx85PKHbNdTGChCZLqN8QFwow==
+14:41:14.451 [consensus/pbft] execDoneSync -> INFO 239[0m Replica 2 finished execution 78, trying next
+14:41:14.452 [consensus/pbft] processNewView -> INFO 23a[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:15.209 [consensus/pbft] executeOne -> INFO 23b[0m Replica 2 executing/committing request batch for view=4/seqNo=79 and digest ogaJImi+iCXv8iFcFus8myodGOoYju9qgC/2cfJttLMEmhgPcy0wBlWOcQnDfJamVk+Pvf1sTyaiFqRgG1RALA==
+14:41:15.248 [consensus/pbft] execDoneSync -> INFO 23c[0m Replica 2 finished execution 79, trying next
+14:41:15.248 [consensus/pbft] processNewView -> INFO 23d[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:16.267 [consensus/pbft] executeOne -> INFO 23e[0m Replica 2 executing/committing request batch for view=4/seqNo=80 and digest VAgHgudQX+OM9BFrZhAzEPbULsvHM6sYUL/udwwhBlSmuJHB5iRBfwUM6Dwk1sFDAoQE7zT1m+4jrGLNED83Pw==
+14:41:16.297 [consensus/pbft] execDoneSync -> INFO 23f[0m Replica 2 finished execution 80, trying next
+14:41:16.298 [consensus/pbft] processNewView -> INFO 240[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:16.299 [consensus/pbft] processNewView -> INFO 241[0m Replica 2 ignoring new-view from 4, v:4: we are active in view 4
+14:41:18.289 [consensus/pbft] recvViewChange -> INFO 242[0m Replica 2 received view-change from replica 3, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.290 [consensus/pbft] recvViewChange -> INFO 243[0m Replica 2 received view-change from replica 6, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.290 [consensus/pbft] recvViewChange -> INFO 244[0m Replica 2 received view-change from replica 5, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.290 [consensus/pbft] recvViewChange -> INFO 245[0m Replica 2 received f+1 view-change messages, triggering view-change to view 5
+14:41:18.290 [consensus/pbft] sendViewChange -> INFO 246[0m Replica 2 sending view-change, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.290 [consensus/pbft] recvViewChange -> INFO 247[0m Replica 2 received view-change from replica 2, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.291 [consensus/pbft] recvViewChange -> INFO 248[0m Replica 2 received view-change from replica 7, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.291 [consensus/pbft] recvViewChange -> INFO 249[0m Replica 2 received view-change from replica 1, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.291 [consensus/pbft] recvViewChange -> INFO 24a[0m Replica 2 received view-change from replica 4, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:18.297 [consensus/pbft] recvNewView -> INFO 24b[0m Replica 2 received new-view 5
+14:41:18.297 [consensus/pbft] processNewView2 -> INFO 24c[0m Replica 2 accepting new-view to view 5
+14:41:18.300 [consensus/pbft] executeOne -> INFO 24d[0m Replica 2 executing/committing null request for view=5/seqNo=81
+14:41:18.300 [consensus/pbft] execDoneSync -> INFO 24e[0m Replica 2 finished execution 81, trying next
+14:41:18.867 [consensus/pbft] executeOne -> INFO 24f[0m Replica 2 executing/committing request batch for view=5/seqNo=82 and digest kShIJoR19exMyH7GcD4qedJ1tBpHLEw4OQl3369NdkgOSUoL9viWRU03hSjl9R1ijR/whO+lcYwtDNZfU4y1nA==
+14:41:18.910 [consensus/pbft] execDoneSync -> INFO 250[0m Replica 2 finished execution 82, trying next
+14:41:18.910 [consensus/pbft] processNewView -> INFO 251[0m Replica 2 ignoring new-view from 5, v:5: we are active in view 5
+14:41:19.424 [consensus/pbft] executeOne -> INFO 252[0m Replica 2 executing/committing request batch for view=5/seqNo=83 and digest SdsR0w+35Z0D8QqW2xvrZI+/ohH4yhXZ226uC35LNHOU2jXgj+EhEsneN8i4NY+NDh8pOQellBcZ+l/TDTgDGw==
+14:41:19.466 [consensus/pbft] execDoneSync -> INFO 253[0m Replica 2 finished execution 83, trying next
+14:41:19.467 [consensus/pbft] processNewView -> INFO 254[0m Replica 2 ignoring new-view from 5, v:5: we are active in view 5
+14:41:20.213 [consensus/pbft] executeOne -> INFO 255[0m Replica 2 executing/committing request batch for view=5/seqNo=84 and digest /hT+ti3YYpem5OBXvX9GHhM++dEeNAD8XhQvn072Bxw3mMwx8tmbW+fwMs90hb42TDUbTKeshIa4tuBltzcd1A==
+14:41:20.258 [consensus/pbft] execDoneSync -> INFO 256[0m Replica 2 finished execution 84, trying next
+14:41:20.258 [consensus/pbft] processNewView -> INFO 257[0m Replica 2 ignoring new-view from 5, v:5: we are active in view 5
+14:41:20.396 [consensus/pbft] recvViewChange -> INFO 258[0m Replica 2 received view-change from replica 0, v:5, h:80, |C|:1, |P|:0, |Q|:0
+14:41:21.228 [consensus/pbft] executeOne -> INFO 259[0m Replica 2 executing/committing request batch for view=5/seqNo=85 and digest ZywBb7iC9etMmTVEkMuDLJuQbbJDnfuSWSg5Obcx/DfclSQ4Jw9U5he+rRwmsxUAzCMz5MQstwX7VLwlKWFbcw==
+14:41:21.272 [consensus/pbft] execDoneSync -> INFO 25a[0m Replica 2 finished execution 85, trying next
+14:41:21.272 [consensus/pbft] processNewView -> INFO 25b[0m Replica 2 ignoring new-view from 5, v:5: we are active in view 5
+14:41:22.249 [consensus/pbft] executeOne -> INFO 25c[0m Replica 2 executing/committing request batch for view=5/seqNo=86 and digest 11gZareeuKJEsx0tj5O+r6u8Rd9NUrIBBRAlFtaCBAOaTNGhZ6u6K538hzO/Xuh6fgtBRJfqhq3ovjV5+ucKLA==
+14:41:22.263 [consensus/pbft] execDoneSync -> INFO 25d[0m Replica 2 finished execution 86, trying next
+14:41:22.263 [consensus/pbft] processNewView -> INFO 25e[0m Replica 2 ignoring new-view from 5, v:5: we are active in view 5
+14:41:24.264 [consensus/pbft] ProcessEvent -> INFO 25f[0m Replica 2 view change timer expired, sending view change: Batch outstanding requests
+14:41:24.264 [consensus/pbft] sendViewChange -> INFO 260[0m Replica 2 sending view-change, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.264 [consensus/pbft] recvViewChange -> INFO 261[0m Replica 2 received view-change from replica 2, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.265 [consensus/pbft] recvViewChange -> INFO 262[0m Replica 2 received view-change from replica 1, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.268 [consensus/pbft] recvViewChange -> INFO 263[0m Replica 2 received view-change from replica 7, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.268 [consensus/pbft] recvViewChange -> INFO 264[0m Replica 2 received view-change from replica 4, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.269 [consensus/pbft] recvViewChange -> INFO 265[0m Replica 2 received view-change from replica 3, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.270 [consensus/pbft] recvViewChange -> INFO 266[0m Replica 2 received view-change from replica 6, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.270 [consensus/pbft] recvViewChange -> INFO 267[0m Replica 2 received view-change from replica 5, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:24.280 [consensus/pbft] recvNewView -> INFO 268[0m Replica 2 received new-view 6
+14:41:24.282 [consensus/pbft] processNewView2 -> INFO 269[0m Replica 2 accepting new-view to view 6
+14:41:24.296 [consensus/pbft] recvViewChange -> INFO 26a[0m Replica 2 received view-change from replica 0, v:6, h:80, |C|:1, |P|:6, |Q|:6
+14:41:25.302 [consensus/pbft] executeOne -> INFO 26b[0m Replica 2 executing/committing request batch for view=6/seqNo=87 and digest 81h09FGSaqY4Vx/GzPD2NEBH1WEp5tTWhG8IZj/PDU6Ux0R8RdS6XENgXTuDqVbIZJX2gYo1XP9AmtwWxO/7jw==
+14:41:25.308 [consensus/pbft] execDoneSync -> INFO 26c[0m Replica 2 finished execution 87, trying next
+14:41:25.308 [consensus/pbft] processNewView -> INFO 26d[0m Replica 2 ignoring new-view from 6, v:6: we are active in view 6
+14:41:26.493 [consensus/pbft] executeOne -> INFO 26e[0m Replica 2 executing/committing request batch for view=6/seqNo=88 and digest NYtd8nB+ocXVr43Xrcmv3j69UWga8316iBLnSpbExjkixqUS0xxamPlVj9ByIm3A2bT2eDHnkYuwm46Y5CD6Cg==
+14:41:26.508 [consensus/pbft] execDoneSync -> INFO 26f[0m Replica 2 finished execution 88, trying next
+14:41:26.508 [consensus/pbft] processNewView -> INFO 270[0m Replica 2 ignoring new-view from 6, v:6: we are active in view 6
+14:41:28.504 [consensus/pbft] recvViewChange -> INFO 271[0m Replica 2 received view-change from replica 3, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.505 [consensus/pbft] recvViewChange -> INFO 272[0m Replica 2 received view-change from replica 0, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.508 [consensus/pbft] recvViewChange -> INFO 273[0m Replica 2 received view-change from replica 7, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.508 [consensus/pbft] recvViewChange -> INFO 274[0m Replica 2 received f+1 view-change messages, triggering view-change to view 7
+14:41:28.508 [consensus/pbft] sendViewChange -> INFO 275[0m Replica 2 sending view-change, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.509 [consensus/pbft] recvViewChange -> INFO 276[0m Replica 2 received view-change from replica 2, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.509 [consensus/pbft] recvViewChange -> INFO 277[0m Replica 2 received view-change from replica 4, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.509 [consensus/pbft] recvViewChange -> INFO 278[0m Replica 2 received view-change from replica 1, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.510 [consensus/pbft] recvViewChange -> INFO 279[0m Replica 2 received view-change from replica 6, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.511 [consensus/pbft] recvViewChange -> INFO 27a[0m Replica 2 received view-change from replica 5, v:7, h:80, |C|:1, |P|:8, |Q|:8
+14:41:28.522 [consensus/pbft] recvNewView -> INFO 27b[0m Replica 2 received new-view 7
+14:41:28.523 [consensus/pbft] processNewView2 -> INFO 27c[0m Replica 2 accepting new-view to view 7
+14:41:29.524 [consensus/pbft] executeOne -> INFO 27d[0m Replica 2 executing/committing request batch for view=7/seqNo=89 and digest xWVWd++Xnxl6SZp3A/EQCPjB5/n/dv9uLj74DMXPau1LhVi+lmekGdmMTcbvRsnGC04bxbNUV99GmssacvAl3A==
+14:41:29.525 [consensus/pbft] execDoneSync -> INFO 27e[0m Replica 2 finished execution 89, trying next
+14:41:29.525 [consensus/pbft] processNewView -> INFO 27f[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:44.001 [consensus/pbft] executeOne -> INFO 280[0m Replica 2 executing/committing request batch for view=7/seqNo=90 and digest 5e5fR796qAT2rbYP0LMdgP3e0QkaCE/vN+M+i8prI7nDchubzuAwms0jeq611ZxDNMn5zQmvQkqeFioQAspokA==
+14:41:44.054 [consensus/pbft] execDoneSync -> INFO 281[0m Replica 2 finished execution 90, trying next
+14:41:44.055 [consensus/pbft] processNewView -> INFO 282[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:44.055 [consensus/pbft] processNewView -> INFO 283[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:44.802 [consensus/pbft] executeOne -> INFO 284[0m Replica 2 executing/committing request batch for view=7/seqNo=91 and digest ekY/Ez7nBO7s3MvCm9+I9CzaSet8UAXmGslnhgTdNyXND79mFvU5ugghcbCHWTJPZGQ7+e2/nfx/WF1ByiV6Vw==
+14:41:44.850 [consensus/pbft] execDoneSync -> INFO 285[0m Replica 2 finished execution 91, trying next
+14:41:44.850 [consensus/pbft] processNewView -> INFO 286[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:45.823 [consensus/pbft] executeOne -> INFO 287[0m Replica 2 executing/committing request batch for view=7/seqNo=92 and digest gQwRqJ+65CgHEtEFj6bPQdFhkhs6TA6SjR5iDauMPYK18DvV3+Yap93US2+rwVd5lHzIlVYT8vgucK5GLc91Dw==
+14:41:45.840 [consensus/pbft] execDoneSync -> INFO 288[0m Replica 2 finished execution 92, trying next
+14:41:45.841 [consensus/pbft] processNewView -> INFO 289[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:46.556 [consensus/pbft] executeOne -> INFO 28a[0m Replica 2 executing/committing request batch for view=7/seqNo=93 and digest oP83dSPnu3sBN4K//lYE5qspIbdTi39NucEakyNQc3S4yQCY4mf3oYDKZsdWlvubVakAOaY1i9A1K79oZRmpig==
+14:41:46.598 [consensus/pbft] execDoneSync -> INFO 28b[0m Replica 2 finished execution 93, trying next
+14:41:46.598 [consensus/pbft] processNewView -> INFO 28c[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:47.373 [consensus/pbft] executeOne -> INFO 28d[0m Replica 2 executing/committing request batch for view=7/seqNo=94 and digest VDYnsjGv+zGKzE1Yb63hUFyPifwlqh64GVFVtnWeZGXXVBqQNd6Xsn5gkOic8GklPwqosUQlRQAH/nnA0vGGNg==
+14:41:47.421 [consensus/pbft] execDoneSync -> INFO 28e[0m Replica 2 finished execution 94, trying next
+14:41:47.421 [consensus/pbft] processNewView -> INFO 28f[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:48.393 [consensus/pbft] executeOne -> INFO 290[0m Replica 2 executing/committing request batch for view=7/seqNo=95 and digest uI9gxI9JbGaZWSF2eIV6+0dRkGF3rmJWOzwgoOa4C3dDRalvDFKSq5YUxLedUXV3h3sRX8FaOTomGs7OFxkjrw==
+14:41:48.440 [consensus/pbft] execDoneSync -> INFO 291[0m Replica 2 finished execution 95, trying next
+14:41:48.440 [consensus/pbft] processNewView -> INFO 292[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:48.937 [consensus/pbft] executeOne -> INFO 293[0m Replica 2 executing/committing request batch for view=7/seqNo=96 and digest pWtRhOIlEyf0ui9+MTspvLlPdzQ+Um/+44trjk68SWce5eVbJ0PdW+nKHgXy9+lJnjD4pnPH7KNVQIwQLnnH6w==
+14:41:48.981 [consensus/pbft] execDoneSync -> INFO 294[0m Replica 2 finished execution 96, trying next
+14:41:48.981 [consensus/pbft] processNewView -> INFO 295[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:50.014 [consensus/pbft] executeOne -> INFO 296[0m Replica 2 executing/committing request batch for view=7/seqNo=97 and digest 9orfjrH+MkIPgMyQwXsKB1GRmCp6ANifJYHSQa/fSsXoMI3vml+fsJKYpIRRbOx7JPEnuKnxDud9/kS66SRQpg==
+14:41:50.047 [consensus/pbft] execDoneSync -> INFO 297[0m Replica 2 finished execution 97, trying next
+14:41:50.048 [consensus/pbft] processNewView -> INFO 298[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:51.064 [consensus/pbft] executeOne -> INFO 299[0m Replica 2 executing/committing request batch for view=7/seqNo=98 and digest AuPxDRWqA7ZPU0+PJ/EWouvI0bq0v07jQKGsehpzRRbBdBK4igXuSAuYTTEVVRNjaShf0/QhooUD8EcrbF4mDQ==
+14:41:51.093 [consensus/pbft] execDoneSync -> INFO 29a[0m Replica 2 finished execution 98, trying next
+14:41:51.093 [consensus/pbft] processNewView -> INFO 29b[0m Replica 2 ignoring new-view from 7, v:7: we are active in view 7
+14:41:53.149 [consensus/pbft] ProcessEvent -> INFO 29c[0m Replica 2 view change timer expired, sending view change: Batch outstanding requests
+14:41:53.149 [consensus/pbft] sendViewChange -> INFO 29d[0m Replica 2 sending view-change, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.149 [consensus/pbft] recvViewChange -> INFO 29e[0m Replica 2 received view-change from replica 2, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.151 [consensus/pbft] recvViewChange -> INFO 29f[0m Replica 2 received view-change from replica 6, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.151 [consensus/pbft] recvViewChange -> INFO 2a0[0m Replica 2 received view-change from replica 5, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.152 [consensus/pbft] recvViewChange -> INFO 2a1[0m Replica 2 received view-change from replica 1, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.152 [consensus/pbft] recvViewChange -> INFO 2a2[0m Replica 2 received view-change from replica 3, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.152 [consensus/pbft] recvViewChange -> INFO 2a3[0m Replica 2 received view-change from replica 4, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.153 [consensus/pbft] recvViewChange -> INFO 2a4[0m Replica 2 received view-change from replica 0, v:8, h:90, |C|:1, |P|:8, |Q|:8
+14:41:53.164 [consensus/pbft] recvNewView -> INFO 2a5[0m Replica 2 received new-view 8
+14:41:53.165 [consensus/pbft] processNewView2 -> INFO 2a6[0m Replica 2 accepting new-view to view 8
+[33m14:41:53.176 [consensus/pbft] recvPrePrepare -> WARN 2a7[0m Pre-prepare from other than primary: got 7, should be 0
+14:41:53.178 [consensus/pbft] recvViewChange -> INFO 2a8[0m Replica 2 received view-change from replica 7, v:8, h:90, |C|:1, |P|:8, |Q|:9
+14:41:54.221 [consensus/pbft] executeOne -> INFO 2a9[0m Replica 2 executing/committing request batch for view=8/seqNo=99 and digest QTwNxXlOaScglzQo1RYFSosXjQzK3w2ZMrvS3evnrWHu6vTWcNz//GLO7PoO8esBkKLyV1bwwN27FMUlY/BVOA==
+14:41:54.238 [consensus/pbft] execDoneSync -> INFO 2aa[0m Replica 2 finished execution 99, trying next
+14:41:54.238 [consensus/pbft] processNewView -> INFO 2ab[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:41:57.534 [consensus/pbft] executeOne -> INFO 2ac[0m Replica 2 executing/committing request batch for view=8/seqNo=100 and digest GnhLIZ/Ef3Mt2C0SahGmsE1D5j4a0/Bhhbrv9f+175vnqGoqyxGEPr5rPE1js3Mh+cAMD07iy5GFz6GeeeK8kw==
+14:41:57.564 [consensus/pbft] execDoneSync -> INFO 2ad[0m Replica 2 finished execution 100, trying next
+14:41:57.565 [consensus/pbft] processNewView -> INFO 2ae[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:41:57.566 [consensus/pbft] processNewView -> INFO 2af[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:41:58.639 [consensus/pbft] executeOne -> INFO 2b0[0m Replica 2 executing/committing request batch for view=8/seqNo=101 and digest W+6ZCoq0KP5HoPGKtP9MZcKYqkj6gseAxIVavjEoorBROlEH0XUtk5eQg5T/DZuxrA8hNhQ6sWSclxv4Kfe/Lg==
+14:41:58.648 [consensus/pbft] execDoneSync -> INFO 2b1[0m Replica 2 finished execution 101, trying next
+14:41:58.648 [consensus/pbft] processNewView -> INFO 2b2[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:14.782 [consensus/pbft] executeOne -> INFO 2b3[0m Replica 2 executing/committing request batch for view=8/seqNo=102 and digest 0EPkD3581FdXgVFqvIkum7VZc18HYR6X19sq9Jix3Szy03Xgk4YwufgpyTKbxazuU5G31iZNpg3dU0q8r3bOQg==
+14:42:14.824 [consensus/pbft] execDoneSync -> INFO 2b4[0m Replica 2 finished execution 102, trying next
+14:42:14.824 [consensus/pbft] processNewView -> INFO 2b5[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:15.799 [consensus/pbft] executeOne -> INFO 2b6[0m Replica 2 executing/committing request batch for view=8/seqNo=103 and digest ir0Ub5Ox8OwKMyd06hCFmH5ZMrFIxLOGxto/bjW3DiYjvwx6MlH76utWUNd5h6WoQfHaTEVg6nDkrGdy76JxCA==
+14:42:15.845 [consensus/pbft] execDoneSync -> INFO 2b7[0m Replica 2 finished execution 103, trying next
+14:42:15.845 [consensus/pbft] processNewView -> INFO 2b8[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:16.744 [consensus/pbft] executeOne -> INFO 2b9[0m Replica 2 executing/committing request batch for view=8/seqNo=104 and digest b4FNh8t3NglpQsfvnzutwmJS5Ob/weLcEWvkqmzHS8CJifDzwGsui3RWHA23EF43jC3lRUF/gaynhhLZzv/Z9g==
+14:42:16.787 [consensus/pbft] execDoneSync -> INFO 2ba[0m Replica 2 finished execution 104, trying next
+14:42:16.787 [consensus/pbft] processNewView -> INFO 2bb[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:17.876 [consensus/pbft] executeOne -> INFO 2bc[0m Replica 2 executing/committing request batch for view=8/seqNo=105 and digest nhUM2pzmMwv0AlLDeose6+8VHw8avTpjno0XR0SAiDmLnoJ+4JtFPvlZoO/QB0fHcT9s9q1Kp1MLzceerelGoA==
+14:42:17.908 [consensus/pbft] execDoneSync -> INFO 2bd[0m Replica 2 finished execution 105, trying next
+14:42:17.909 [consensus/pbft] processNewView -> INFO 2be[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:20.523 [consensus/pbft] executeOne -> INFO 2bf[0m Replica 2 executing/committing request batch for view=8/seqNo=106 and digest faLC8DGzb7BIo5SRNnNcWY0VU38je9+y8KNTd3Q+SIjPBKFc3R0n4QtuPjeeF8nxZ3mKsj/oxgISRh3K2zx52g==
+14:42:20.568 [consensus/pbft] execDoneSync -> INFO 2c0[0m Replica 2 finished execution 106, trying next
+14:42:20.568 [consensus/pbft] processNewView -> INFO 2c1[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:21.628 [consensus/pbft] executeOne -> INFO 2c2[0m Replica 2 executing/committing request batch for view=8/seqNo=107 and digest DAEXqjiTRPIT6ygVGGKJ3I8SNjqE0U+PRCiSLemFCWH4b6ToEnMJ0hCAX/QuvtVpnl9tEZkLF+wlRt5nyT/7lw==
+14:42:21.671 [consensus/pbft] execDoneSync -> INFO 2c3[0m Replica 2 finished execution 107, trying next
+14:42:21.671 [consensus/pbft] processNewView -> INFO 2c4[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:22.712 [consensus/pbft] executeOne -> INFO 2c5[0m Replica 2 executing/committing request batch for view=8/seqNo=108 and digest H9G4eUaO+DAmambj2Pq4Dx5q2k+CkxH8EVxnaziauoYHFJj29jb195HUi4nfCi6eOsLdhxDYnanssw40wvDQDQ==
+14:42:22.745 [consensus/pbft] execDoneSync -> INFO 2c6[0m Replica 2 finished execution 108, trying next
+14:42:22.745 [consensus/pbft] processNewView -> INFO 2c7[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:45.955 [consensus/pbft] executeOne -> INFO 2c8[0m Replica 2 executing/committing request batch for view=8/seqNo=109 and digest /zPimR2p3cV/IPW4G5TqgWas4jpzhfoXaPPIeq1RV62z+242NLrH/CL47jsjYY0Cnh7DMaroxtayJzBleWtbQA==
+14:42:45.986 [consensus/pbft] execDoneSync -> INFO 2c9[0m Replica 2 finished execution 109, trying next
+14:42:45.986 [consensus/pbft] processNewView -> INFO 2ca[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.134 [consensus/pbft] executeOne -> INFO 2cb[0m Replica 2 executing/committing request batch for view=8/seqNo=110 and digest 0ZTQVRq6kQya85whwA0PhHtoiWgnbHr5+vLPY6fX18p7JHxslwwF6dR5jgQMZgLhxquQPnppYlFpOuthKE8c8w==
+14:42:47.173 [consensus/pbft] execDoneSync -> INFO 2cc[0m Replica 2 finished execution 110, trying next
+14:42:47.174 [consensus/pbft] processNewView -> INFO 2cd[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.183 [consensus/pbft] processNewView -> INFO 2ce[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:47.990 [consensus/pbft] executeOne -> INFO 2cf[0m Replica 2 executing/committing request batch for view=8/seqNo=111 and digest sks5BOU1BztcW1fQUuaE7+tEq76QumZZjRJqVn6QRjeG2PqHQyd6u9mM+1DQ7NsgKXYIAHbBuPYDImoCkV1OaQ==
+14:42:48.037 [consensus/pbft] execDoneSync -> INFO 2d0[0m Replica 2 finished execution 111, trying next
+14:42:48.038 [consensus/pbft] processNewView -> INFO 2d1[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:48.932 [consensus/pbft] executeOne -> INFO 2d2[0m Replica 2 executing/committing request batch for view=8/seqNo=112 and digest 84T1jCVRKc/A6BPpXwhIRJNRrm/U2zpKN3u7LzksNFlqov+Fgw0bR1nwHFADTKXsh5RiZSxrYqBLhLLXucbhCw==
+14:42:48.980 [consensus/pbft] execDoneSync -> INFO 2d3[0m Replica 2 finished execution 112, trying next
+14:42:48.980 [consensus/pbft] processNewView -> INFO 2d4[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+[33m14:42:49.310 [consensus/pbft] recvCommit -> WARN 2d5[0m Replica 2 ignoring commit for view=8/seqNo=109: not in-wv, in view 8, high water mark 110
+14:42:49.793 [consensus/pbft] executeOne -> INFO 2d6[0m Replica 2 executing/committing request batch for view=8/seqNo=113 and digest SUEdeGwnH5R2LrMTI2934rP8+LZ6BHVVXxvot9Hvynk3L66myBcV6R/G9RUOS9XDyoxuOCwT3BIpUcSjV8SSNA==
+14:42:49.837 [consensus/pbft] execDoneSync -> INFO 2d7[0m Replica 2 finished execution 113, trying next
+14:42:49.837 [consensus/pbft] processNewView -> INFO 2d8[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:50.915 [consensus/pbft] executeOne -> INFO 2d9[0m Replica 2 executing/committing request batch for view=8/seqNo=114 and digest fgJVEfFczv32W7joWAk3MT0VT7hu1SdxpAvlLr2hQVF9H0GltiXC/lo8Il/vlwqCE5rkXJebkOpC5MrRg/rTlw==
+14:42:50.930 [consensus/pbft] execDoneSync -> INFO 2da[0m Replica 2 finished execution 114, trying next
+14:42:50.930 [consensus/pbft] processNewView -> INFO 2db[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:51.950 [consensus/pbft] executeOne -> INFO 2dc[0m Replica 2 executing/committing request batch for view=8/seqNo=115 and digest ria7jfMNQsIb2hKcmKvX24GHWCcEsi8P8hSPpXc7IKx9gEjQnqhjfRJQZEZQp9LszLkxMaA1UO0WNbRTFatbuQ==
+14:42:51.967 [consensus/pbft] execDoneSync -> INFO 2dd[0m Replica 2 finished execution 115, trying next
+14:42:51.968 [consensus/pbft] processNewView -> INFO 2de[0m Replica 2 ignoring new-view from 0, v:8: we are active in view 8
+14:42:57.647 [consensus/pbft] ProcessEvent -> INFO 2df[0m Replica 2 view change timer expired, sending view change: Batch outstanding requests
+14:42:57.647 [consensus/pbft] sendViewChange -> INFO 2e0[0m Replica 2 sending view-change, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.647 [consensus/pbft] recvViewChange -> INFO 2e1[0m Replica 2 received view-change from replica 2, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.648 [consensus/pbft] recvViewChange -> INFO 2e2[0m Replica 2 received view-change from replica 3, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.648 [consensus/pbft] recvViewChange -> INFO 2e3[0m Replica 2 received view-change from replica 5, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.649 [consensus/pbft] recvViewChange -> INFO 2e4[0m Replica 2 received view-change from replica 7, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.649 [consensus/pbft] recvViewChange -> INFO 2e5[0m Replica 2 received view-change from replica 1, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.649 [consensus/pbft] recvViewChange -> INFO 2e6[0m Replica 2 received view-change from replica 4, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.649 [consensus/pbft] recvViewChange -> INFO 2e7[0m Replica 2 received view-change from replica 6, v:9, h:110, |C|:1, |P|:5, |Q|:5
+14:42:57.657 [consensus/pbft] recvNewView -> INFO 2e8[0m Replica 2 received new-view 9
+14:42:57.658 [consensus/pbft] processNewView2 -> INFO 2e9[0m Replica 2 accepting new-view to view 9
+[33m14:42:57.982 [consensus/pbft] recvPrePrepare -> WARN 2ea[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:58.242 [consensus/pbft] executeOne -> INFO 2eb[0m Replica 2 executing/committing request batch for view=9/seqNo=116 and digest YKkLLgovGtqCVvu7TLQkNjzWZEHNlUExAAZrnkquPbP7ZwzEzZM4ep7TWvZvW0YxwehMXsJfjbQr12tYJ5LVCw==
+14:42:58.281 [consensus/pbft] execDoneSync -> INFO 2ec[0m Replica 2 finished execution 116, trying next
+14:42:58.281 [consensus/pbft] processNewView -> INFO 2ed[0m Replica 2 ignoring new-view from 1, v:9: we are active in view 9
+[33m14:42:58.571 [consensus/pbft] recvPrePrepare -> WARN 2ee[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:58.737 [consensus/pbft] executeOne -> INFO 2ef[0m Replica 2 executing/committing request batch for view=9/seqNo=117 and digest UGlEHAdJb+zzEdPRhQUc+d86wsdDYUHkQ4f84Ze3EAv4fi3SkeFmK1f9m2aYBpq87inqkzTdtP4meEByalu6UQ==
+14:42:58.785 [consensus/pbft] execDoneSync -> INFO 2f0[0m Replica 2 finished execution 117, trying next
+14:42:58.785 [consensus/pbft] processNewView -> INFO 2f1[0m Replica 2 ignoring new-view from 1, v:9: we are active in view 9
+[33m14:42:59.017 [consensus/pbft] recvPrePrepare -> WARN 2f2[0m Pre-prepare from other than primary: got 0, should be 1
+14:42:59.067 [consensus/pbft] recvViewChange -> INFO 2f3[0m Replica 2 received view-change from replica 0, v:9, h:110, |C|:1, |P|:5, |Q|:8
+14:42:59.182 [consensus/pbft] executeOne -> INFO 2f4[0m Replica 2 executing/committing request batch for view=9/seqNo=118 and digest kR8N838MrbUuyEp/bHio3GC19Fml2MINA3TqlKv4UwqbqHviehH1nKy3ba4TgNLTni/gO7O9euXGmcmu+4/ToA==
+14:42:59.220 [consensus/pbft] execDoneSync -> INFO 2f5[0m Replica 2 finished execution 118, trying next
+14:42:59.220 [consensus/pbft] processNewView -> INFO 2f6[0m Replica 2 ignoring new-view from 1, v:9: we are active in view 9
+14:43:00.174 [consensus/pbft] executeOne -> INFO 2f7[0m Replica 2 executing/committing request batch for view=9/seqNo=119 and digest SLQv+ZJpEhrqPuy1XpY3n+OxogXYlJPg7Z8DGmYjE4D31yBjX0pEOGZ8xFyXgq1rsDUD9wHnmnL8KwRxaVMJmQ==
+14:43:00.179 [consensus/pbft] execDoneSync -> INFO 2f8[0m Replica 2 finished execution 119, trying next
+14:43:00.179 [consensus/pbft] processNewView -> INFO 2f9[0m Replica 2 ignoring new-view from 1, v:9: we are active in view 9
+14:43:02.179 [consensus/pbft] ProcessEvent -> INFO 2fa[0m Replica 2 view change timer expired, sending view change: Batch outstanding requests
+14:43:02.179 [consensus/pbft] sendViewChange -> INFO 2fb[0m Replica 2 sending view-change, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.180 [consensus/pbft] recvViewChange -> INFO 2fc[0m Replica 2 received view-change from replica 2, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.180 [consensus/pbft] recvViewChange -> INFO 2fd[0m Replica 2 received view-change from replica 0, v:10, h:110, |C|:1, |P|:9, |Q|:12
+14:43:02.181 [consensus/pbft] recvViewChange -> INFO 2fe[0m Replica 2 received view-change from replica 7, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.182 [consensus/pbft] recvViewChange -> INFO 2ff[0m Replica 2 received view-change from replica 5, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.182 [consensus/pbft] recvViewChange -> INFO 300[0m Replica 2 received view-change from replica 3, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.183 [consensus/pbft] recvViewChange -> INFO 301[0m Replica 2 received view-change from replica 6, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.184 [consensus/pbft] sendNewView -> INFO 302[0m Replica 2 is new primary, sending new-view, v:10, X:map[116:YKkLLgovGtqCVvu7TLQkNjzWZEHNlUExAAZrnkquPbP7ZwzEzZM4ep7TWvZvW0YxwehMXsJfjbQr12tYJ5LVCw== 119:SLQv+ZJpEhrqPuy1XpY3n+OxogXYlJPg7Z8DGmYjE4D31yBjX0pEOGZ8xFyXgq1rsDUD9wHnmnL8KwRxaVMJmQ== 112:84T1jCVRKc/A6BPpXwhIRJNRrm/U2zpKN3u7LzksNFlqov+Fgw0bR1nwHFADTKXsh5RiZSxrYqBLhLLXucbhCw== 117:UGlEHAdJb+zzEdPRhQUc+d86wsdDYUHkQ4f84Ze3EAv4fi3SkeFmK1f9m2aYBpq87inqkzTdtP4meEByalu6UQ== 113:SUEdeGwnH5R2LrMTI2934rP8+LZ6BHVVXxvot9Hvynk3L66myBcV6R/G9RUOS9XDyoxuOCwT3BIpUcSjV8SSNA== 115:ria7jfMNQsIb2hKcmKvX24GHWCcEsi8P8hSPpXc7IKx9gEjQnqhjfRJQZEZQp9LszLkxMaA1UO0WNbRTFatbuQ== 111:sks5BOU1BztcW1fQUuaE7+tEq76QumZZjRJqVn6QRjeG2PqHQyd6u9mM+1DQ7NsgKXYIAHbBuPYDImoCkV1OaQ== 114:fgJVEfFczv32W7joWAk3MT0VT7hu1SdxpAvlLr2hQVF9H0GltiXC/lo8Il/vlwqCE5rkXJebkOpC5MrRg/rTlw== 118:kR8N838MrbUuyEp/bHio3GC19Fml2MINA3TqlKv4UwqbqHviehH1nKy3ba4TgNLTni/gO7O9euXGmcmu+4/ToA==]
+14:43:02.186 [consensus/pbft] processNewView2 -> INFO 303[0m Replica 2 accepting new-view to view 10
+14:43:02.189 [consensus/pbft] recvViewChange -> INFO 304[0m Replica 2 received view-change from replica 4, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:02.190 [consensus/pbft] recvViewChange -> INFO 305[0m Replica 2 received view-change from replica 1, v:10, h:110, |C|:1, |P|:9, |Q|:9
+14:43:03.188 [consensus/pbft] ProcessEvent -> INFO 306[0m Replica 2 batch timer expired
+14:43:03.188 [consensus/pbft] sendBatch -> INFO 307[0m Creating batch with 97 requests
+14:43:03.221 [consensus/pbft] executeOne -> INFO 308[0m Replica 2 executing/committing request batch for view=10/seqNo=120 and digest Xre+bpfMj81WCmCL3KV1avyZv8r0MAhLEMQRG4Hfmizv62CtKS5qxeCeGAnhXjp7ld62afONhdzGqa4lYfDwaA==
+14:43:03.235 [consensus/pbft] execDoneSync -> INFO 309[0m Replica 2 finished execution 120, trying next
+14:43:03.236 [consensus/pbft] processNewView -> INFO 30a[0m Replica 2 ignoring new-view from 2, v:10: we are active in view 10
+14:43:03.236 [consensus/pbft] processNewView -> INFO 30b[0m Replica 2 ignoring new-view from 2, v:10: we are active in view 10
