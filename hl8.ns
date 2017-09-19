@@ -1,0 +1,18 @@
+set ns [new Simulator]
+source tb_compat.tcl
+
+set nodecount 8
+set nodelist ""
+
+for {set i 1} {$i <= $nodecount} {incr i} {
+        set node($i) [$ns node]
+        append nodelist "$node($i) "
+        tb-set-node-os $node($i) Ubuntu16-Hyperledger
+}
+
+set connection [$ns make-lan "$nodelist" 100Mb 0ms]
+
+$ns rtproto Static
+
+$ns run
+

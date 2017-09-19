@@ -2,6 +2,7 @@
 #args: nnodes
 
 cd `dirname ${BASH_SOURCE-$0}`
+rm ./benchmark_log/*
 
 source ./env.sh
 
