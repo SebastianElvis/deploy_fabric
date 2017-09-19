@@ -777,3 +777,6 @@
 14:43:03.235 [consensus/pbft] execDoneSync -> INFO 309[0m Replica 2 finished execution 120, trying next
 14:43:03.236 [consensus/pbft] processNewView -> INFO 30a[0m Replica 2 ignoring new-view from 2, v:10: we are active in view 10
 14:43:03.236 [consensus/pbft] processNewView -> INFO 30b[0m Replica 2 ignoring new-view from 2, v:10: we are active in view 10
+
+terminated
+04:21:17.876 [main] main -> INFO 30c[0m Exiting.....

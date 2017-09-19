@@ -557,3 +557,17 @@
 14:43:03.223 [consensus/pbft] execDoneSync -> INFO 22d[0m Replica 6 finished execution 120, trying next
 14:43:03.224 [consensus/pbft] processNewView -> INFO 22e[0m Replica 6 ignoring new-view from 2, v:10: we are active in view 10
 14:43:03.226 [consensus/pbft] processNewView -> INFO 22f[0m Replica 6 ignoring new-view from 2, v:10: we are active in view 10
+2017/09/19 04:21:17 transport: http2Client.notifyError got notified that the client transport was broken EOF.
+[31m04:21:17.906 [peer] handleChat -> ERRO 230[0m Error during Chat, stopping handler: rpc error: code = 13 desc = transport is closing
+[31m04:21:17.906 [peer] chatWithPeer -> ERRO 231[0m Ending Chat with peer address 155.98.39.84:7051 due to error: Error during Chat, stopping handler: rpc error: code = 13 desc = transport is closing
+[31m04:21:17.908 [peer] handleChat -> ERRO 232[0m Error during Chat, stopping handler: stream error: code = 1 desc = "context canceled"
+[31m04:21:17.915 [peer] handleChat -> ERRO 233[0m Error during Chat, stopping handler: stream error: code = 1 desc = "context canceled"
+2017/09/19 04:21:17 transport: http2Client.notifyError got notified that the client transport was broken EOF.
+[31m04:21:17.931 [peer] handleChat -> ERRO 234[0m Error during Chat, stopping handler: rpc error: code = 13 desc = transport is closing
+[31m04:21:17.931 [peer] chatWithPeer -> ERRO 235[0m Ending Chat with peer address pc344.emulab.net:7051 due to error: Error during Chat, stopping handler: rpc error: code = 13 desc = transport is closing
+[31m04:21:17.954 [peer] handleChat -> ERRO 236[0m Error during Chat, stopping handler: stream error: code = 1 desc = "context canceled"
+[31m04:21:17.965 [peer] handleChat -> ERRO 237[0m Error during Chat, stopping handler: stream error: code = 1 desc = "context canceled"
+[31m04:21:17.981 [peer] handleChat -> ERRO 238[0m Error during Chat, stopping handler: stream error: code = 1 desc = "context canceled"
+
+terminated
+04:21:18.005 [main] main -> INFO 239[0m Exiting.....

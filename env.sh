@@ -7,8 +7,8 @@ LOG_DIR=$HL_HOME/benchmark_log
 EXE_HOME=$HL_HOME/../../src/macro/kvstore/
 BENCHMARK=ycsb
 
-export PATH=$PATH:/users/hanrc/hanrc/go/src/github.com/hyperledger/fabric/build/bin
-export GOPATH=/users/hanrc/hanrc/go
+export GOPATH=/opt/gopath
+export PATH=$PATH:$GOPATH/src/github.com/hyperledger/fabric/build/bin
 
 ##comment these out for smallbank
 #EXE_HOME=$HL_HOME/../../src/smallbank/hyperledger
