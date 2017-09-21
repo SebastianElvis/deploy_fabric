@@ -85,7 +85,7 @@ peer:
     # The networkId allows for logical seperation of networks
     # networkId: dev
     # networkId: test
-    networkId: dev
+    networkId: dev2
 
     # The Address this Peer will listen on
     listenAddress: 0.0.0.0:7051
